@@ -1,0 +1,107 @@
+/*tablette format*/
+
+    .bt
+    {
+        width: 120px;
+        height: 100px;
+        margin: -1px;
+
+
+    }
+
+    .bt a
+    {
+        line-height: 100px;
+        color: #fff;
+        display:block;
+    }
+    .bt a img
+    {
+        width: 120%;
+        height: 100%;
+    }
+
+
+    .bt
+    {
+        -moz-transition: all 0.5s ease-in-out 0s;
+        -webkit-transition: all 0.5s ease-in-out 0s;
+        -o-transition: all 0.5s ease-in-out 0s;
+        -ms-transition: all 0.5s ease-in-out 0s;
+        transition: all 0.5s ease-in-out 0s;
+        opacity: 0.7;
+    }
+    .bt:hover
+    {
+        -moz-transform: rotate(3deg) scale(1.5)  translateX(0px)   ;
+        -webkit-transform: rotate(3deg) scale(1.5) translateX(0px) ;
+        -o-transform: rotate(3deg) scale(1.5)  translateX(0px);
+        -ms-transform: rotate(3deg) scale(1.5) translateX(0px) ;
+        transform: rotate(3deg) scale(1.5) translateX(0px);
+        opacity: 1;
+    }
+#box
+{
+    width: 200px;
+    font-size: 12px;
+    line-height: 20px;
+    right: -140px;
+    top: 0%; /* change this value to place the menu higher or lower */
+    position: fixed;
+    z-index: 100;
+}
+
+
+#up
+{
+
+
+   top: 30%;
+   left: 20px;
+
+    opacity: 1;
+}
+#up_image
+{
+
+   float: right;
+    margin-right: 0px;
+}
+
+#up_image:hover
+{
+    -moz-transform: rotate(0deg) scale(1.3)    ;
+    -webkit-transform: rotate(0deg) scale(1.3)  ;
+    -o-transform: rotate(0deg) scale(1.3)  ;
+    -ms-transform: rotate(0deg) scale(1.3)  ;
+    transform: rotate(0deg) scale(1.3) ;
+    opacity: 1;
+}
+
+
+.enter
+{
+
+    top: 100%;
+    right: -80%;
+    color: lime;
+
+
+
+}
+.titre
+{
+
+    color: lime;
+
+}
+
+
+#back {
+
+    background-size: 20%; /* version standardisée */
+    opacity: 0.8;
+}
+
+
+
