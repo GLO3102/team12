@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>TV TEMPLATE</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../css/css_movieAndTv.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" onclick="re()" "data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only" >Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="http://placehold.it/150x50&text=Logo" alt="">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#" id="ttt">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Heading Row -->
+        <div class="row">
+		
+			
+			
+			
+			<div class="col-md-4">
+			<div class="upAndDown">
+			<img class="img-responsive img-rounded" id="cover" src="https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Lost-Season1.jpg/250px-Lost-Season1.jpg" >
+		
+			</div>
+			<div class="upAndDown">
+         		
+                <h1><div id="nomSerieTV"> Lost </div> </h1>
+                <p id="descriptionSerieTV">The survivors of a plane crash are forced to work together in order to survive on a seemingly deserted tropical island. </p>
+				<div class="attributsSerieTV">
+				<span id="rating">  TV-14   </span>|
+				 <span id="duree">44 min </span>|
+				<span id="genre">Adventure, Drama, Fantasy </span>|
+				<span id="dateSortie">2004</span>
+				</div>
+                <a class="btn btn-primary btn-lg" href="#">Watch!</a>
+				
+
+            </div>
+			
+			<div class="upAndDown">
+			<div id="epListId">
+			<br>
+			Episode List:
+			<br>
+			<br> 
+			
+			<select name="episodeList" size="5">
+			<option value="ep1"onclick="showImg();">Episode 1</option>
+			<option value="ep2"onclick="showImg();">Episode 2</option>
+			<option value="ep3"onclick="showImg();">Episode 3</option>
+			<option value="ep4"onclick="showImg();">Episode 4</option>
+			<option value="ep5"onclick="showImg();">Episode 5</option>
+			
+			</select>
+			</div>
+			<br>
+			<img id="imageEpisode" class="hide" src="http://tvmedia.ign.com/tv/image/article/881/881564/lost-pilot-jack_1213391575.jpg">
+			  </div>
+			 
+			</div>
+			
+		
+			<div class="col-md-8">
+			<div class="upAndDown">			
+            	
+			
+                <img class="img-responsive img-rounded" href="http://www.google.com" src="http://kingoftheflatscreen.com/wp-content/uploads/2014/03/LOST_Full_Cast___Textless_by_Wolverine080976.png" alt="">
+			</div>
+		       
+			<div class="upAndDown">	
+            <!-- /.col-md-8 -->			
+			<br>			
+			<div class="embed-responsive embed-responsive-4by3">
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0HQLeAnhGYU"></iframe>
+			</div>
+			
+			
+			</div>	
+			
+				</div>	
+		
+			
+						
+            <!-- /.col-md-4 -->
+        </div>
+		
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Call to Action Well -->
+        <div class="row">
+            <div class="col-lg-12">
+                <img id="logoItunes" src="../images/1257009-logo-itunes-11.jpg">
+                    <a href="https://itunes.apple.com/ca/tv-season/lost-season-1/id81864976"> Buy on Itunes! </a> 
+              
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+        <!-- /.row -->
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+	<script src="navbar.js"></script>
+	<script>
+	function showImg(){
+	
+	var el=document.getElementById('imageEpisode');
+	var state=el.getAttribute("class");
+	if (state=="hide"){
+	el.setAttribute("class", "show");
+	}
+
+	
+	}
+
+
+	
+
+</script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
