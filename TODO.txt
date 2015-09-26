@@ -1,0 +1,9 @@
+- Menu : devrait lire UMovie et non uMovies
+- Search bar : (détail) on pourrait mettre un icone de loupe ?
+- Film : Il manque un espace entre Watch! et les specs du film
+- Index : Clic image devrait être Click the image, ou quelque chose du genre !
+- Index : Top5 manque d'espacement après la flèche, et entre Top et 5
+- Index : Utiliser un meilleur font pour le texte (Top5, clic image)
+- Index : Supprimer les liens des Top5 (erreur 404)
+- Index : Redimensionnement étrange avec l'image du centre
+- TV Series et film : changer copyright en bas, nommer film.html -> movie.html
