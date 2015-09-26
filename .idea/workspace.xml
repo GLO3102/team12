@@ -1,10 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68073506-0b50-46e8-af80-f36dd670de7f" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Utilisateur\Documents\team12\startbootstrap-small-business-1.0.3\index.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/js/jquery.js" afterPath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/js/jquery.js" />
+    <list default="true" id="68073506-0b50-46e8-af80-f36dd670de7f" name="Default" comment="move de notre content dans scratch/, detatchment de l'architecture de notre page des elements du template.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/images/1257009-logo-itunes-11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/images/Cinema-screen.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/images/arrowleft.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/images/arrowright.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/images/clapper-board-152088_1280.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/images/logo.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/images/movie1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/images/movie2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/images/movie3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/images/movie4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/images/movie5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/images/search-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/actor.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/css/css_menu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/css/css_movieAndTv.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/js/effect.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/movie.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/css/style_homepage.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/css/style_homepageMobile.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/css/style_homepageTablet.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/team12.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/tvshow.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/css_menu.css" afterPath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/css_menu.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/css_movieAndTv.css" afterPath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/css_movieAndTv.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/js/effect.js" afterPath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/js/effect.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/small-business.css" afterPath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/small-business.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/style_homepage.css" afterPath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/style_homepage.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/style_homepageMobile.css" afterPath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/style_homepageMobile.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/style_homepageTablet.css" afterPath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/style_homepageTablet.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/html/tvshow.html" afterPath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/html/tvshow.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="team12.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,90 +64,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="bootstrap.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/js/bootstrap.min.js">
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scratch/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/js/jquery.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="arrowleft.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/images/arrowleft.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="arrowright.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/images/arrowright.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Cinema-screen.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/images/Cinema-screen.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/html/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.65384614">
-              <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+            <state vertical-scroll-proportion="-24.192308">
+              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="clapper-board-152088_1280.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/images/clapper-board-152088_1280.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="movie2.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/images/movie2.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="movie1.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/images/movie1.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/js/bootstrap.js">
+      <file leaf-file-name="actor.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scratch/actor.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-18.307692">
+              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tvshow.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scratch/tvshow.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.923077">
+              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scratch/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.5">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="movie.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scratch/movie.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.24584718">
+              <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -132,10 +133,29 @@
       <list>
         <option value="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/html/film.html" />
         <option value="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/style.css" />
-        <option value="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/js/effect.js" />
         <option value="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/html/index.html" />
         <option value="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/js/bootstrap.min.js" />
         <option value="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/js/jquery.js" />
+        <option value="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/html/tvshow.html" />
+        <option value="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/style_homepageMobile.css" />
+        <option value="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/style_homepageTablet.css" />
+        <option value="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/style_homepage.css" />
+        <option value="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/small-business.css" />
+        <option value="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/css_menu.css" />
+        <option value="$PROJECT_DIR$/scratch/resources/style.css" />
+        <option value="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/css_movieAndTv.css" />
+        <option value="$PROJECT_DIR$/scratch/resources/js/minisearch.js" />
+        <option value="$PROJECT_DIR$/scratch/resources/css/normalize.css" />
+        <option value="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/js/effect.js" />
+        <option value="$PROJECT_DIR$/scratch/index2.html" />
+        <option value="$PROJECT_DIR$/scratch/resources/css/minisearch.css" />
+        <option value="$PROJECT_DIR$/scratch/resources/js/effect.js" />
+        <option value="$PROJECT_DIR$/scratch/resources/css/style.css" />
+        <option value="$PROJECT_DIR$/scratch/index.html" />
+        <option value="$PROJECT_DIR$/scratch/test.html" />
+        <option value="$PROJECT_DIR$/scratch/actor.html" />
+        <option value="$PROJECT_DIR$/scratch/tvshow.html" />
+        <option value="$PROJECT_DIR$/scratch/movie.html" />
       </list>
     </option>
   </component>
@@ -149,8 +169,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="876" />
+    <option name="width" value="1936" />
+    <option name="height" value="1066" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -217,7 +237,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="startbootstrap-small-business-1.0.3" />
+              <option name="myItemId" value="scratch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="team12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scratch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -235,29 +273,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="startbootstrap-small-business-1.0.3" />
+              <option name="myItemId" value="scratch" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="team12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="team12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="startbootstrap-small-business-1.0.3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -271,7 +291,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="startbootstrap-small-business-1.0.3" />
+              <option name="myItemId" value="scratch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -291,16 +315,38 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="recentsLimit" value="5" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Philippe\PhpstormProjects\team12\scratch" />
+      <recent name="C:\Users\Philippe\PhpstormProjects\team12\scratch\resources\css" />
+      <recent name="C:\Users\Philippe\PhpstormProjects\team12\scratch\resources\js" />
+      <recent name="C:\Users\Philippe\PhpstormProjects\team12\scratch\resources" />
       <recent name="C:\Users\Utilisateur\Documents\team12\startbootstrap-small-business-1.0.3\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Philippe\PhpstormProjects\team12\scratch\resources\images" />
+      <recent name="C:\Users\Philippe\PhpstormProjects\team12\scratch\resources\css" />
       <recent name="C:\Users\Utilisateur\Documents\team12\startbootstrap-small-business-1.0.3\html" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.tvshow.html (1)">
+    <configuration default="false" name="film.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/team12/startbootstrap-small-business-1.0.3/html/film.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="tvshow.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/team12/startbootstrap-small-business-1.0.3/html/tvshow.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="movie.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/team12/startbootstrap-small-business-1.0.3/html/movie.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="movie.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/team12/scratch/movie.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="tvshow.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/team12/scratch/tvshow.html">
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
@@ -331,10 +377,39 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
+    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" nameIsGenerated="true" uri="http://localhost:63342/team12/scratch/index.html">
+      <method />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.film.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.tvshow.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.movie.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.movie.html (1)" />
+      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.tvshow.html (1)" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.tvshow.html (1)" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.movie.html (1)" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.movie.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.tvshow.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.film.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="68073506-0b50-46e8-af80-f36dd670de7f" name="Default" comment="" />
@@ -345,57 +420,58 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24739583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="move de notre content dans scratch/, detatchment de l'architecture de notre page des elements du template." />
+    <option name="LAST_COMMIT_MESSAGE" value="move de notre content dans scratch/, detatchment de l'architecture de notre page des elements du template." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/style.css">
+    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/js/bootstrap.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="203" column="0" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/html/film.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.7307692">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/js/effect.js">
+    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/js/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-          <folding />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -405,6 +481,24 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/images/arrowright.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/images/Cinema-screen.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/images/clapper-board-152088_1280.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -419,25 +513,17 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/images/clapper-board-152088_1280.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/images/Cinema-screen.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/html/index.html">
+    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/js/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/js/bootstrap.js">
+    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/js/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -457,13 +543,249 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/js/jquery.js">
+    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/images/arrowleft.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/images/arrowright.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/images/Cinema-screen.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/images/clapper-board-152088_1280.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/images/movie2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/images/movie1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/js/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/html/film.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.307692">
+          <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18847007">
+          <caret line="4" column="1048" selection-start-line="4" selection-start-column="1048" selection-end-line="4" selection-end-column="1048" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/fonts/glyphicons-halflings-regular.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.361679">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scratch/resources/images/search-icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scratch/resources/css/normalize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2744887">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Répartition du travail.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18299246">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/js/effect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40258342">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4330011">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scratch/resources/css/css_movieAndTv.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18299246">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scratch/resources/js/effect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16469322">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/html/movie.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.2236987">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scratch/resources/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25618947">
+          <caret line="14" column="75" selection-start-line="14" selection-start-column="75" selection-end-line="14" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/style_homepageTablet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.344828">
+          <caret line="63" column="22" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/style_homepageMobile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.689655">
+          <caret line="61" column="22" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/style_homepage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.344828">
+          <caret line="56" column="6" selection-start-line="56" selection-start-column="3" selection-end-line="56" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/small-business.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="8" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/css_movieAndTv.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="22" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/css_menu.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.79870826">
+          <caret line="46" column="8" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/html/tvshow.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52934664">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="204" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scratch/actor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.307692">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scratch/tvshow.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.923077">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scratch/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.192308">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scratch/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.5">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startbootstrap-small-business-1.0.3/README.md">
+      <provider editor-type-id="MultiMarkdownFxHtmlEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scratch/movie.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24584718">
+          <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>

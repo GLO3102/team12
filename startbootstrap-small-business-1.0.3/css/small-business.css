@@ -22,9 +22,9 @@ footer {
 
 /* Barre de recherche du menu */
 .navbar .search {
-	width: 120px;
-	margin-right: 5px;
-	margin-left: 15px;
+    width: 120px;
+    margin-right: 5px;
+    margin-left: 15px;
     margin-top: 10px;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -32,10 +32,10 @@ footer {
 
 /* Champ USERNAME du menu */
 .navbar .username {
-	color: white !important;
+    color: white !important;
 }
 
-@media(min-width:768px) {
+@media (min-width: 768px) {
     body {
         padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
     }
@@ -43,9 +43,9 @@ footer {
     .navbar-fixed-top .navbar-brand {
         padding: 15px 0;
     }
-	
-	.droite {
-		float: right;
-	}
+
+    .droite {
+        float: right;
+    }
 }
 

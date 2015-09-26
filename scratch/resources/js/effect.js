@@ -5,18 +5,16 @@ function toggle(id) {
     var el = document.getElementById(id);
     var img = document.getElementById("arrow");
     var box = el.getAttribute("class");
-    if (box == "hide") {
+    if(box == "hide"){
         el.setAttribute("class", "show");
-        delay(img, "../images/arrowright.png", 400);
+        delay(img, "resources/images/arrowright.png", 400);
     }
-    else {
+    else{
         el.setAttribute("class", "hide");
-        delay(img, "../images/arrowleft.png", 400);
+        delay(img, "resources/images/arrowleft.png", 400);
     }
 }
 
-function delay(elem, src, delayTime) {
-    window.setTimeout(function () {
-        elem.setAttribute("src", src);
-    }, delayTime);
+function delay(elem, src, delayTime){
+    window.setTimeout(function() {elem.setAttribute("src", src);}, delayTime);
 }
