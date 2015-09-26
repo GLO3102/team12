@@ -1,48 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68073506-0b50-46e8-af80-f36dd670de7f" name="Default" comment="move de notre content dans scratch/, detatchment de l'architecture de notre page des elements du template.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/images/1257009-logo-itunes-11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/images/Cinema-screen.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/images/arrowleft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/images/arrowright.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/images/clapper-board-152088_1280.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/images/logo.PNG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/images/movie1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/images/movie2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/images/movie3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/images/movie4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/images/movie5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/images/search-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/actor.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/css/css_menu.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/css/css_movieAndTv.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/js/effect.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/movie.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/css/style_homepage.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/css/style_homepageMobile.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/resources/css/style_homepageTablet.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/team12.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scratch/tvshow.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/css_menu.css" afterPath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/css_menu.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/css_movieAndTv.css" afterPath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/css_movieAndTv.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/js/effect.js" afterPath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/js/effect.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/small-business.css" afterPath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/small-business.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/style_homepage.css" afterPath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/style_homepage.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/style_homepageMobile.css" afterPath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/style_homepageMobile.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/style_homepageTablet.css" afterPath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/css/style_homepageTablet.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/html/tvshow.html" afterPath="$PROJECT_DIR$/startbootstrap-small-business-1.0.3/html/tvshow.html" />
+    <list default="true" id="68073506-0b50-46e8-af80-f36dd670de7f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="team12.iws" />
@@ -107,8 +66,8 @@
       <file leaf-file-name="movie.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scratch/movie.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24584718">
-              <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.45182723">
+              <caret line="24" column="60" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -417,6 +376,13 @@
       <option name="number" value="Default" />
       <updated>1442893859327</updated>
     </task>
+    <task id="LOCAL-00001" summary="move de notre content dans scratch/, detatchment de l'architecture de notre page des elements du template.">
+      <created>1443300276409</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1443300276409</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -612,14 +578,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scratch/resources/css/normalize.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2744887">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Répartition du travail.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18299246">
@@ -781,10 +739,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scratch/resources/css/normalize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3110872">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scratch/movie.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24584718">
-          <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.45182723">
+          <caret line="24" column="60" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="60" />
           <folding />
         </state>
       </provider>
