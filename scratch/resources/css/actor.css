@@ -67,3 +67,8 @@ footer {
     width: 100%;
     height: 100%;
 }
+
+#logoItunes {
+    max-width: 5%;
+    height: auto;
+}
