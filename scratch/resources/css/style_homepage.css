@@ -1,11 +1,9 @@
 
 #back {
-    margin: 0;
-    padding: 0;
-    background: url("../images/Cinema-screen.jpg") no-repeat center fixed;
-    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-    background-size: cover; /* version standardisée */
-    opacity: 0.8;
+    margin-left: auto;
+    margin-right: auto;
+    width:1600px;
+    background-color: transparent;
 }
 
 #box {
@@ -13,7 +11,7 @@
     font-size: 12px;
     line-height: 20px;
     right: -140px;
-    top: 2%; /* change this value to place the menu higher or lower */
+    top: 2%;
     position: fixed;
     z-index: 100;
 }
@@ -133,36 +131,27 @@
 
     margin-right: auto;
     margin-left: auto;
-    width: 90%;
+    width: 300px;
 }
 
 #up_image:hover {
-    -moz-transform: rotate(-15deg) scale(1.1);
-    -webkit-transform: rotate(-15deg) scale(1.1);
-    -o-transform: rotate(-15deg) scale(1.1);
-    -ms-transform: rotate(-15deg) scale(1.1);
-    transform: rotate(-15deg) scale(1.1);
+    -moz-transform: rotate(0deg) scale(1.5);
+    -webkit-transform: rotate(0deg) scale(1.5);
+    -o-transform: rotate(0deg) scale(1.5);
+    -ms-transform: rotate(0deg) scale(1.5);
+    transform: rotate(0deg) scale(1.5);
     opacity: 1;
 }
 
 .titre {
     position: absolute;
     font-style: italic;
-    font-size: x-large;
+    font-size: large;
     color: #afd3ff;
     z-index: 3;
     top: 0;
-    right: 100%;
+    right:150%;
+    font-family: fantasy;
 }
 
-.enter {
-    position: absolute;
-    font-style: italic;
-    font-size: xx-large;
-    font-family: "Glyphicons Halflings";
-    color: #e2fff8;
-    z-index: 3;
-    top: 100%;
-    right: 5%;
 
-}
