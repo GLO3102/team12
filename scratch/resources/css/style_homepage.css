@@ -2,7 +2,7 @@
 #back {
     margin-left: auto;
     margin-right: auto;
-    width:1600px;
+    width: 1600px;
     background-color: transparent;
 }
 
@@ -150,8 +150,190 @@
     color: #afd3ff;
     z-index: 3;
     top: 0;
-    right:150%;
+    right: 150%;
     font-family: fantasy;
 }
 
+/*tablette format*/
+
+@media only screen and (min-width: 500px)and (max-width: 720px ) {
+
+    .bt {
+        width: 120px;
+        height: 100px;
+        margin: -1px;
+
+    }
+
+    .bt a {
+        line-height: 100px;
+        color: #fff;
+        display: block;
+    }
+
+    .bt a img {
+        width: 120%;
+        height: 100%;
+    }
+
+    .bt {
+        -moz-transition: all 0.5s ease-in-out 0s;
+        -webkit-transition: all 0.5s ease-in-out 0s;
+        -o-transition: all 0.5s ease-in-out 0s;
+        -ms-transition: all 0.5s ease-in-out 0s;
+        transition: all 0.5s ease-in-out 0s;
+        opacity: 0.7;
+    }
+
+    .bt:hover {
+        -moz-transform: rotate(3deg) scale(1.5) translateX(0px);
+        -webkit-transform: rotate(3deg) scale(1.5) translateX(0px);
+        -o-transform: rotate(3deg) scale(1.5) translateX(0px);
+        -ms-transform: rotate(3deg) scale(1.5) translateX(0px);
+        transform: rotate(3deg) scale(1.5) translateX(0px);
+        opacity: 1;
+    }
+
+    #box {
+        width: 200px;
+        font-size: 12px;
+        line-height: 20px;
+        right: -140px;
+        top: 0%; /* change this value to place the menu higher or lower */
+        position: fixed;
+        z-index: 100;
+    }
+
+    #up {
+
+        top: 40%;
+        left: 15%;
+
+        opacity: 1;
+    }
+
+    #up_image {
+
+        margin-left: 5%;
+
+        width: 200px;
+        height: 120px;
+
+    }
+
+    #up_image:hover {
+        -moz-transform: rotate(0deg) scale(1.1);
+        -webkit-transform: rotate(0deg) scale(1.1);
+        -o-transform: rotate(0deg) scale(1.1);
+        -ms-transform: rotate(0deg) scale(1.1);
+        transform: rotate(0deg) scale(1.1);
+        opacity: 1;
+    }
+
+    .titre {
+
+        color: blue;
+        font-family: fantasy;
+
+    }
+
+    #background {
+
+        margin-left: auto;
+        margin-right: auto;
+        width: 900px;
+    }
+
+}
+
+/* mobile format*/
+@media only screen and  (max-width: 500px) {
+
+    .bt {
+        width: 120px;
+        height: 100px;
+        margin: -1px;
+
+    }
+
+    .bt a {
+        line-height: 100px;
+        color: #fff;
+        display: block;
+    }
+
+    .bt a img {
+        width: 120%;
+        height: 100%;
+    }
+
+    .bt {
+        -moz-transition: all 0.5s ease-in-out 0s;
+        -webkit-transition: all 0.5s ease-in-out 0s;
+        -o-transition: all 0.5s ease-in-out 0s;
+        -ms-transition: all 0.5s ease-in-out 0s;
+        transition: all 0.5s ease-in-out 0s;
+        opacity: 0.7;
+    }
+
+    .bt:hover {
+        -moz-transform: rotate(3deg) scale(1.5) translateX(0px);
+        -webkit-transform: rotate(3deg) scale(1.5) translateX(0px);
+        -o-transform: rotate(3deg) scale(1.5) translateX(0px);
+        -ms-transform: rotate(3deg) scale(1.5) translateX(0px);
+        transform: rotate(3deg) scale(1.5) translateX(0px);
+        opacity: 1;
+    }
+
+    #box {
+        width: 200px;
+        font-size: 12px;
+        line-height: 20px;
+        right: -140px;
+        top: 0%; /* change this value to place the menu higher or lower */
+        position: fixed;
+        z-index: 100;
+    }
+
+    #up {
+
+        top: 38%;
+        left: 10px;
+
+        opacity: 1;
+    }
+
+    #up_image {
+
+        margin-left: 30%;
+        margin-right: auto;
+        width: 100px;
+        height: 80px;
+
+    }
+
+    #up_image:hover {
+        -moz-transform: rotate(-6deg) scale(1.2);
+        -webkit-transform: rotate(-6deg) scale(1.2);
+        -o-transform: rotate(-6deg) scale(1.2);
+        -ms-transform: rotate(-6deg) scale(1.2);
+        transform: rotate(-6deg) scale(1.2);
+        opacity: 1;
+    }
+
+    .titre {
+
+        color: #fbfdff;
+        font-family: fantasy;
+        right: 105%;
+
+    }
+
+    #background {
+        margin-left: auto;
+        margin-right: auto;
+        width: 600px;
+    }
+
+}
 
