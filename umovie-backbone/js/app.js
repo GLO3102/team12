@@ -7,7 +7,6 @@ $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
 $(function () {
     'use strict';
 
-    // kick things off by creating the `App`
     new app.HomePageView();
 });
 

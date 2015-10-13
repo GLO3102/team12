@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68073506-0b50-46e8-af80-f36dd670de7f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umovie-backbone/js/views/HomePage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umovie-backbone/js/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umovie-backbone/js/helper/formToArray.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umovie-backbone/js/views/header.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umovie-backbone/js/routers/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie-backbone/index.html" afterPath="$PROJECT_DIR$/umovie-backbone/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie-backbone/js/app.js" afterPath="$PROJECT_DIR$/umovie-backbone/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie-backbone/js/routers/router.js" afterPath="$PROJECT_DIR$/umovie-backbone/js/routers/router.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="team12.iws" />
@@ -33,8 +28,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/umovie-backbone/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-30.807692">
-              <caret line="96" column="56" selection-start-line="96" selection-start-column="56" selection-end-line="96" selection-end-column="56" />
+            <state vertical-scroll-proportion="-29.5">
+              <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -44,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/umovie-backbone/js/routers/router.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -54,7 +49,7 @@
         <entry file="file://$PROJECT_DIR$/umovie-backbone/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -121,9 +116,9 @@
         <option value="$PROJECT_DIR$/umovie-backbone/js/views/header.js" />
         <option value="$PROJECT_DIR$/umovie-backbone/js/helper/formToArray.js" />
         <option value="$PROJECT_DIR$/umovie-backbone/index.html" />
-        <option value="$PROJECT_DIR$/umovie-backbone/js/app.js" />
-        <option value="$PROJECT_DIR$/umovie-backbone/js/routers/router.js" />
         <option value="$PROJECT_DIR$/umovie-backbone/js/views/HomePage.js" />
+        <option value="$PROJECT_DIR$/umovie-backbone/js/routers/router.js" />
+        <option value="$PROJECT_DIR$/umovie-backbone/js/app.js" />
       </list>
     </option>
   </component>
@@ -533,7 +528,13 @@
       <option name="project" value="LOCAL" />
       <updated>1444685124249</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="2e draft.  Decoupage du code.">
+      <created>1444780187217</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1444780187217</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -542,6 +543,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24739583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -551,7 +553,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39916405" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -575,7 +576,8 @@
     <MESSAGE value="move de notre content dans scratch/, detatchment de l'architecture de notre page des elements du template." />
     <MESSAGE value="modif styling homepage." />
     <MESSAGE value="Premier draft version Backbone." />
-    <option name="LAST_COMMIT_MESSAGE" value="Premier draft version Backbone." />
+    <MESSAGE value="2e draft.  Decoupage du code." />
+    <option name="LAST_COMMIT_MESSAGE" value="2e draft.  Decoupage du code." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -806,8 +808,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/umovie-backbone/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-30.807692">
-          <caret line="96" column="56" selection-start-line="96" selection-start-column="56" selection-end-line="96" selection-end-column="56" />
+        <state vertical-scroll-proportion="-29.5">
+          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -815,7 +817,7 @@
     <entry file="file://$PROJECT_DIR$/umovie-backbone/js/routers/router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -823,7 +825,7 @@
     <entry file="file://$PROJECT_DIR$/umovie-backbone/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
