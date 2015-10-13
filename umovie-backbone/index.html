@@ -17,7 +17,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"></script>
 </head>
-<body>
+<>
 
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
@@ -86,70 +86,16 @@
     <h1>Home Page</h1>
     <hr/>
     <p>
-        Some Stuff. <br />
+        Some Stuff. <br/>
         first-level variable test:<b><%= foo %></b>
-        <br />
+        <br/>
         <a href="#/prefs" class="btn btn-primary">User preferences link</a>
     </p>
 </script>
 
-<script>
-    $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
-        options.url = 'https://umovie.herokuapp.com/' + options.url;
-    });
-
-    /**
-     * Appens a serializeObject() function
-     */
-    $.fn.serializeObject = function() {
-        var o = {};
-        var a = this.serializeArray();
-        $.each(a, function() {
-            if (o[this.name] !== undefined) {
-                if (!o[this.name].push) {
-                    o[this.name] = [o[this.name]];
-                }
-                o[this.name].push(this.value || '');
-            } else {
-                o[this.name] = this.value || '';
-            }
-        });
-        return o;
-    };
-
-    var HomePage = Backbone.View.extend({
-        el: '.page',
-        render: function () {
-            console.log("rendering template...");
-            var template = _.template($("#homepage-template").html());
-            var vars = {foo: "bar"};
-            var html = template(vars);
-            console.log("done");
-            this.$el.html(html);
-        }
-    });
-
-    var Router = Backbone.Router.extend({
-        routes: {
-            "": "home",
-            "prefs": "prefs"
-        }
-    });
-
-    var homepage = new HomePage();
-
-    var router = new Router();
-    router.on('route:home', function () {
-        console.log("Home route loaded.");
-        homepage.render();
-    });
-    router.on('route:prefs', function() {
-        console.log("User Preferences Route Loaded.");
-        $(".page").html("User Preference Page.");
-    });
-
-    Backbone.history.start();
-</script>
+<script type="text/javascript" src="js/views/HomePage.js"></script>
+<script type="text/javascript" src="js/routers/router.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
 </body>
 
 </html>
