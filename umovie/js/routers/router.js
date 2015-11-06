@@ -11,6 +11,7 @@ var app = app || {};
                 "prefs": "prefs",
                 "movies/:id": "getMovie",
                 "actors/:id" : "getActor",
+                "tvshows/season/:id" : "getTVShow",
                 "watchlists/:id": "getWatchlist",
                 "*actions": "defaultRoute"
             },
@@ -65,6 +66,24 @@ var app = app || {};
                     var actorView = new app.ActorView({
                         model: modActor,
                         collection: modActorMovies
+                    });
+                });
+
+            });
+
+        });
+
+        app.router.on('route:getTVShow', function(id) {
+            var modTVShow = new app.TVShowModel();
+            var tvShowEpisodesCollection = new app.TVShowEpisodesCollection();
+            modTVShow.url = modTVShow.urlRoot + id;
+            tvShowEpisodesCollection.url = modTVShow.url + "/episodes";
+            modTVShow.fetch().done(function()
+            {
+                tvShowEpisodesCollection.fetch().done(function() {
+                    var actorView = new app.TVShowView({
+                        model: modTVShow,
+                        collection: tvShowEpisodesCollection
                     });
                 });
 
