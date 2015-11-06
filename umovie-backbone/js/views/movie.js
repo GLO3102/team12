@@ -5,7 +5,7 @@ $(function() {
         urlRoot: "unsecure/movies/",
 
         parse: function(response){
-            return response.results;
+            return response.results[0];
         }
     });
 });
