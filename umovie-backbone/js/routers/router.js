@@ -8,6 +8,7 @@ $(function () {
             '': "home",
             "prefs": "prefs",
             "movies/:id" : "getMovie",
+			"watchlists/:id" : "getWatchlist",
             "*actions": "defaultRoute"
 
         },
@@ -33,6 +34,17 @@ $(function () {
         {
             var movieView = new MovieView({
                 model: modFilm
+            });
+        });
+    });
+	
+	app.router.on('route:getWatchlist', function(id) {
+        var modWatchlist = new WatchlistModel();
+        modWatchlist.url = modWatchlist.urlRoot + id;
+        modWatchlist.fetch().done(function()
+        {
+            var watchlistView = new WatchlistView({
+                model: modWatchlist
             });
         });
     });
