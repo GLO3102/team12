@@ -8,6 +8,8 @@ $(function () {
             '': "home",
             "prefs": "prefs",
             "movies/:id" : "getMovie",
+            "actors/:id" : "getActor",
+            "actors/:id/movies" : "getActorMovies",
             "*actions": "defaultRoute"
 
         },
@@ -35,6 +37,24 @@ $(function () {
                 model: modFilm
             });
         });
+    });
+
+    app.router.on('route:getActor', function(id) {
+        var modActor = new ActorModel();
+        var modActorMovies = new ActorMovies();
+        modActor.url = modActor.urlRoot + id;
+        modActorMovies.url = modActor.url + "/movies";
+        modActor.fetch().done(function()
+        {
+            modActorMovies.fetch().done(function() {
+                var actorView = new ActorView({
+                    model: modActor,
+                    collection: modActorMovies
+                });
+            });
+
+        });
+
     });
 
     Backbone.history.start();
