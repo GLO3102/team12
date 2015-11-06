@@ -13,6 +13,13 @@ var app = app || {};
             }
         });
 
+        app.WatchlistCollection = Backbone.Collection.extend({
+            model: WatchlistModel,
+            parse: function (response) {
+                return response.movies;
+            }
+        });
+
         app.WatchlistView = Backbone.View.extend({
             template: _.template(Template),
             el: ".page",
