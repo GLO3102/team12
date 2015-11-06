@@ -3,13 +3,13 @@ var app = app || {};
 (function () {
     'use strict';
 
-    require(['backbone', 'text!../templates/HeaderView.html'], function (Backbone, Template) {
+    require(['backbone', 'text!../templates/HomeView.html'], function (Backbone, Template) {
         /**
-         * Header View
+         * View HomePage.
          */
-        app.HeaderView = Backbone.View.extend({
+        app.HomeView = Backbone.View.extend({
             // Bind on the page container.
-            el: '.header',
+            el: '.page',
             //events: {
             //
             //},
@@ -18,6 +18,7 @@ var app = app || {};
             //},
             render: function () {
                 console.log("rendering template...");
+                //var template = _.template($("#homepage-template").html());
                 var template = _.template(Template);
                 var vars = {foo: "bar"};
                 var html = template(vars);
@@ -27,6 +28,6 @@ var app = app || {};
         });
 
         // View Instance
-        app.header = new app.HeaderView();
+        app.homePage = new app.HomeView();
     });
 })();
