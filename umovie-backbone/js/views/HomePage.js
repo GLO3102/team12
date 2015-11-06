@@ -1,6 +1,6 @@
 var app = app || {};
 
-(function ($) {
+$(function ($) {
     'use strict';
 
     /**
@@ -31,4 +31,4 @@ var app = app || {};
 
     // View Instance
     app.homePage = new app.HomePageView();
-})(jQuery);
+});

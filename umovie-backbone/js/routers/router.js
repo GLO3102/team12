@@ -1,6 +1,6 @@
 var app = app || {};
 
-(function () {
+$(function () {
     'use strict';
 
     var UmovieRouter = Backbone.Router.extend({
@@ -19,15 +19,14 @@ var app = app || {};
             console.log("User Preferences Route Loaded.");
             $(".page").html("User Preference Page.");
         },
-        getMovie: function( id ) {
-            createMovieModel(id);
-        },
         defaultRoute: function (actions) {
             console.log("defaultRoute Route Loaded.");
         }
     });
 
-    function createMovieModel(id) {
+    app.router = new UmovieRouter();
+
+    app.router.on('route:getMovie', function(id) {
         var modFilm = new MovieModel();
         modFilm.url = modFilm.urlRoot + id;
         modFilm.fetch().done(function()
@@ -36,8 +35,7 @@ var app = app || {};
                 model: modFilm
             });
         });
-    }
+    });
 
-    app.router = new UmovieRouter();
     Backbone.history.start();
-})();
+});
