@@ -10,6 +10,8 @@ var app = app || {};
             routes: {
                 '': "home",
                 "prefs": "prefs",
+                "movies/:id": "getMovie",
+                "watchlists/:id": "getWatchlist",
                 "*actions": "defaultRoute",
             },
             initialize: function () {
@@ -24,12 +26,33 @@ var app = app || {};
                 console.log("User Preferences Route Loaded.");
                 $(".page").html("User Preference Page.");
             },
+            getMovie: function (id) {
+                console.log("getMovie function called with id:" + id);
+                var modFilm = new MovieModel();
+                modFilm.url = modFilm.urlRoot + id;
+                modFilm.fetch().done(function () {
+                    var movieView = new app.MovieView({
+                        model: modFilm
+                    });
+                });
+            },
+            getWatchlist: function (id) {
+                console.log("getWatchlist function called with id: " + id);
+                var modWatchlist = new WatchlistModel();
+                modWatchlist.url = modWatchlist.urlRoot + id;
+                modWatchlist.fetch().done(function () {
+                    var watchlistView = new app.WatchlistView({
+                        model: modWatchlist
+                    });
+                });
+            },
             defaultRoute: function (actions) {
                 console.log("defaultRoute Route Loaded.");
             }
         });
 
         app.router = new UmovieRouter();
+
         Backbone.history.start();
     });
 })();
