@@ -18,9 +18,11 @@ var app = app || {};
             el: ".page",
 
             initialize: function () {
+                console.log("MovieView initializing...");
                 this.render();
             },
             render: function () {
+                console.log("MovieView rendering...");
                 this.$el.html(this.template({
                     mod: this.model.toJSON()
                 }));

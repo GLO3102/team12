@@ -28,7 +28,7 @@ var app = app || {};
             },
             getMovie: function (id) {
                 console.log("getMovie function called with id:" + id);
-                var modFilm = new MovieModel();
+                var modFilm = new app.MovieModel();
                 modFilm.url = modFilm.urlRoot + id;
                 modFilm.fetch().done(function () {
                     var movieView = new app.MovieView({
@@ -38,7 +38,7 @@ var app = app || {};
             },
             getWatchlist: function (id) {
                 console.log("getWatchlist function called with id: " + id);
-                var modWatchlist = new WatchlistModel();
+                var modWatchlist = new app.WatchlistModel();
                 modWatchlist.url = modWatchlist.urlRoot + id;
                 modWatchlist.fetch().done(function () {
                     var watchlistView = new app.WatchlistView({
