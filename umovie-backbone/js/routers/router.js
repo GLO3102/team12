@@ -7,7 +7,9 @@ var app = app || {};
         routes: {
             '': "home",
             "prefs": "prefs",
-            "*actions": "defaultRoute",
+            "movies/:id" : "getMovie",
+            "*actions": "defaultRoute"
+
         },
         home: function () {
             console.log("Home route loaded.");
@@ -16,6 +18,16 @@ var app = app || {};
         prefs: function () {
             console.log("User Preferences Route Loaded.");
             $(".page").html("User Preference Page.");
+        },
+        getMovie: function( id ) {
+            var modFilm = new MovieModel();
+            modFilm.url = modFilm.urlRoot + id;
+            modFilm.fetch().done(function()
+            {
+                var movieView = new MovieView({
+                    model: modFilm
+                });
+            });
         },
         defaultRoute: function (actions) {
             console.log("defaultRoute Route Loaded.");

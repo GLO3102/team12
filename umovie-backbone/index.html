@@ -77,6 +77,17 @@
     <div class="page"></div>
 </div>
 
+
+<script id="movie-tpl" type="text/template">
+
+    <% _.each(mod, function(){ %>
+    <div class="movie">
+        <label class="movie-content"><%= mod[0].trackId %></label>
+    </div>
+    <% }); %>
+
+</script>
+
 <!-- Footer -->
 <footer>
     <p>Copyright &copy; UMovie-team12 2015</p>
@@ -93,7 +104,9 @@
     </p>
 </script>
 
+<script type="text/javascript" src="js/views/movie.js"></script>
 <script type="text/javascript" src="js/views/HomePage.js"></script>
+
 <script type="text/javascript" src="js/routers/router.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
 </body>
