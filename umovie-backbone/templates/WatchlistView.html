@@ -1,5 +1,29 @@
-<% _.each(watchlist.movies, function(movie){ %>
 <div class="watchlists">
-    WOW SUCH MOVIE:<pre><%= movie._id %></pre>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <span class="badge"><%= watchlist.movies.length %></span>
+            Watchlist name: <%= watchlist.name %>
+        </li>
+            <li class="list-group-item"></li>
+    </ul>
+
+    <% _.each(watchlist.movies, function(movie){
+        if (!movie.trackName)
+            return;
+    %>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title"><%= movie.trackName %></h3>
+        </div>
+        <div class="panel-body">
+            <br />
+            Movie ID: <%= movie._id %>
+            <br />
+            <img src="<%= movie.artworkUrl100 %>" />
+            <div class="well">
+                <%= movie.longDescription %>
+            </div>
+        </div>
+    </div>
+    <% }); %>
 </div>
-<% }); %>
