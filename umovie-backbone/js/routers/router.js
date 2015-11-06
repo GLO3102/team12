@@ -5,7 +5,6 @@ var app = app || {};
 
     require(['backbone'], function (Backbone) {
 
-
         var UmovieRouter = Backbone.Router.extend({
             routes: {
                 '': "home",

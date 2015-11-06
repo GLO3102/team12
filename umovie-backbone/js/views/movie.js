@@ -9,6 +9,7 @@ var app = app || {};
             urlRoot: "unsecure/movies/",
 
             parse: function (response) {
+                console.log("MovieModel parsing...");
                 return response.results[0];
             }
         });
@@ -27,7 +28,6 @@ var app = app || {};
                     mod: this.model.toJSON()
                 }));
             }
-
         });
 
 

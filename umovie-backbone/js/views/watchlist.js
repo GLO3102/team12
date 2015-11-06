@@ -9,13 +9,15 @@ var app = app || {};
             urlRoot: "unsecure/watchlists/",
 
             parse: function (response) {
+                console.log("WatchlistModel parsing...");
                 return response;
             }
         });
 
         app.WatchlistCollection = Backbone.Collection.extend({
-            model: WatchlistModel,
+            model: app.WatchlistModel,
             parse: function (response) {
+                console.log("WatchlistCollection parsing...");
                 return response.movies;
             }
         });
@@ -23,16 +25,17 @@ var app = app || {};
         app.WatchlistView = Backbone.View.extend({
             template: _.template(Template),
             el: ".page",
-
             initialize: function () {
+                console.log("WatchlistView initializing...");
                 this.render();
             },
             render: function () {
+                console.log("WatchlistView rendering...");
                 this.$el.html(this.template({
                     watchlist: this.model.toJSON()
                 }));
             }
-
         });
+
     });
 })();
