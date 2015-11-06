@@ -1,0 +1,10 @@
+<div class="actor">
+    <label class="actor-content"><%= mod.artistName %></label>
+</div>
+<hr>
+<div class="actor-movies">
+    <% var movieArray = movies[0]; %>
+    <% _.each(movieArray, function(movie){ %>
+    <label class="actor-movie"><%= movie.trackName %></label><br>
+    <% }); %>
+</div>
