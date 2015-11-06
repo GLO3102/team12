@@ -20,19 +20,23 @@ var app = app || {};
             $(".page").html("User Preference Page.");
         },
         getMovie: function( id ) {
-            var modFilm = new MovieModel();
-            modFilm.url = modFilm.urlRoot + id;
-            modFilm.fetch().done(function()
-            {
-                var movieView = new MovieView({
-                    model: modFilm
-                });
-            });
+            createMovieModel(id);
         },
         defaultRoute: function (actions) {
             console.log("defaultRoute Route Loaded.");
         }
     });
+
+    function createMovieModel(id) {
+        var modFilm = new MovieModel();
+        modFilm.url = modFilm.urlRoot + id;
+        modFilm.fetch().done(function()
+        {
+            var movieView = new MovieView({
+                model: modFilm
+            });
+        });
+    }
 
     app.router = new UmovieRouter();
     Backbone.history.start();
