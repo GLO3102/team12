@@ -47,7 +47,10 @@ require(['jquery', 'bootstrap'], function ($) {
 
     require(['jquery'], function ($) {
         $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
-            options.url = 'https://umovie.herokuapp.com/' + options.url;
+            if (!options.url.match("^http") )
+            {
+                options.url = 'https://umovie.herokuapp.com/' + options.url;
+            }
         });
     });
 })();

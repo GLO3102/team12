@@ -23,13 +23,30 @@ var app = app || {};
                 this.render();
             },
             render: function () {
+                var modelJSON = this.model.toJSON();
+                var youtubeVideo = this.findYoutubeVideo(modelJSON.trackName + 'trailer');
+                console.log("Found youtube video: " + youtubeVideo);
                 console.log("MovieView rendering...");
                 this.$el.html(this.template({
-                    mod: this.model.toJSON()
+                    mod: modelJSON,
+                    youtubeVideoId: youtubeVideo
                 }));
+            },
+            findYoutubeVideo: function(keyword) {
+                var url = 'https://www.googleapis.com/youtube/v3/search?part=id&q=' + keyword + '&type=video&key=AIzaSyA2Sh1KhOUfKYpfQchT5oZPgO0PpTqB17M';
+                var videos = undefined;
+                $.ajaxSetup({
+                    async: false
+                });
+                $.getJSON(url, function(data) {
+                    videos = data;
+                });
+                $.ajaxSetup({
+                    async: true
+                });
+                return videos.items[0].id.videoId;
             }
         });
-
 
     });
 })();
