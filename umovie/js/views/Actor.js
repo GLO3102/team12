@@ -3,7 +3,7 @@ var app = app || {};
 (function () {
     'use strict';
 
-    require(['backbone', 'text!../templates/ActorView.html'], function (Backbone, Template) {
+    require(['backbone', 'text!templates/ActorView.html'], function (Backbone, Template) {
 
         app.ActorMovieModel = Backbone.Model.extend({
             parse: function (response) {

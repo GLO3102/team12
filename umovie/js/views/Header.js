@@ -3,7 +3,7 @@ var app = app || {};
 (function () {
     'use strict';
 
-    require(['backbone', 'text!../templates/HeaderView.html'], function (Backbone, Template) {
+    require(['backbone', 'text!templates/HeaderView.html'], function (Backbone, Template) {
         /**
          * Header View
          */

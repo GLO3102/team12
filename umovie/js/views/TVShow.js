@@ -3,7 +3,7 @@ var app = app || {};
 (function () {
     'use strict';
 
-    require(['backbone', 'text!../templates/TVShowView.html'], function (Backbone, Template) {
+    require(['backbone', 'text!templates/TVShowView.html'], function (Backbone, Template) {
 
         app.TVShowEpisodeModel = Backbone.Model.extend({
             parse: function (response) {

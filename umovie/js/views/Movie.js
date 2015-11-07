@@ -3,7 +3,7 @@ var app = app || {};
 (function () {
     'use strict';
 
-    require(['backbone', 'text!../templates/MovieView.html'], function (Backbone, Template) {
+    require(['backbone', 'text!templates/MovieView.html'], function (Backbone, Template) {
 
         app.MovieModel = Backbone.Model.extend({
             urlRoot: "unsecure/movies/",

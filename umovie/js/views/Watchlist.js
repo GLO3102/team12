@@ -3,7 +3,7 @@ var app = app || {};
 (function () {
     'use strict';
 
-    require(['backbone', 'text!../templates/WatchlistView.html'], function (Backbone, Template) {
+    require(['backbone', 'text!templates/WatchlistView.html'], function (Backbone, Template) {
 
         app.WatchlistModel = Backbone.Model.extend({
             urlRoot: "unsecure/watchlists/",

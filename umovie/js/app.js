@@ -1,10 +1,13 @@
 var app = app || {};
 
+/**
+ * Sets up all required paths and libraries, from CDNs.
+ */
 requirejs.config({
     baseUrl: 'js',
     paths: {
         views: '/views',
-        templates: '/templates',
+        templates: '../templates',
         models: '/models',
         collections: '/collections',
         jquery: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min',
@@ -28,11 +31,17 @@ requirejs.config({
     enforceDefine: true
 });
 
+/**
+ * exposes jquery and bootstrap so things like the dropdown menu works.
+ */
 require(['jquery', 'bootstrap'], function ($) {
     console.log("Jquery and bootstrap loaded.");
     return {};
 });
 
+/**
+ * Sets the base URL to the API address.
+ */
 (function () {
     'use strict';
 
@@ -41,14 +50,4 @@ require(['jquery', 'bootstrap'], function ($) {
             options.url = 'https://umovie.herokuapp.com/' + options.url;
         });
     });
-
-})();
-
-(function () {
-    'use strict';
-
-    require(['backbone'], function (Backbone) {
-        console.log("Hello from require");
-    });
-
 })();
