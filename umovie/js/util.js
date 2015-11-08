@@ -19,15 +19,15 @@ var app = app || {};
 validate: function(attrs){
 
     var email_filter    = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    var username_filter = /^([a-zA-Z0])([a-zA-Z0])+$/;
+    var name_filter = /^([a-zA-Z0])([a-zA-Z0])+$/;
 
     var errors = [];
 
     if (attrs.name == '')
         errors.push({name: 'name', error: 'Please enter your  Name'});
 
-    if (!username_filter.test(attrs.name))
-        errors.push({name: 'username', error: 'Your name ontains invalid characters.  Usernames may only contain letters.'});
+    if (!name_filter.test(attrs.name))
+        errors.push({name: 'name', error: 'Your name ontains invalid characters.  names may only contain letters.'});
 
 
     if (!email_filter.test(attrs.email))
@@ -41,6 +41,7 @@ validate: function(attrs){
 
     })
 
+// validation recherche
 
 
 });
