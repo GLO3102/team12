@@ -19,6 +19,13 @@ var app = app || {};
             }
         });
 
+
+
+
+        function delay(elem, src, delayTime){
+            window.setTimeout(function() {elem.setAttribute("src", src);}, delayTime);
+        }
+
         // Home View Instance
         app.homePage = new app.HomeView();
     });
