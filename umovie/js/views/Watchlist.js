@@ -6,13 +6,23 @@ var app = app || {};
     require(['backbone', 'text!templates/WatchlistView.html'], function (Backbone, Template) {
 
         app.WatchlistModel = Backbone.Model.extend({
+//validation name required
+            validate:function(attrs) {
+            if (!attrs.name)
+            return "name is required"
+
+            },
+
             urlRoot: "unsecure/watchlists/",
 
             parse: function (response) {
                 console.log("WatchlistModel parsing...");
                 return response;
+
             }
         });
+
+
 
         app.WatchlistCollection = Backbone.Collection.extend({
             model: app.WatchlistModel,
