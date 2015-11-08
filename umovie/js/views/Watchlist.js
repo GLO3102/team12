@@ -18,7 +18,7 @@ var app = app || {};
             model: app.WatchlistModel,
             parse: function (response) {
                 console.log("WatchlistCollection parsing...");
-                return response.movies;
+                return response;
             }
         });
 

@@ -48,9 +48,14 @@ var app = app || {};
             getMovie: function (id) {
                 var modFilm = new app.MovieModel();
                 modFilm.url = modFilm.urlRoot + id;
-                modFilm.fetch().done(function () {
-                    var movieView = new app.MovieView({
-                        model: modFilm
+                var watchListsCollection = new app.WatchlistCollection;
+                watchListsCollection.url = "unsecure/watchlists";
+                watchListsCollection.fetch().done(function () {
+                    modFilm.fetch().done(function () {
+                        var movieView = new app.MovieView({
+                            model: modFilm,
+                            collection: watchListsCollection
+                        });
                     });
                 });
             },

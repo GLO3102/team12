@@ -17,6 +17,9 @@ var app = app || {};
         app.MovieView = Backbone.View.extend({
             template: _.template(Template),
             el: ".page",
+            events: {
+                "click .btn-default" : "addToWatchlist"
+            },
 
             initialize: function () {
                 console.log("MovieView initializing...");
@@ -25,11 +28,13 @@ var app = app || {};
             render: function () {
                 var modelJSON = this.model.toJSON();
                 var youtubeVideo = this.findYoutubeVideo(modelJSON.trackName + 'trailer');
+                var watchlists = this.collection.toJSON().slice(0,10);
                 console.log("Found youtube video: " + youtubeVideo);
                 console.log("MovieView rendering...");
                 this.$el.html(this.template({
                     mod: modelJSON,
-                    youtubeVideoId: youtubeVideo
+                    youtubeVideoId: youtubeVideo,
+                    watchlists: watchlists
                 }));
             },
             findYoutubeVideo: function(keyword) {
@@ -45,6 +50,12 @@ var app = app || {};
                     async: true
                 });
                 return videos.items[0].id.videoId;
+            },
+            addToWatchlist: function(event) {
+                var targetID = event.target.id;
+                var modWatchlist = new app.WatchlistModel();
+                modWatchlist.url = modWatchlist.urlRoot + targetID + "/movies";
+                modWatchlist.fetch({data: this.model.attributes, type: 'POST'});
             }
         });
 

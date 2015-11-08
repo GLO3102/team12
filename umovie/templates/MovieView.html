@@ -7,6 +7,8 @@
 
         </div>
 
+
+
         <div class="upAndDown">
             <h1>
 
@@ -25,12 +27,21 @@
                 <span id="dateSortie"><%= mod.releaseDate %></span>
             </div>
             <br>
-            <a class="btn btn-primary btn-lg" href="#">Watch!</a>
+            <button class="btn btn-primary btn-lg" data-toggle="popover" data-trigger="focus"
+                    data-content='<% _.each( watchlists, function(watchlist) { %>
+                                 <button class="btn btn-default" id="<%=watchlist.id%>"><%= watchlist.name %></button>
+                                 <% }); %>'>
+                    Add to watchlist</button>
 
+            <script>
+                $('.btn-primary').popover({ title: "Add to watchlist",
+                                            html : true,
+                                            animation: true});
+
+            </script>
         </div>
 
     </div>
-
 
     <div class="col-md-8">
 
@@ -42,12 +53,10 @@
                 src="http://www.youtube.com/embed/<%= youtubeVideoId %>" frameborder="0"></iframe>
         <!--</div>-->
 
-
         <!-- /.col-md-4 -->
     </div>
     <hr>
     <div class="row">
-
 
         <!-- Call to Action Well -->
 
@@ -65,3 +74,4 @@
 
 
 </div>
+

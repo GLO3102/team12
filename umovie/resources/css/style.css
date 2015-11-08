@@ -165,4 +165,9 @@ footer {
     height: 100%;
 }
 
+.popover {
+    max-width: 800px;
+    width: auto;
+}
+
 /* END ACTORS SECTION */
