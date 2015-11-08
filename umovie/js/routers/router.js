@@ -62,13 +62,21 @@ var app = app || {};
             getActor: function (id) {
                 var modActor = new app.ActorModel();
                 var modActorMovies = new app.ActorMovies();
+                var modImgActor = new app.ActorImg();
                 modActor.url = modActor.urlRoot + id;
                 modActorMovies.url = modActor.url + "/movies";
+               modImgActor.url="http://umovie.herokuapp.com/unsecure/actors/"+id+"/movies";
                 modActor.fetch().done(function () {
                     modActorMovies.fetch().done(function () {
-                        var actorView = new app.ActorView({
-                            model: modActor,
-                            collection: modActorMovies
+                        modImgActor.fetch().done(function () {
+                            var actorView = new app.ActorView({
+                                model: modActor,
+                                collection: modActorMovies
+                            });
+                            var actorImgView = new app.ActorImgView({
+                                model: modImgActor
+                            });
+
                         });
                     });
                 });
