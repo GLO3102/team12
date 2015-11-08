@@ -8,7 +8,7 @@
 
     <div class="upAndDown">
 
-            <h1><div id="actorName"></div> </h1>
+            <h1><div id="actorName"><%=mod.artistName%></div> </h1>
             <div class="attributsGenre">
                 <span id="primary"><%=mod.primaryGenreName%> </span>
             </div>
@@ -32,12 +32,6 @@
                     <img class="img-responsive img-rounded imageFilm" src=<%=movieArray[i].artworkUrl100%> >
                     <ul>
                         <li>Release date : <%=movieArray[i].releaseDate%> </li>
-                        <br>
-                        <div class='embed-container'> <iframe id="player" type="text/html" width="640" height="390"
-                                                              src="" frameborder="0"></iframe>
-
-                        </div>
-                        <hr>
                     </ul>
                 </li>
                 <% }; %>
