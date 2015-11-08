@@ -27,7 +27,7 @@ validate: function(attrs){
         errors.push({name: 'name', error: 'Please enter your  Name'});
 
     if (!name_filter.test(attrs.name))
-        errors.push({name: 'name', error: 'Your name ontains invalid characters.  names may only contain letters.'});
+        errors.push({name: 'name', error: 'Your name contains invalid characters.  names may only contain letters.'});
 
 
     if (!email_filter.test(attrs.email))
@@ -42,8 +42,16 @@ validate: function(attrs){
     })
 
 // validation recherche
+app.SearchModel=Backbone.Model.extend({
+   validate: function(attrs) {
+
+       if (attrs == '')
+           errors.push('Please enter a word');
+
+   }
 
 
+})
 });
  app.song=app.WatchlistModel();
 
