@@ -1,17 +1,14 @@
 <div class="tv-show">
-
     <!-- Heading Row -->
     <div class="row">
-
 
         <div class="col-md-4">
             <div class="upAndDown">
                 <img class="img-responsive img-rounded" id="cover"
                      src=<%=changeResolutionTo1000x1000(mod.artworkUrl100)%>>
-
             </div>
-            <div class="upAndDown">
 
+            <div class="upAndDown">
                 <h1>
                     <div id="nomSerieTV"> <%= mod.artistName %></div>
                 </h1>
@@ -25,47 +22,33 @@
                 </div>
                 <br>
                 <a class="btn btn-primary btn-lg" href="#">Watch!</a>
-
-
             </div>
 
             <div class="upAndDown">
                 <div id="epListId">
                     <br>
                     Episode List:
-                    <br>
-                    <br>
-
                     <select name="episodeList" size="5">
-                    <% var epArray = episodes[0]; %>
-                    <% _.each(epArray, function(ep){ %>
-                    <option value="<%= ep.trackNumber %>" onclick='showImg("<%= ep.artworkUrl100 %>","<%= ep.previewUrl%>");'><%= ep.trackName %></option>
+                        <% var epArray = episodes[0]; %>
+                        <% _.each(epArray, function(ep){ %>
+                        <option value="<%= ep.trackNumber %>" onclick='showImg("<%= ep.artworkUrl100 %>","<%= ep.previewUrl%>");'><%= ep.trackName %></option>
 
-                    <% }); %>
+                        <% }); %>
                     </select>
-
                 </div>
                 <br>
                 <img id="imageEpisode" class="show"
                      src=''>
             </div>
-
         </div>
-
 
         <div class="col-md-8">
-                <!-- /.col-md-8 -->
-                <br>
-
-                <!--<div class="embed-responsive embed-responsive-4by3">-->
-                    <!--<iframe class="embed-responsive-item" id="preView" src=""></iframe>-->
-                <!--</div>-->
-
-            <iframe id="player" type="text/html" width="640" height="390"
-                    src="http://www.youtube.com/embed/<%= youtubeVideoId %>" frameborder="0"></iframe>
-
+            <!-- /.col-md-8 -->
+            <div class="embed-responsive embed-responsive-4by3">
+                <iframe id="player" type="text/html" width="640" height="390"
+                        src="http://www.youtube.com/embed/<%= youtubeVideoId %>" frameborder="0"></iframe>
+            </div>
         </div>
-
 
         <!-- /.col-md-4 -->
     </div>
@@ -87,11 +70,11 @@
 </div>
 
 <script>
-    function showImg(epImg,epPreview) {
+    function showImg(epImg, epPreview) {
 
         var el = document.getElementById('imageEpisode');
         //alert(1);
-       document.getElementById('imageEpisode').src = epImg;
+        document.getElementById('imageEpisode').src = epImg;
         document.getElementById('preView').src = epPreview;
 
     }

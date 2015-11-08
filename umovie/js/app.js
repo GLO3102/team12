@@ -47,8 +47,8 @@ require(['jquery', 'bootstrap'], function ($) {
 
     require(['jquery'], function ($) {
         $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
-            if (!options.url.match("^http") )
-            {
+            // if the requested URL already starts with 'http', consider it is not fetching form the API (i.e. Youtube)
+            if (!options.url.match("^http")) {
                 options.url = 'https://umovie.herokuapp.com/' + options.url;
             }
         });
