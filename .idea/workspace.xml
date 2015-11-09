@@ -2,34 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68073506-0b50-46e8-af80-f36dd670de7f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umovie/js/collections/ActorMovies.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umovie/js/collections/TVShowEpisodesCollection.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umovie/js/collections/WatchlistCollection.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umovie/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umovie/js/models/ActorImgModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umovie/js/models/ActorModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umovie/js/models/ActorMovieModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umovie/js/models/MovieModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umovie/js/models/TVShowEpisodeModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umovie/js/models/TVShowModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umovie/js/models/WatchlistModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/umovie/js/views/ActorImg.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/index.html" afterPath="$PROJECT_DIR$/umovie/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/app.js" afterPath="$PROJECT_DIR$/umovie/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/helper/util.js" afterPath="$PROJECT_DIR$/umovie/js/helper/util.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/routers/router.js" afterPath="$PROJECT_DIR$/umovie/js/routers/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/util.js" afterPath="$PROJECT_DIR$/umovie/js/util.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/views/Actor.js" afterPath="$PROJECT_DIR$/umovie/js/views/Actor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/views/Header.js" afterPath="$PROJECT_DIR$/umovie/js/views/Header.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/views/Home.js" afterPath="$PROJECT_DIR$/umovie/js/views/Home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/views/Movie.js" afterPath="$PROJECT_DIR$/umovie/js/views/Movie.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/views/TVShow.js" afterPath="$PROJECT_DIR$/umovie/js/views/TVShow.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/views/Watchlist.js" afterPath="$PROJECT_DIR$/umovie/js/views/Watchlist.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/templates/ActorImgView.html" afterPath="$PROJECT_DIR$/umovie/templates/ActorImgView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/templates/MovieView.html" afterPath="$PROJECT_DIR$/umovie/templates/MovieView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/templates/TVShowView.html" afterPath="$PROJECT_DIR$/umovie/templates/TVShowView.html" />
     </list>
     <ignored path="team12.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -840,7 +813,13 @@
       <option name="project" value="LOCAL" />
       <updated>1447033649297</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Modifié pour utiliser RequireJS sur le sens du monde.">
+      <created>1447041625512</created>
+      <option name="number" value="00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1447041625512</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -849,6 +828,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.246875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845187" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -858,7 +838,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -900,7 +879,8 @@
     <MESSAGE value="removed old folder" />
     <MESSAGE value="removed useless button from home page." />
     <MESSAGE value="Ajouté serve.py pour faire un petit serveur web temporaire pour tester l'application sans WebStorm." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajouté serve.py pour faire un petit serveur web temporaire pour tester l'application sans WebStorm." />
+    <MESSAGE value="Modifié pour utiliser RequireJS sur le sens du monde." />
+    <option name="LAST_COMMIT_MESSAGE" value="Modifié pour utiliser RequireJS sur le sens du monde." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
