@@ -19,7 +19,7 @@ var app = app || {};
 validate: function(attrs){
 
     var email_filter    = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    var name_filter = /^([a-zA-Z0])([a-zA-Z0])+$/;
+    var name_filter = /^([a-zA-Z])([a-zA-Z])+$/;
 
     var errors = [];
 
