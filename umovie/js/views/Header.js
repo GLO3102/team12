@@ -1,32 +1,15 @@
-var app = app || {};
-
-(function () {
-    'use strict';
-
-    require(['backbone', 'text!templates/HeaderView.html'], function (Backbone, Template) {
-        /**
-         * Header View
-         */
-        app.HeaderView = Backbone.View.extend({
-            // Bind on the page container.
-            el: '.header',
-            //events: {
-            //
-            //},
-            //initialize: function() {
-            //    //this.listenTo(app.todos, 'add', this.addOne);
-            //},
-            render: function () {
-                console.log("rendering template...");
-                var template = _.template(Template);
-                var vars = {foo: "bar"};
-                var html = template(vars);
-                console.log("done");
-                this.$el.html(html);
-            }
-        });
-
-        // View Instance
-        app.header = new app.HeaderView();
+define(['backbone', 'text!templates/HeaderView.html'], function (Backbone, HeaderTemplate) {
+    var HeaderView = Backbone.View.extend({
+        el: '.header',
+        render: function () {
+            console.log("HeaderView: rendering template...");
+            var template = _.template(HeaderTemplate);
+            var vars = {foo: "bar"};
+            var html = template(vars);
+            this.$el.html(html);
+            console.log("HeaderView: done");
+        }
     });
-})();
+
+    return HeaderView;
+});

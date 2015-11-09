@@ -1,32 +1,26 @@
-var app = app || {};
+define(['backbone', 'text!templates/HomeView.html'], function (Backbone, Template) {
 
-(function () {
-    'use strict';
+    console.log("HomeView: entered DEFINE");
 
-    require(['backbone', 'text!templates/HomeView.html'], function (Backbone, Template) {
-        /**
-         * View HomePage.
-         */
-        app.HomeView = Backbone.View.extend({
-            el: '.page',
-            render: function () {
-                console.log("rendering template...");
-                var template = _.template(Template);
-                var vars = {foo: "bar"};
-                var html = template(vars);
-                console.log("done");
-                this.$el.html(html);
-            }
-        });
-
-
-
-
-        function delay(elem, src, delayTime){
-            window.setTimeout(function() {elem.setAttribute("src", src);}, delayTime);
+    var HomeView = Backbone.View.extend({
+        el: '.page',
+        render: function () {
+            console.log("HomeView: rendering template...");
+            var template = _.template(Template);
+            var vars = {foo: "bar"};
+            var html = template(vars);
+            this.$el.html(html);
+            console.log("HomeView: done");
         }
-
-        // Home View Instance
-        app.homePage = new app.HomeView();
     });
-})();
+
+    function delay(elem, src, delayTime) {
+        window.setTimeout(function () {
+            elem.setAttribute("src", src);
+        }, delayTime);
+    }
+
+    console.log("HomeView: returning");
+
+    return HomeView;
+});
