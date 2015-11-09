@@ -4,7 +4,11 @@
     <% _.each(watchlists, function(watchlist){ %>
 
         <button type="button" class="btn btn-info" data-toggle="collapse" data-target=<%='#div'+watchlist.id%>><%= watchlist.name %></button>
-        <button class="btn btn-danger btn-xs" id=<%=watchlist.id%>>X</button>
+        <button class="btn btn-warning modify btn-xs" data-button=<%=watchlist.id%>>Change name</button>
+        <div class="col-xs-2">
+            <input class="form-control" id="name<%=watchlist.id%>" placeholder="New watchlist name" data-id=<%=watchlist.id%> type="text">
+        </div>
+        <button class="btn btn-danger btn-xs" style="float:right;" id=<%=watchlist.id%>>X</button>
         <div id=<%='div'+watchlist.id %> class="collapse">
             <% _.each(watchlist.movies, function(movie){ %>
             <br>
@@ -16,7 +20,7 @@
             <div id=<%=movie.trackId+watchlist.id%> class="collapse">
                 <label><%=movie.longDescription%></label>
             </div>
-            <button data-button='{"trackId" : "<%=movie.trackId%>", "watchlistId" : "<%=watchlist.id%>"}' class="btn btn-warning btn-xs" style="padding-top: 5px;">Remove</button>
+            <button data-button='{"trackId" : "<%=movie.trackId%>", "watchlistId" : "<%=watchlist.id%>"}' class="btn btn-warning remove btn-xs" style="padding-top: 5px;">Remove</button>
             <br>
             <% }); %>
         </div>

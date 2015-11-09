@@ -32,13 +32,14 @@ var app = app || {};
             el: ".page",
             events: {
                 "click .btn-danger" : "deleteWatchlist",
-                "click .btn-warning" : "removeMovie",
-                "click .btn-success" : "addWatchlist"
+                "click .remove" : "removeMovie",
+                "click .btn-success" : "addWatchlist",
+                "click .modify" : "modifyWatchlist"
             },
             initialize: function () {
                 console.log("WatchlistView initializing...");
                 var self = this;
-                this.collection.bind('sync add remove', function () {
+                this.collection.bind('sync add remove update', function () {
                     self.render();
                 });
                 this.render();
@@ -81,6 +82,16 @@ var app = app || {};
                     type : 'POST',
                     validate : true
                 });
+            },
+            modifyWatchlist: function(event) {
+                var watchlistID = $(event.target).attr('data-button');
+                var newName = $('#name'+watchlistID).val();
+                var modWatchlist = new app.WatchlistModel();
+                modWatchlist.url = modWatchlist.urlRoot + watchlistID;
+                modWatchlist.fetch({type: 'PUT', data:{"name" : newName}}).done( function() {
+                    console.log("Modifying watchlist name...")
+                });
+
             }
         });
 
