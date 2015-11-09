@@ -37,7 +37,10 @@ var app = app || {};
             },
             initialize: function () {
                 console.log("WatchlistView initializing...");
-                this.collection.on ('create remove update change',this.render, this);
+                var self = this;
+                this.collection.bind('sync add remove', function () {
+                    self.render();
+                });
                 this.render();
             },
             render: function () {
@@ -50,10 +53,12 @@ var app = app || {};
                 var targetID = event.target.id;
                 var modWatchlist = new app.WatchlistModel();
                 modWatchlist.url = modWatchlist.urlRoot + targetID;
-                modWatchlist.fetch({type: 'DELETE'}).done( function() {
-                    this.render();
+                modWatchlist.fetch({type: 'DELETE'}).done( function(){
+                    console.log("Deleting watchlist...")
                 });
-
+                this.collection.remove({
+                    "id" : targetID
+                });
             },
             removeMovie: function(event) {
                 var data = $.parseJSON($(event.target).attr('data-button'));
@@ -62,7 +67,10 @@ var app = app || {};
                 var modMovie = new app.MovieModel();
                 modMovie.url = "unsecure/watchlists/" + watchlistID + "/movies/" + trackId;
                 modMovie.fetch({type: 'DELETE'}).done( function() {
-                    this.render();
+                    console.log("Removing movie...")
+                });
+                this.collection.fetch({
+                    update: true
                 });
             },
             addWatchlist: function(event) {

@@ -26,11 +26,15 @@
                 <span id="dateSortie"><%= mod.releaseDate %></span>
             </div>
             <br>
-            <button class="btn btn-primary btn-lg" data-toggle="popover" data-trigger="focus"
-                    data-content='<% _.each( watchlists, function(watchlist) { %>
-                                 <button class="btn btn-default" id="<%=watchlist.id%>"><%= watchlist.name %></button>
-                                 <% }); %>'>
-                Add to watchlist</button><hr>
+            <button class="btn btn-primary btn-lg" data-toggle="popover" data-trigger="focus" data-placement="auto"
+                    data-content='<% _.each(watchlists,function(watchlist){%>
+                    <button class="btn btn-default" id=<%=watchlist.id%> >
+                    <%=watchlist.name%>
+                    </button>
+                    <%});%>'
+                    >
+                Add to watchlist
+            </button><hr>
 
             <script>
                 $('.btn-primary').popover({

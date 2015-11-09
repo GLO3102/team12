@@ -10,7 +10,10 @@ var app = app || {};
 
             parse: function (response) {
                 console.log("MovieModel parsing...");
-                return response.results[0];
+                if (typeof response.results !== 'undefined')
+                    return response.results[0];
+                else
+                    return response;
             }
         });
 
@@ -28,7 +31,7 @@ var app = app || {};
             render: function () {
                 var modelJSON = this.model.toJSON();
                 var youtubeVideo = this.findYoutubeVideo(modelJSON.trackName + 'trailer');
-                var watchlists = this.collection.toJSON().slice(0,5);
+                var watchlists = this.collection.toJSON().slice(0,10);
                 console.log("Found youtube video: " + youtubeVideo);
                 console.log("MovieView rendering...");
                 this.$el.html(this.template({
