@@ -12,6 +12,7 @@ var app = app || {};
                 "movies/:id": "getMovie",
                 "actors/:id": "getActor",
                 "tvshows/season/:id": "getTVShow",
+                "watchlists" : "getWatchlists",
                 "watchlists/:id": "getWatchlist",
                 "*actions": "defaultRoute"
             },
@@ -26,6 +27,15 @@ var app = app || {};
             prefs: function () {
                 console.log("User Preferences Route Loaded.");
                 $(".page").html("User Preference Page.");
+            },
+            getWatchlists: function() {
+                var watchListsCollection = new app.WatchlistCollection;
+                watchListsCollection.url = "unsecure/watchlists";
+                watchListsCollection.fetch().done(function () {
+                    var watchlistView = new app.WatchlistView({
+                        collection: watchListsCollection
+                    });
+                });
             },
             getWatchlist: function (id) {
                 console.log("getWatchlist function called with id: " + id);

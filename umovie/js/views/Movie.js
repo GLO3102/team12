@@ -28,7 +28,7 @@ var app = app || {};
             render: function () {
                 var modelJSON = this.model.toJSON();
                 var youtubeVideo = this.findYoutubeVideo(modelJSON.trackName + 'trailer');
-                var watchlists = this.collection.toJSON().slice(0,10);
+                var watchlists = this.collection.toJSON().slice(0,5);
                 console.log("Found youtube video: " + youtubeVideo);
                 console.log("MovieView rendering...");
                 this.$el.html(this.template({

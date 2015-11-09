@@ -6,6 +6,11 @@ var app = app || {};
     require(['backbone', 'text!templates/WatchlistView.html'], function (Backbone, Template) {
 
         app.WatchlistModel = Backbone.Model.extend({
+            //validation name required
+            validate:function(attrs) {
+                if (!attrs.name)
+                    return "Watchlist name is required"
+            },
             urlRoot: "unsecure/watchlists/",
 
             parse: function (response) {
@@ -25,15 +30,49 @@ var app = app || {};
         app.WatchlistView = Backbone.View.extend({
             template: _.template(Template),
             el: ".page",
+            events: {
+                "click .btn-danger" : "deleteWatchlist",
+                "click .btn-warning" : "removeMovie",
+                "click .btn-success" : "addWatchlist"
+            },
             initialize: function () {
                 console.log("WatchlistView initializing...");
+                this.collection.on ('create remove update change',this.render, this);
                 this.render();
             },
             render: function () {
                 console.log("WatchlistView rendering...");
                 this.$el.html(this.template({
-                    watchlist: this.model.toJSON()
+                    watchlists: this.collection.toJSON()
                 }));
+            },
+            deleteWatchlist: function () {
+                var targetID = event.target.id;
+                var modWatchlist = new app.WatchlistModel();
+                modWatchlist.url = modWatchlist.urlRoot + targetID;
+                modWatchlist.fetch({type: 'DELETE'}).done( function() {
+                    this.render();
+                });
+
+            },
+            removeMovie: function(event) {
+                var data = $.parseJSON($(event.target).attr('data-button'));
+                var watchlistID = data.watchlistId;
+                var trackId = data.trackId;
+                var modMovie = new app.MovieModel();
+                modMovie.url = "unsecure/watchlists/" + watchlistID + "/movies/" + trackId;
+                modMovie.fetch({type: 'DELETE'}).done( function() {
+                    this.render();
+                });
+            },
+            addWatchlist: function(event) {
+                var isValid = this.collection.create({
+                    "name": $("#textArea").val(),
+                    "owner": "owner@mail.com"
+                }, {
+                    type : 'POST',
+                    validate : true
+                });
             }
         });
 
