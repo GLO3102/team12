@@ -59,6 +59,7 @@ define(['backbone', 'models/WatchlistModel', 'models/MovieModel', 'text!template
             });
         },
         modifyWatchlist: function (event) {
+            var self = this;
             var watchlistID = $(event.target).attr('data-button');
             var newName = $('#name' + watchlistID).val();
             var modWatchlist = new WatchlistModel();
@@ -66,10 +67,9 @@ define(['backbone', 'models/WatchlistModel', 'models/MovieModel', 'text!template
 
             modWatchlist.fetch().done(function () {
                 console.log("Modifying watchlist name...");
-                modWatchlist.save({name: newName});
-            });
-            this.collection.fetch({
-                update: true
+                modWatchlist.save({name: newName}).done( function() {
+                    self.collection.fetch();
+                });
             });
         }
     });
