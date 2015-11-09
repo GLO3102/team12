@@ -66,7 +66,6 @@ define(['backbone', 'models/WatchlistModel', 'models/MovieModel', 'text!template
             modWatchlist.fetch({type: 'PUT', data: {"name": newName}}).done(function () {
                 console.log("Modifying watchlist name...")
             });
-
         }
     });
 

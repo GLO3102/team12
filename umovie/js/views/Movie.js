@@ -1,4 +1,4 @@
-define(['backbone', 'models/MovieModel', 'text!templates/MovieView.html', 'helper/util'], function (Backbone, MovieModel, Template, Util) {
+define(['backbone', 'models/MovieModel', 'models/WatchlistModel', 'text!templates/MovieView.html', 'helper/util'], function (Backbone, MovieModel, WatchlistModel, Template, Util) {
 
     var MovieView = Backbone.View.extend({
         template: _.template(Template),
@@ -39,7 +39,7 @@ define(['backbone', 'models/MovieModel', 'text!templates/MovieView.html', 'helpe
         },
         addToWatchlist: function (event) {
             var targetID = event.target.id;
-            var modWatchlist = new app.WatchlistModel();
+            var modWatchlist = new WatchlistModel();
             modWatchlist.url = modWatchlist.urlRoot + targetID + "/movies";
             modWatchlist.fetch({data: this.model.attributes, type: 'POST'});
         }
