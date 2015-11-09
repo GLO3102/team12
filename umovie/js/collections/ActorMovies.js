@@ -1,6 +1,6 @@
 define(['backbone', 'models/ActorMovieModel'], function (Backbone, ActorMovieModel) {
 
-    console.log("ActorMovies: entering define.");
+    console.log("ActorMovies: defined");
 
     var ActorMovies = Backbone.Collection.extend({
         model: ActorMovieModel,
@@ -8,8 +8,6 @@ define(['backbone', 'models/ActorMovieModel'], function (Backbone, ActorMovieMod
             return response;
         }
     });
-
-    console.log("ActorMovies: returning");
 
     return ActorMovies;
 });

@@ -4,8 +4,7 @@ define(['backbone', 'text!templates/HeaderView.html'], function (Backbone, Heade
         render: function () {
             console.log("HeaderView: rendering template...");
             var template = _.template(HeaderTemplate);
-            var vars = {foo: "bar"};
-            var html = template(vars);
+            var html = template();
             this.$el.html(html);
             console.log("HeaderView: done");
         }

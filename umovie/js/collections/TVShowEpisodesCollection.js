@@ -1,6 +1,6 @@
 define(['backbone', 'models/TVShowEpisodeModel'], function (Backbone, TVShowEpisodeModel) {
 
-    console.log("TVShowEpisodesCollection: entering DEFINE");
+    console.log("TVShowEpisodesCollection: defined");
 
     var TVShowEpisodesCollection = Backbone.Collection.extend({
         model: TVShowEpisodeModel,
@@ -8,8 +8,6 @@ define(['backbone', 'models/TVShowEpisodeModel'], function (Backbone, TVShowEpis
             return response;
         }
     });
-
-    console.log("TVShowEpisodesCollection: returning.");
 
     return TVShowEpisodesCollection;
 });

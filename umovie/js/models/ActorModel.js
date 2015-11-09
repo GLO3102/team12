@@ -1,6 +1,6 @@
 define(['backbone'], function (Backbone) {
 
-    console.log("ActorModel: entering define.");
+    console.log("ActorModel: defined");
 
     var ActorModel = Backbone.Model.extend({
         urlRoot: "unsecure/actors/",

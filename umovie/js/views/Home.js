@@ -1,6 +1,6 @@
 define(['backbone', 'text!templates/HomeView.html'], function (Backbone, Template) {
 
-    console.log("HomeView: entered DEFINE");
+    console.log("HomeView: defined");
 
     var HomeView = Backbone.View.extend({
         el: '.page',
@@ -19,8 +19,6 @@ define(['backbone', 'text!templates/HomeView.html'], function (Backbone, Templat
             elem.setAttribute("src", src);
         }, delayTime);
     }
-
-    console.log("HomeView: returning");
 
     return HomeView;
 });

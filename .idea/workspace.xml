@@ -2,8 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68073506-0b50-46e8-af80-f36dd670de7f" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/serve.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/views/Movie.js" afterPath="$PROJECT_DIR$/umovie/js/views/Movie.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/collections/ActorMovies.js" afterPath="$PROJECT_DIR$/umovie/js/collections/ActorMovies.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/collections/TVShowEpisodesCollection.js" afterPath="$PROJECT_DIR$/umovie/js/collections/TVShowEpisodesCollection.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/collections/WatchlistCollection.js" afterPath="$PROJECT_DIR$/umovie/js/collections/WatchlistCollection.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/main.js" afterPath="$PROJECT_DIR$/umovie/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/models/ActorImgModel.js" afterPath="$PROJECT_DIR$/umovie/js/models/ActorImgModel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/models/ActorModel.js" afterPath="$PROJECT_DIR$/umovie/js/models/ActorModel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/models/ActorMovieModel.js" afterPath="$PROJECT_DIR$/umovie/js/models/ActorMovieModel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/models/MovieModel.js" afterPath="$PROJECT_DIR$/umovie/js/models/MovieModel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/models/TVShowEpisodeModel.js" afterPath="$PROJECT_DIR$/umovie/js/models/TVShowEpisodeModel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/models/TVShowModel.js" afterPath="$PROJECT_DIR$/umovie/js/models/TVShowModel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/models/WatchlistModel.js" afterPath="$PROJECT_DIR$/umovie/js/models/WatchlistModel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/util.js" afterPath="$PROJECT_DIR$/umovie/js/util.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/views/Actor.js" afterPath="$PROJECT_DIR$/umovie/js/views/Actor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/views/ActorImg.js" afterPath="$PROJECT_DIR$/umovie/js/views/ActorImg.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/views/Header.js" afterPath="$PROJECT_DIR$/umovie/js/views/Header.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/views/Home.js" afterPath="$PROJECT_DIR$/umovie/js/views/Home.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/views/TVShow.js" afterPath="$PROJECT_DIR$/umovie/js/views/TVShow.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/views/Watchlist.js" afterPath="$PROJECT_DIR$/umovie/js/views/Watchlist.js" />
     </list>
     <ignored path="team12.iws" />
@@ -26,11 +43,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="router.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/umovie/js/routers/router.js">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/umovie/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35344827">
-              <caret line="103" column="55" selection-start-line="103" selection-start-column="51" selection-end-line="103" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -39,68 +56,18 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/umovie/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.206896">
-              <caret line="44" column="52" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Watchlist.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/umovie/js/views/Watchlist.js">
+      <file leaf-file-name="util.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/umovie/js/util.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.62069">
-              <caret line="64" column="17" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TVShow.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/umovie/js/views/TVShow.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.3448277">
-              <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Header.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/umovie/js/views/Header.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.793103">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActorImg.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/umovie/js/views/ActorImg.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.24138">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Movie.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/umovie/js/views/Movie.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.62069">
-              <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Home.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/umovie/js/views/Home.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="11" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.5678879">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -109,8 +76,68 @@
       <file leaf-file-name="Actor.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/umovie/js/views/Actor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.586206">
-              <caret line="30" column="12" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActorImg.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/umovie/js/views/ActorImg.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Header.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/umovie/js/views/Header.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Home.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/umovie/js/views/Home.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Movie.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/umovie/js/views/Movie.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TVShow.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/umovie/js/views/TVShow.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Watchlist.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/umovie/js/views/Watchlist.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -157,35 +184,35 @@
         <option value="$PROJECT_DIR$/umovie/resources/css/style.css" />
         <option value="$PROJECT_DIR$/umovie/templates/ActorView.html" />
         <option value="$PROJECT_DIR$/umovie/templates/HomeView.html" />
-        <option value="$PROJECT_DIR$/serve.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/umovie/index.html" />
-        <option value="$PROJECT_DIR$/umovie/js/util.js" />
         <option value="$PROJECT_DIR$/umovie/js/app.js" />
-        <option value="$PROJECT_DIR$/umovie/js/views/Header.js" />
-        <option value="$PROJECT_DIR$/umovie/js/main.js" />
-        <option value="$PROJECT_DIR$/umovie/js/views/Home.js" />
         <option value="$PROJECT_DIR$/umovie/js/models/ActorImg.js" />
+        <option value="$PROJECT_DIR$/umovie/js/helper/util.js" />
+        <option value="$PROJECT_DIR$/umovie/templates/MovieView.html" />
+        <option value="$PROJECT_DIR$/umovie/templates/TVShowView.html" />
+        <option value="$PROJECT_DIR$/umovie/js/routers/router.js" />
+        <option value="$PROJECT_DIR$/umovie/templates/ActorImgView.html" />
+        <option value="$PROJECT_DIR$/umovie/js/views/Movie.js" />
+        <option value="$PROJECT_DIR$/umovie/js/views/Header.js" />
+        <option value="$PROJECT_DIR$/serve.py" />
+        <option value="$PROJECT_DIR$/umovie/js/main.js" />
         <option value="$PROJECT_DIR$/umovie/js/collections/ActorMovies.js" />
         <option value="$PROJECT_DIR$/umovie/js/collections/TVShowEpisodesCollection.js" />
+        <option value="$PROJECT_DIR$/umovie/js/collections/WatchlistCollection.js" />
+        <option value="$PROJECT_DIR$/umovie/js/models/ActorImgModel.js" />
+        <option value="$PROJECT_DIR$/umovie/js/models/ActorModel.js" />
         <option value="$PROJECT_DIR$/umovie/js/models/ActorMovieModel.js" />
         <option value="$PROJECT_DIR$/umovie/js/models/MovieModel.js" />
         <option value="$PROJECT_DIR$/umovie/js/models/TVShowEpisodeModel.js" />
         <option value="$PROJECT_DIR$/umovie/js/models/TVShowModel.js" />
         <option value="$PROJECT_DIR$/umovie/js/models/WatchlistModel.js" />
-        <option value="$PROJECT_DIR$/umovie/js/collections/WatchlistCollection.js" />
-        <option value="$PROJECT_DIR$/umovie/js/helper/util.js" />
-        <option value="$PROJECT_DIR$/umovie/templates/MovieView.html" />
-        <option value="$PROJECT_DIR$/umovie/js/views/TVShow.js" />
-        <option value="$PROJECT_DIR$/umovie/templates/TVShowView.html" />
-        <option value="$PROJECT_DIR$/umovie/js/models/ActorImgModel.js" />
-        <option value="$PROJECT_DIR$/umovie/js/routers/router.js" />
-        <option value="$PROJECT_DIR$/umovie/js/models/ActorModel.js" />
-        <option value="$PROJECT_DIR$/umovie/templates/ActorImgView.html" />
-        <option value="$PROJECT_DIR$/umovie/js/views/ActorImg.js" />
         <option value="$PROJECT_DIR$/umovie/js/views/Actor.js" />
-        <option value="$PROJECT_DIR$/umovie/js/views/Movie.js" />
+        <option value="$PROJECT_DIR$/umovie/js/views/ActorImg.js" />
+        <option value="$PROJECT_DIR$/umovie/js/views/Home.js" />
+        <option value="$PROJECT_DIR$/umovie/js/views/TVShow.js" />
         <option value="$PROJECT_DIR$/umovie/js/views/Watchlist.js" />
+        <option value="$PROJECT_DIR$/umovie/js/util.js" />
       </list>
     </option>
   </component>
@@ -524,6 +551,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Philippe\PhpstormProjects\team12\umovie" />
       <recent name="C:\Users\Philippe\PhpstormProjects\team12\umovie-backbone\js\lib" />
       <recent name="C:\Users\Philippe\PhpstormProjects\team12\scratch\resources\css" />
       <recent name="C:\Users\Philippe\PhpstormProjects\team12\scratch\resources\images" />
@@ -551,8 +579,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/umovie/resources/css/style.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/umovie/templates/ActorView.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/umovie/js/views/Watchlist.js</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -888,7 +915,13 @@
       <option name="project" value="LOCAL" />
       <updated>1447041679523</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Petit fix de scope/variables">
+      <created>1447042361373</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1447042361373</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -949,7 +982,8 @@
     <MESSAGE value="removed useless button from home page." />
     <MESSAGE value="Ajouté serve.py pour faire un petit serveur web temporaire pour tester l'application sans WebStorm." />
     <MESSAGE value="Modifié pour utiliser RequireJS sur le sens du monde." />
-    <option name="LAST_COMMIT_MESSAGE" value="Modifié pour utiliser RequireJS sur le sens du monde." />
+    <MESSAGE value="Petit fix de scope/variables" />
+    <option name="LAST_COMMIT_MESSAGE" value="Petit fix de scope/variables" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1052,13 +1086,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/umovie/js/helper/formToArray.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3114224">
-          <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/umovie/templates/ErrorView.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.576923">
@@ -1108,26 +1135,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/umovie/js/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6961207">
-          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/umovie/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6407982">
           <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serve.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3297414">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1143,90 +1154,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/umovie/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.036637932">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umovie/js/models/ActorMovieModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18318966">
-          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umovie/js/models/TVShowEpisodeModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23814656">
-          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umovie/js/models/WatchlistModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3297414">
-          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umovie/js/collections/WatchlistCollection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umovie/js/collections/TVShowEpisodesCollection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27478448">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umovie/js/models/MovieModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34806034">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umovie/js/collections/ActorMovies.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umovie/js/helper/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12823276">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/umovie/templates/MovieView.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umovie/js/models/TVShowModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20150863">
-          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -1239,86 +1170,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/umovie/js/models/ActorModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12823276">
-          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umovie/js/models/ActorImgModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21982759">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umovie/js/views/Actor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.586206">
-          <caret line="30" column="12" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umovie/js/views/Home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="11" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umovie/js/views/Movie.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.62069">
-          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umovie/js/views/ActorImg.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.24138">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umovie/js/views/Header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.793103">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umovie/js/views/TVShow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.3448277">
-          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umovie/js/views/Watchlist.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.62069">
-          <caret line="64" column="17" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umovie/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.206896">
-          <caret line="44" column="52" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/umovie/templates/ActorImgView.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.058419243">
@@ -1327,10 +1178,186 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/umovie/js/collections/TVShowEpisodesCollection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18318966">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umovie/js/collections/ActorMovies.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18318966">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umovie/js/collections/WatchlistCollection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umovie/js/helper/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12823276">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umovie/js/helper/formToArray.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umovie/js/models/ActorImgModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umovie/js/models/ActorModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umovie/js/models/ActorMovieModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umovie/js/models/MovieModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umovie/js/models/TVShowEpisodeModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umovie/js/models/TVShowModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umovie/js/models/WatchlistModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/umovie/js/routers/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35344827">
-          <caret line="103" column="55" selection-start-line="103" selection-start-column="51" selection-end-line="103" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="82" column="10" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umovie/js/views/Actor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umovie/js/views/ActorImg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umovie/js/views/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umovie/js/views/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umovie/js/views/Movie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umovie/js/views/TVShow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umovie/js/views/Watchlist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umovie/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umovie/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umovie/js/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5678879">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>

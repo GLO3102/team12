@@ -1,6 +1,6 @@
 define(['backbone'], function (Backbone) {
 
-    console.log("TVShowModel: entering DEFINE");
+    console.log("TVShowModel: defined");
 
     var TVShowModel = Backbone.Model.extend({
         urlRoot: "unsecure/tvshows/season/",
@@ -8,8 +8,6 @@ define(['backbone'], function (Backbone) {
             return response.results[0];
         }
     });
-
-    console.log("TVShowModel: returning");
 
     return TVShowModel;
 });

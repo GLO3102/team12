@@ -1,6 +1,6 @@
 define(['backbone'], function (Backbone) {
 
-    console.log("MovieModel: entering DEFINE");
+    console.log("MovieModel: defined");
 
     var MovieModel = Backbone.Model.extend({
         urlRoot: "unsecure/movies/",
@@ -12,8 +12,6 @@ define(['backbone'], function (Backbone) {
                 return response;
         }
     });
-
-    console.log("MovieModel: returning");
 
     return MovieModel;
 });

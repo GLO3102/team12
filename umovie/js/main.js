@@ -23,7 +23,7 @@ requirejs.config({
             exports: 'backbone'
         }
     },
-    enforceDefine: true
+    //enforceDefine: true
 });
 console.log("RequireJS configuration done.");
 
@@ -35,19 +35,14 @@ require(['jquery', 'bootstrap'], function ($) {
     return {};
 });
 
-/**
- * Sets the base URL to the API address.
- */
-require(['jquery'], function ($) {
+define(['jquery', 'app'], function ($, App) {
+    //Sets the base URL to the API address.
     $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
         // if the requested URL already starts with 'http', consider it is not fetching form the API (i.e. Youtube)
         if (!options.url.match("^http")) {
             options.url = 'https://umovie.herokuapp.com/' + options.url;
         }
     });
-});
-
-require(['app'], function (App) {
     console.log("App.initialize()");
     App.initialize();
 });

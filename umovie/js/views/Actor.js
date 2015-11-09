@@ -9,7 +9,7 @@ define([
     'helper/util'
 ], function (Backbone, ActorMovies, ActorMovieModel, ActorModel, ActorImg, ActorTemplate, ActorImgTemplate, Util) {
 
-    console.log("ActorView: entering define.");
+    console.log("ActorView: defined");
 
     var ActorView = Backbone.View.extend({
         template: _.template(ActorTemplate),
@@ -25,8 +25,6 @@ define([
             }));
         }
     });
-
-    console.log("ActorView: returning");
 
     return ActorView;
 });

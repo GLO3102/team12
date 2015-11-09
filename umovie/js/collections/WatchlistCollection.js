@@ -1,6 +1,6 @@
 define(['backbone', 'models/WatchlistModel'], function (Backbone, WatchlistModel) {
 
-    console.log("WatchlistCollection: entering DEFINE");
+    console.log("WatchlistCollection: defined");
 
     var WatchlistCollection = Backbone.Collection.extend({
         model: WatchlistModel,
@@ -9,8 +9,6 @@ define(['backbone', 'models/WatchlistModel'], function (Backbone, WatchlistModel
             return response;
         }
     });
-
-    console.log("WatchlistCollection: returning");
 
     return WatchlistCollection;
 });

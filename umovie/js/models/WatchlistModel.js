@@ -1,6 +1,6 @@
 define(['backbone'], function (Backbone) {
 
-    console.log("WatchlistModel: entering DEFINE");
+    console.log("WatchlistModel: defined");
 
     var WatchlistModel = Backbone.Model.extend({
         //validation name required
@@ -15,8 +15,6 @@ define(['backbone'], function (Backbone) {
             return response;
         }
     });
-
-    console.log("Watchlistmodel: returning");
 
     return WatchlistModel;
 });

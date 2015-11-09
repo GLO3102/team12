@@ -1,14 +1,12 @@
 define(['backbone'], function (Backbone) {
 
-    console.log("ActorMovieModel: entering define");
+    console.log("ActorMovieModel: defined");
 
     var ActorMovieModel = Backbone.Model.extend({
         parse: function (response) {
             return response.results;
         }
     });
-
-    console.log("ActorMovieModel: returning");
 
     return ActorMovieModel;
 });

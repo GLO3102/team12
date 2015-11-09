@@ -4,7 +4,7 @@ define([
     'helper/util'
 ], function (Backbone, TVShowTemplate, Util) {
 
-    console.log("TVShow: entering DEFINE");
+    console.log("TVShow: defined");
 
     var TVShowView = Backbone.View.extend({
         template: _.template(TVShowTemplate),
@@ -37,8 +37,6 @@ define([
             return videos.items[0].id.videoId;
         }
     });
-
-    console.log("TVShow: returning");
 
     return TVShowView;
 });

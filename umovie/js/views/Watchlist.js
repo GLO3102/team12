@@ -1,6 +1,6 @@
 define(['backbone', 'models/WatchlistModel', 'models/MovieModel', 'text!templates/WatchlistView.html'], function (Backbone, WatchlistModel, MovieModel, Template) {
 
-    console.log("Watchlist: entering DEFINE");
+    console.log("Watchlist: defined");
 
     var WatchlistView = Backbone.View.extend({
         template: _.template(Template),
@@ -73,8 +73,6 @@ define(['backbone', 'models/WatchlistModel', 'models/MovieModel', 'text!template
             });
         }
     });
-
-    console.log("Watchlist: returning");
 
     return WatchlistView;
 });
