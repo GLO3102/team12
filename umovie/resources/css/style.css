@@ -179,9 +179,4 @@ footer {
     height: auto;
 }
 
-hr{
-
-    width:100%;
-    color: #ff3440;
-    height: 15px;
-}
+.hrr hr{ background-color: black; height: 3px; border: 0; }

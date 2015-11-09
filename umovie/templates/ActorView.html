@@ -1,48 +1,50 @@
+<div class="jumbotron" >
+    <!-- Heading Row -->
+    <div class="row">
 
-<!-- Heading Row -->
-<div class="row">
-
-    <div class="col-md-4">
-    <div class="imgActorSection"></div>
+        <div class="col-md-4">
+            <div class="imgActorSection"></div>
 
 
-    <div class="upAndDown">
+            <div class="upAndDown">
 
-            <h1><div id="actorName"><%=mod.artistName%></div> </h1>
-            <div class="attributsGenre">
-                <span id="primary"><%=mod.primaryGenreName%> </span>
+                <h1><div id="actorName"><%=mod.artistName%></div> </h1>
+                <div class="attributsGenre">
+                    <span id="primary"><%=mod.primaryGenreName%> </span>
+                </div>
+                <br>
+                <img class="logoItunes" src="resources/images/1257009-logo-itunes-11.jpg">
+
+                <a href=<%=movies[0][0].trackViewUrl%>> Buy on Itunes! </a>
+
             </div>
-            <br>
-            <img class="logoItunes" src="resources/images/1257009-logo-itunes-11.jpg">
 
-            <a href=<%=movies[0][0].trackViewUrl%>> Buy on Itunes! </a>
 
         </div>
 
+        <div class="col-md-8">
+            <h1><div>Known for :</div> </h1>
+            <div id="movieList">
 
-    </div>
-    <div class="col-md-8">
-        <h1><div>Known for :</div> </h1>
-        <div id="movieList">
-
-            <ul>
-                <% var movieArray = movies[0]; %>
-                <%  for (var i = 0; i < 3; ++i){ %>
-                <li> <label class="actor-movie"><%= movieArray[i].trackName %></label>
-                    <img class="img-responsive img-rounded imageFilm" src=<%=movieArray[i].artworkUrl100%> >
-                    <ul>
-                        <li>Release date : <%=movieArray[i].releaseDate%> </li>
-                    </ul>
-                </li>
-                <% }; %>
-
+                <ul>
+                    <% var movieArray = movies[0]; %>
+                    <%  for (var i = 0; i < 3; ++i){ %>
+                    <div class="hrr"><hr /></div>
+                    <li> <div class="actor-movie"><%= movieArray[i].trackName %></div>
+                        <img class="img-responsive img-rounded imageFilm" src=<%=movieArray[i].artworkUrl100%> >
+                        <ul>
+                            <li>Release date : <%=movieArray[i].releaseDate%> </li>
+                        </ul>
+                    </li>
+                    <% }; %>
 
 
 
-            </ul>
+
+                </ul>
+            </div>
+
         </div>
-
     </div>
-
 
 </div>
