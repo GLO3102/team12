@@ -63,8 +63,13 @@ define(['backbone', 'models/WatchlistModel', 'models/MovieModel', 'text!template
             var newName = $('#name' + watchlistID).val();
             var modWatchlist = new WatchlistModel();
             modWatchlist.url = modWatchlist.urlRoot + watchlistID;
-            modWatchlist.fetch({type: 'PUT', data: {"name": newName}}).done(function () {
-                console.log("Modifying watchlist name...")
+
+            modWatchlist.fetch().done(function () {
+                console.log("Modifying watchlist name...");
+                modWatchlist.save({name: newName});
+            });
+            this.collection.fetch({
+                update: true
             });
         }
     });
