@@ -24,7 +24,7 @@ define(['backbone', 'text!templates/WatchlistView.html'], function (Backbone, Te
             if (attrs == '')
                 errors.push('Please enter a word');
         }
-    })
+    });
 
     app.song = app.WatchlistModel();
 

@@ -13,7 +13,10 @@ define([
     'collections/TVShowEpisodesCollection',
     'views/TVShow',
     'views/Watchlist',
-    'collections/WatchlistCollection'
+    'collections/WatchlistCollection',
+    'views/Login',
+    'views/Signup',
+    'jquery.cookie'
 ], function (Backbone,
              HeaderView,
              HomeView,
@@ -28,7 +31,9 @@ define([
              TVShowEpisodesCollection,
              TVShowView,
              WatchlistView,
-WatchlistCollection) {
+             WatchlistCollection,
+             LoginView,
+             SignupView) {
     var UmovieRouter = Backbone.Router.extend({
         routes: {
             '': "home",
@@ -38,17 +43,42 @@ WatchlistCollection) {
             "tvshows/season/:id": "getTVShow",
             "watchlists": "getWatchlists",
             "watchlists/:id": "getWatchlist",
+            "login": "login",
+            "logout": "logout",
+            "signup": "signup",
             "*actions": "defaultRoute"
         },
         initialize: function () {
             // Renders Header.
             var Header = new HeaderView;
             Header.render();
+            var Home = new HomeView;
+            Home.render();
         },
         home: function () {
             console.log("Home route loaded.");
+            if(typeof Header === "undefined") {
+                var Header = new HeaderView;
+                Header.render();
+            }
             var Home = new HomeView;
             Home.render();
+        },
+        signup: function() {
+            var Home = new HomeView;
+            Home.render();
+            var Signup = new SignupView;
+            Signup.render();
+        },
+        login: function() {
+            var Home = new HomeView;
+            Home.render();
+            var Login = new LoginView;
+            Login.render();
+        },
+        logout: function() {
+            $.removeCookie('token');
+            this.navigate('', {trigger: true});
         },
         prefs: function () {
             console.log("User Preferences Route Loaded.");
@@ -56,7 +86,7 @@ WatchlistCollection) {
         },
         getWatchlists: function () {
             var watchListsCollection = new WatchlistCollection;
-            watchListsCollection.url = "unsecure/watchlists";
+            watchListsCollection.url = "watchlists";
             watchListsCollection.fetch().done(function () {
                 var watchlistView = new WatchlistView({
                     collection: watchListsCollection
@@ -85,7 +115,7 @@ WatchlistCollection) {
             var modFilm = new MovieModel();
             modFilm.url = modFilm.urlRoot + id;
             var watchListsCollection = new WatchlistCollection;
-            watchListsCollection.url = "unsecure/watchlists";
+            watchListsCollection.url = "watchlists";
             watchListsCollection.fetch().done(function () {
                 modFilm.fetch().done(function () {
                     var movieView = new MovieView({
@@ -101,7 +131,7 @@ WatchlistCollection) {
             var modImgActor = new ActorImgModel();
             modActor.url = modActor.urlRoot + id;
             modActorMovies.url = modActor.url + "/movies";
-            modImgActor.url = "http://umovie.herokuapp.com/unsecure/actors/" + id + "/movies";
+            modImgActor.url = "http://umovie.herokuapp.com/actors/" + id + "/movies";
             modActor.fetch().done(function () {
                 modActorMovies.fetch().done(function () {
                     modImgActor.fetch().done(function () {
@@ -141,8 +171,9 @@ WatchlistCollection) {
     });
 
     var initialize = function () {
-        var app_router = new UmovieRouter;
+        console.log("Starting Backbone history...");
         Backbone.history.start();
+        var app_router = new UmovieRouter;
     };
 
     return {

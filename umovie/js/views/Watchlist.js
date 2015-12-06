@@ -41,7 +41,7 @@ define(['backbone', 'models/WatchlistModel', 'models/MovieModel', 'text!template
             var watchlistID = data.watchlistId;
             var trackId = data.trackId;
             var modMovie = new MovieModel();
-            modMovie.url = "unsecure/watchlists/" + watchlistID + "/movies/" + trackId;
+            modMovie.url = "watchlists/" + watchlistID + "/movies/" + trackId;
             modMovie.fetch({type: 'DELETE'}).done(function () {
                 console.log("Removing movie...")
             });

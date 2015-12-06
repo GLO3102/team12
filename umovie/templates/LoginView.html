@@ -1,0 +1,25 @@
+<div class="row">
+<div class="modal fade" id="login-modal" data-backdrop="static" data-keyboard="false" style="display: block;">
+    <div class="modal-dialog">
+        <div class="loginmodal-container">
+            <h1>Login to Your Account</h1><br>
+
+            <input id="loginEmail" type="text" name="user" placeholder="Email">
+            <input id="loginPassword" type="password" name="pass" placeholder="Password">
+            <input id="submitLogin" type="submit" class="login loginmodal-submit" value="Login">
+
+
+            <div class="login-help">
+                <a id="register">Register</a>
+            </div>
+            <br>
+            <div class="col-lg-2">
+                <span id="errorText" class="label label-danger"></span>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script>
+    $("#login-modal").modal('show');
+</script>

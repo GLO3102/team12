@@ -10,9 +10,13 @@ requirejs.config({
         bootstrap: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min',
         underscore: 'https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min',
         backbone: 'http://backbonejs.org/backbone-min',
-        text: 'https://cdnjs.cloudflare.com/ajax/libs/require-text/2.0.12/text.min'
+        text: 'https://cdnjs.cloudflare.com/ajax/libs/require-text/2.0.12/text.min',
+        'jquery.cookie': 'https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min'
     },
     shim: {
+        'jquery': {
+            exports: "$"
+        },
         'underscore': '_',
         'bootstrap': {
             deps: ['jquery'],
@@ -21,8 +25,11 @@ requirejs.config({
         'backbone': {
             deps: ['underscore', 'jquery'],
             exports: 'backbone'
+        },
+        'jquery.cookie': {
+            deps: ['jquery']
         }
-    },
+    }
     //enforceDefine: true
 });
 console.log("RequireJS configuration done.");
@@ -35,7 +42,7 @@ require(['jquery', 'bootstrap'], function ($) {
     return {};
 });
 
-define(['jquery', 'app'], function ($, App) {
+define(['jquery', 'app', 'jquery.cookie'], function ($, App) {
     //Sets the base URL to the API address.
     $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
         // if the requested URL already starts with 'http', consider it is not fetching form the API (i.e. Youtube)
@@ -43,6 +50,11 @@ define(['jquery', 'app'], function ($, App) {
             options.url = 'https://umovie.herokuapp.com/' + options.url;
         }
     });
+    if($.cookie('token')) {
+        $.ajaxSetup({
+            headers: { "Authorization": $.cookie('token') }
+        });
+    }
     console.log("App.initialize()");
     App.initialize();
 });
