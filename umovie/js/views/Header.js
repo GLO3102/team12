@@ -1,4 +1,4 @@
-define(['backbone','text!templates/HeaderView.html', 'jquery.cookie'], function (Backbone, HeaderTemplate) {
+define(['backbone', 'text!templates/HeaderView.html', 'jquery.cookie'], function (Backbone, HeaderTemplate) {
     var HeaderView = Backbone.View.extend({
         template: _.template(HeaderTemplate),
         el: '.header',
@@ -7,13 +7,14 @@ define(['backbone','text!templates/HeaderView.html', 'jquery.cookie'], function 
             var user = undefined;
             var token = $.cookie("token");
             var self = this;
-            debugger;
-            if(token) {
+            //debugger;
+            if (token) {
                 $.ajax({
                     type: "GET",
-                    url: "https://umovie.herokuapp.com/tokenInfo"
-                }).done( function (data) {
+                    url: "tokenInfo"
+                }).done(function (data) {
                     user = data;
+                    $.cookie("userPublicInfo", JSON.stringify(user));
                     console.log("HeaderView: rendering template...");
                     self.$el.html(self.template({
                         user: user
@@ -23,7 +24,7 @@ define(['backbone','text!templates/HeaderView.html', 'jquery.cookie'], function 
             }
             else {
                 console.log("Not logged in. Redirecting to login page...");
-                Backbone.history.navigate('login',{trigger: true});
+                Backbone.history.navigate('login', {trigger: true});
             }
         }
     });

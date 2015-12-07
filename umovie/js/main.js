@@ -43,18 +43,14 @@ require(['jquery', 'bootstrap'], function ($) {
 });
 
 define(['jquery', 'app', 'jquery.cookie'], function ($, App) {
-    //Sets the base URL to the API address.
     $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
-        // if the requested URL already starts with 'http', consider it is not fetching form the API (i.e. Youtube)
+        // Sets the base URL to the API address.
+        // if the requested URL already starts with 'http', consider it is not fetching form the API (but rather, i.e., Youtube API)
         if (!options.url.match("^http")) {
+            jqXHR.setRequestHeader("Authorization", $.cookie('token'));
             options.url = 'https://umovie.herokuapp.com/' + options.url;
         }
     });
-    if($.cookie('token')) {
-        $.ajaxSetup({
-            headers: { "Authorization": $.cookie('token') }
-        });
-    }
     console.log("App.initialize()");
     App.initialize();
 });

@@ -67,7 +67,7 @@ define(['backbone', 'models/WatchlistModel', 'models/MovieModel', 'text!template
 
             modWatchlist.fetch().done(function () {
                 console.log("Modifying watchlist name...");
-                modWatchlist.save({name: newName}).done( function() {
+                modWatchlist.save({name: newName}).done(function () {
                     self.collection.fetch();
                 });
             });

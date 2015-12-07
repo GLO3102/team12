@@ -32,9 +32,10 @@
                     <%=watchlist.name%>
                     </button>
                     <%});%>'
-                    >
+            >
                 Add to watchlist
-            </button><hr>
+            </button>
+            <hr>
 
             <script>
                 $('.btn-primary').popover({
@@ -56,10 +57,7 @@
 
         <br>
         <!-- /.col-md-8 -->
-        <div class="embed-responsive embed-responsive-4by3">
-        <iframe id="player" type="text/html" width="640" height="390"
-                src="http://www.youtube.com/embed/<%= youtubeVideoId %>" frameborder="0"></iframe>
-        </div>
+        <div class="embed-responsive embed-responsive-4by3" id="youtube-preview"></div>
 
         <!-- /.col-md-4 -->
     </div>
@@ -68,3 +66,4 @@
 
 </div>
 
+<div id="disqus_thread"></div>
