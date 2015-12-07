@@ -131,7 +131,7 @@ define([
             var modImgActor = new ActorImgModel();
             modActor.url = modActor.urlRoot + id;
             modActorMovies.url = modActor.url + "/movies";
-            modImgActor.url = "http://umovie.herokuapp.com/actors/" + id + "/movies";
+            modImgActor.url = modActorMovies.url;
             modActor.fetch().done(function () {
                 modActorMovies.fetch().done(function () {
                     modImgActor.fetch().done(function () {
