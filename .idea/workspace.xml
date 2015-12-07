@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68073506-0b50-46e8-af80-f36dd670de7f" name="Default" comment="Petit fix de scope/variables">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sso/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sso/disqus_signon.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sso/hmac-sha1-3.1.2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sso/package.json" />
+    <list default="true" id="68073506-0b50-46e8-af80-f36dd670de7f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/main.js" afterPath="$PROJECT_DIR$/umovie/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/views/Header.js" afterPath="$PROJECT_DIR$/umovie/js/views/Header.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/views/Movie.js" afterPath="$PROJECT_DIR$/umovie/js/views/Movie.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/views/Watchlist.js" afterPath="$PROJECT_DIR$/umovie/js/views/Watchlist.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/templates/MovieView.html" afterPath="$PROJECT_DIR$/umovie/templates/MovieView.html" />
     </list>
     <ignored path="team12.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,8 +48,8 @@
       <file leaf-file-name="Movie.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/umovie/js/views/Movie.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.76185346">
-              <caret line="66" column="10" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.6368078">
+              <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -66,7 +58,7 @@
       <file leaf-file-name="MovieView.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/umovie/templates/MovieView.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-25.538462">
+            <state vertical-scroll-proportion="0.0">
               <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
               <folding />
             </state>
@@ -228,6 +220,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -448,8 +442,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -477,7 +469,6 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="975" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
-    <property name="FullScreen" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
   <component name="RecentsManager">
@@ -510,18 +501,8 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gitignore</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/umovie/index.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/umovie/js/main.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/umovie/js/models/ActorModel.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/umovie/js/models/MovieModel.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/umovie/js/models/TVShowModel.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/umovie/js/routers/router.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/umovie/js/util.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/umovie/js/views/Header.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/umovie/js/views/Watchlist.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/umovie/resources/css/style.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/umovie/templates/HeaderView.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/umovie/js/views/Login.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/umovie/templates/LoginView.html</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -529,10 +510,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/umovie/js/views/Login.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/umovie/js/views/Signup.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/umovie/templates/LoginView.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/umovie/templates/SignupView.html</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -867,17 +844,23 @@
       <option name="project" value="LOCAL" />
       <updated>1447042361373</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="modifs:&#10;- rendu la preview Youtube asynchrone (requêtes synchrones sont deprecated et ça ralentissait le chargement de la page)&#10;- fixed ajaxPrefilter pour le token @ API uMovie + Youtube API&#10;- Ajouté module SSO (exécuter avec npm install &amp;&amp; npm start)">
+      <created>1449457206433</created>
+      <option name="number" value="00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1449457206433</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18489583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18489583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845187" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32845187" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -929,7 +912,8 @@
     <MESSAGE value="Ajouté serve.py pour faire un petit serveur web temporaire pour tester l'application sans WebStorm." />
     <MESSAGE value="Modifié pour utiliser RequireJS sur le sens du monde." />
     <MESSAGE value="Petit fix de scope/variables" />
-    <option name="LAST_COMMIT_MESSAGE" value="Petit fix de scope/variables" />
+    <MESSAGE value="modifs:&#10;- rendu la preview Youtube asynchrone (requêtes synchrones sont deprecated et ça ralentissait le chargement de la page)&#10;- fixed ajaxPrefilter pour le token @ API uMovie + Youtube API&#10;- Ajouté module SSO (exécuter avec npm install &amp;&amp; npm start)" />
+    <option name="LAST_COMMIT_MESSAGE" value="modifs:&#10;- rendu la preview Youtube asynchrone (requêtes synchrones sont deprecated et ça ralentissait le chargement de la page)&#10;- fixed ajaxPrefilter pour le token @ API uMovie + Youtube API&#10;- Ajouté module SSO (exécuter avec npm install &amp;&amp; npm start)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -963,7 +947,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -971,7 +954,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1202,7 +1184,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="82" column="10" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1210,7 +1191,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.036637932">
           <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1218,7 +1198,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.43965518">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1234,7 +1213,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5678879">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1242,7 +1220,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14655173">
           <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1266,7 +1243,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.47629312">
           <caret line="26" column="72" selection-start-line="26" selection-start-column="72" selection-end-line="26" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1288,7 +1264,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/umovie/templates/MovieView.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.538462">
+        <state vertical-scroll-proportion="0.0">
           <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding />
         </state>
@@ -1296,8 +1272,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/umovie/js/views/Movie.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76185346">
-          <caret line="66" column="10" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.6368078">
+          <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
           <folding />
         </state>
       </provider>

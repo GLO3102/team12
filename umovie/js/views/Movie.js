@@ -19,7 +19,7 @@ define(['backbone', 'models/MovieModel', 'models/WatchlistModel', 'text!template
             var watchlists = this.collection.toJSON().slice(0, 10);
             console.log("Found youtube video: " + youtubeVideo);
             console.log("MovieView rendering...");
-            this.renderReviewSection(modelJSON.trackId);
+            this.renderReviewSection(modelJSON);
             this.$el.html(this.template({
                 mod: modelJSON,
                 youtubeVideoId: youtubeVideo,
@@ -27,7 +27,7 @@ define(['backbone', 'models/MovieModel', 'models/WatchlistModel', 'text!template
                 resizer: Util
             }));
         },
-        renderReviewSection: function (movie_id) {
+        renderReviewSection: function (movie_infos) {
             console.log("Rendering Review section.");
             if ($.cookie("userPublicInfo")) {
                 var remote_auth_token = "";
@@ -39,28 +39,21 @@ define(['backbone', 'models/MovieModel', 'models/WatchlistModel', 'text!template
                         email: userPublicInfo.email
                     }
                 };
-
                 $.post("http://localhost:8081/disqus/sso", userData, function (data, textStatus) {
-                    console.log("Remote auth token is now: " + data.auth);
-                    console.log("text status is: " + textStatus);
-
                     disqus_config = function () {
-                        console.log("Current location is: " + window.location.href);
-                        this.page.url = window.location.href; // Replace PAGE_URL with your page's canonical URL variable
-                        this.page.identifier = movie_id; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                        this.page.title = 'a unique title for each page where Disqus is present';
+                        var curloc = "http://localhost:63342/team12/umovie/movies/" + movie_infos.trackId;
+                        this.page.url = curloc;
+                        this.page.identifier = movie_infos.trackId;
+                        this.page.title = movie_infos.trackName;
                         this.page.remote_auth_s3 = data.auth;
                         this.page.api_key = data.pubKey;
                     };
-
-                    console.log("auth token is: " + remote_auth_token);
                     (function () { // DON'T EDIT BELOW THIS LINE
                         var d = document, s = d.createElement('script');
                         s.src = '//umovie-team12.disqus.com/embed.js';
                         s.setAttribute('data-timestamp', +new Date());
                         (d.head || d.body).appendChild(s);
                     })();
-
                     return {};
                 }, "json");
             }
