@@ -27,6 +27,7 @@ define(['backbone','text!templates/LoginView.html', 'jquery.cookie'], function (
                     $.cookie("token", data["token"], { expires: date });
                     $("#login-modal").hide();
                     $('.modal-backdrop').remove();
+                    $('body').removeClass('modal-open');
                     Backbone.history.navigate('', {trigger: true});
                 },
                 error: function (XMLHttpRequest) {
