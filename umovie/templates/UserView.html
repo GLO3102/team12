@@ -7,13 +7,66 @@
             <div>
             <font size="4"> <%= mod.email %></font>
             </div>
-            <button class="btn-info btnAddFriend">Add as Friend</button>
+            <button class="btnAddFriend">Add as Friend</button>
         </div>
 
 
                 <div class="upAndDown">
+
                     <div class="col-md-4">
                         <br>
+                        <hr style="height:10px; visibility:hidden;" />
+                        <h2>Friends list</h2>
+                        <hr>
+
+                        <% _.each(mod.following, function(friend){ %>
+                        <!-- /.col-md-8 -->
+                        <table frame="box">
+                            <tr>
+                                <th><%= friend.name %></th>
+                            </tr>
+                            <tr>
+                                <th><%= friend.email %></th>
+                            </tr>
+                        </table>
+                        <br>
+                        <button class="btn btn-primary btn-lg1" data-toggle="popover" data-trigger="focus" data-placement="auto"
+                                data-content='
+                <button class="btn btn-GotoFriendPage" id="<%= friend.id %>">Go to friend page </button>
+                   <button class="btn-removeFriend" id="<%= friend.id %>">Remove Friend</button>
+                    '
+                                >
+                            Actions
+                        </button>
+                        <br>
+                        <button class="btn btn-primary btn-lg2" data-toggle="popover" data-trigger="focus" data-placement="auto"
+                                data-content='
+                <button class="btn btn-GotoFriendPage" id="<%= friend.id %>">Go to friend page </button>'
+                                >
+                            Actions
+                        </button>
+                        <br>
+
+                        <% }); %>
+
+                        <script>
+                            $('.btn-primary').popover({
+                                title: "Actions",
+                                html: true,
+                                animation: true
+                            });
+
+                        </script>
+
+                    </div>
+
+
+
+    <span style="display:inline-block; width: 600px;"></span>
+
+                    <div class="col-md-8">
+
+                        <div class="container">
                     <h2>Watch lists</h2>
                     <hr>
                     <% _.each(watchlists, function(watchlist){ %>
@@ -53,58 +106,12 @@
                         <textarea id="textArea" rows="2" cols="50" placeholder="Enter watchlist name here."></textarea>
                     </div>
                     <button type="button" class="btn btn-lg btn-success" id="buttonAdd">Add</button>
+
+                    </div>
+                    </div>
+
                 </div>
 
-
-
-
-    <span style="display:inline-block; width: 600px;"></span>
-
-    <div class="col-md-8">
-
-        <h2>Friends list</h2>
-        <hr>
-
-        <% _.each(mod.following, function(friend){ %>
-        <!-- /.col-md-8 -->
-        <table frame="box">
-            <tr>
-                <th><%= friend.name %></th>
-            </tr>
-            <tr>
-                <th><%= friend.email %></th>
-            </tr>
-        </table>
-
-        <button class="btn btn-primary btn-lg1" data-toggle="popover" data-trigger="focus" data-placement="auto"
-                data-content='
-                <button class="btn btn-GotoFriendPage" id="<%= friend.id %>">Go to friend page </button>
-                   <button class="btn btn-remove" id="<%= friend.id %>">Remove Friend</button>
-                    '
-                >
-          Actions
-        </button>
-        <button class="btn btn-primary btn-lg2" data-toggle="popover" data-trigger="focus" data-placement="auto"
-                data-content='
-                <button class="btn btn-GotoFriendPage" id="<%= friend.id %>">Go to friend page </button>'
-                >
-            Actions
-        </button>
-
-
-        <% }); %>
-
-        <script>
-            $('.btn-primary').popover({
-                title: "Actions",
-                html: true,
-                animation: true
-            });
-
-        </script>
-
-    </div>
-                </div>
 
 </div>
 

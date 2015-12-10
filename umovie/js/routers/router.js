@@ -174,12 +174,21 @@ define([
             var user = new UserModel();
             user.url = user.urlRoot + id;
 
+            var userPublicInfo = JSON.parse($.cookie("userPublicInfo"));
+            var loggedUserId = userPublicInfo.id;
+
+            var loggedUser = new UserModel();
+            loggedUser.url = loggedUser.urlRoot + loggedUserId;
+
+
+
             var watchListsCollection = new WatchlistCollection;
             watchListsCollection.url = "watchlists";
             user.fetch().done(function() {
                 watchListsCollection.fetch().done(function () {
-
-                        var uView = new UserView(user,watchListsCollection);
+                    loggedUser.fetch().done(function () {
+                        var uView = new UserView(user, watchListsCollection,loggedUser);
+                    });
                 });
             });
 
