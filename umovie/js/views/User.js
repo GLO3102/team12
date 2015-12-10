@@ -70,7 +70,7 @@ define(['backbone', 'models/userModel', 'text!templates/UserView.html', 'jquery.
 
         },
         removeFriend: function (event) {
-            debugger;
+            //debugger;
             var self=this;
             var friendId = event.target.id;
             //console.log(friendId);
