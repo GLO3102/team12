@@ -26,6 +26,8 @@ define(['backbone', 'text!templates/HeaderView.html', 'jquery.cookie'], function
                 console.log("Not logged in. Redirecting to login page...");
                 Backbone.history.navigate('login', {trigger: true});
             }
+
+
         }
     });
 
