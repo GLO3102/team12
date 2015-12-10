@@ -57,7 +57,7 @@ define(['backbone', 'models/userModel', 'text!templates/UserView.html', 'jquery.
                 $.ajax({
                     type: "POST",
                     url: "follow",
-                    contentType: "application/json",
+                    contentType: "application/x-www-form-urlencoded",
                     data: {id: userId}
                 }).done( function(data) {
 
@@ -76,9 +76,9 @@ define(['backbone', 'models/userModel', 'text!templates/UserView.html', 'jquery.
             $.ajax({
                 type: "DELETE",
                 url: "follow/"+friendId,
-                contentType: "application/json"
+                contentType: "application/x-www-form-urlencoded"
             }).done( function(data) {
-
+                self.render();
                 }).fail(function (XMLHttpRequest) {
                     console.log("Something went wrong while adding a new friend.");
                 })
