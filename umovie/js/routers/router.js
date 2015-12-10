@@ -16,6 +16,8 @@ define([
     'collections/WatchlistCollection',
     'views/Login',
     'views/Signup',
+    'models/userModel',
+    'views/User',
     'jquery.cookie'
 ], function (Backbone,
              HeaderView,
@@ -33,7 +35,9 @@ define([
              WatchlistView,
              WatchlistCollection,
              LoginView,
-             SignupView) {
+             SignupView,
+             UserModel,
+             UserView) {
     var UmovieRouter = Backbone.Router.extend({
         routes: {
             '': "home",
@@ -46,6 +50,7 @@ define([
             "login": "login",
             "logout": "logout",
             "signup": "signup",
+            "users/:id": "getUser",
             "*actions": "defaultRoute"
         },
         initialize: function () {
@@ -164,6 +169,20 @@ define([
 
                 });
             });
+        },
+        getUser : function (id){
+            var user = new UserModel();
+            user.url = user.urlRoot + id;
+
+            var watchListsCollection = new WatchlistCollection;
+            watchListsCollection.url = "watchlists";
+            user.fetch().done(function() {
+                watchListsCollection.fetch().done(function () {
+
+                        var uView = new UserView(user,watchListsCollection);
+                });
+            });
+
         },
         defaultRoute: function (actions) {
             console.log("defaultRoute Route Loaded.");

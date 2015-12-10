@@ -285,3 +285,11 @@ footer {
 a:hover {
     cursor: pointer;
 }
+
+
+.btnAddFriend {
+    border-radius: 4px;
+    width: 250px;
+    height: auto;
+
+}

@@ -1,0 +1,110 @@
+<div class="row">
+
+
+        <div class="upAndDown">
+            <img class="img-responsive img-rounded" id="cover">
+            <font size="17"> <%= mod.name %></font>
+            <div>
+            <font size="4"> <%= mod.email %></font>
+            </div>
+            <button class="btn-info btnAddFriend">Add as Friend</button>
+        </div>
+
+
+                <div class="upAndDown">
+                    <div class="col-md-4">
+                        <br>
+                    <h2>Watch lists</h2>
+                    <hr>
+                    <% _.each(watchlists, function(watchlist){ %>
+                        <% if(watchlist.hasOwnProperty('owner')){%>
+                        <% if(watchlist.owner.id == mod.id  ) {%>
+                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target=<%='#div'+watchlist.id%>><%= watchlist.name %></button>
+                    <button class="btn btn-warning modify btn-xs" data-button=<%=watchlist.id%>>Change name</button>
+                    <div class="col-xs-2">
+                        <input class="form-control" id="name<%=watchlist.id%>" placeholder="New watchlist name" data-id=<%=watchlist.id%> type="text">
+                    </div>
+                    <button class="btn btn-danger btn-xs" style="float:right;" id=<%=watchlist.id%>>X</button>
+                    <div id=<%='div'+watchlist.id %> class="collapse">
+                        <% _.each(watchlist.movies, function(movie){ %>
+
+
+                        <br>
+                        <label><%= movie.trackName %></label><br>
+                        <a href="#movies/<%=movie.trackId%>">
+                            <img style="padding-bottom: 10px;" src=<%= movie.artworkUrl100 %> ><br>
+                        </a>
+                        <button class="btn btn-info btn-sm" data-toggle="collapse" data-target=<%='#'+movie.trackId+watchlist.id%>>Description</button>
+                        <div id=<%=movie.trackId+watchlist.id%> class="collapse">
+                            <label><%=movie.longDescription%></label>
+                        </div>
+                        <button data-button='{"trackId" : "<%=movie.trackId%>", "watchlistId" : "<%=watchlist.id%>"}' class="btn btn-warning remove btn-xs" style="padding-top: 5px;">Remove</button>
+                        <br>
+
+                        <% }); %>
+
+                    </div>
+
+                    <hr>
+                        <% } %>
+                        <% } %>
+                    <% }); %>
+                    <div id="watchlist-name-editor-container">
+                        <textarea id="textArea" rows="2" cols="50" placeholder="Enter watchlist name here."></textarea>
+                    </div>
+                    <button type="button" class="btn btn-lg btn-success" id="buttonAdd">Add</button>
+                </div>
+
+
+
+
+    <span style="display:inline-block; width: 600px;"></span>
+
+    <div class="col-md-8">
+
+        <h2>Friends list</h2>
+        <hr>
+
+        <% _.each(mod.following, function(friend){ %>
+        <!-- /.col-md-8 -->
+        <table frame="box">
+            <tr>
+                <th><%= friend.name %></th>
+            </tr>
+            <tr>
+                <th><%= friend.email %></th>
+            </tr>
+        </table>
+
+        <button class="btn btn-primary btn-lg1" data-toggle="popover" data-trigger="focus" data-placement="auto"
+                data-content='
+                <button class="btn btn-GotoFriendPage" id="<%= friend.id %>">Go to friend page </button>
+                   <button class="btn btn-remove" id="<%= friend.id %>">Remove Friend</button>
+                    '
+                >
+          Actions
+        </button>
+        <button class="btn btn-primary btn-lg2" data-toggle="popover" data-trigger="focus" data-placement="auto"
+                data-content='
+                <button class="btn btn-GotoFriendPage" id="<%= friend.id %>">Go to friend page </button>'
+                >
+            Actions
+        </button>
+
+
+        <% }); %>
+
+        <script>
+            $('.btn-primary').popover({
+                title: "Actions",
+                html: true,
+                animation: true
+            });
+
+        </script>
+
+    </div>
+                </div>
+
+</div>
+
