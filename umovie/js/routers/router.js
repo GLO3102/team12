@@ -1,3 +1,4 @@
+
 define([
     'backbone',
     'views/Header',
@@ -59,6 +60,17 @@ define([
             Header.render();
             var Home = new HomeView;
             Home.render();
+            this.firstvView=0;
+            this.currentView = null;
+        },
+        _cleanUp: function() {
+
+            if(this.firstvView !== 0){
+
+                this.currentView.remove();
+
+            }
+
         },
         home: function () {
             console.log("Home route loaded.");
@@ -171,6 +183,9 @@ define([
             });
         },
         getUser : function (id){
+            this._cleanUp();
+
+
             var user = new UserModel();
             user.url = user.urlRoot + id;
 
@@ -180,17 +195,22 @@ define([
             var loggedUser = new UserModel();
             loggedUser.url = loggedUser.urlRoot + loggedUserId;
 
-
+            var self=this;
 
             var watchListsCollection = new WatchlistCollection;
             watchListsCollection.url = "watchlists";
             user.fetch().done(function() {
                 watchListsCollection.fetch().done(function () {
                     loggedUser.fetch().done(function () {
-                        var uView = new UserView(user, watchListsCollection,loggedUser);
+
+                        self.currentView = new UserView(user, watchListsCollection,loggedUser);
+
                     });
                 });
             });
+
+
+            this.firstvView=1;
 
         },
         defaultRoute: function (actions) {

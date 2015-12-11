@@ -1,6 +1,8 @@
 define(['backbone', 'models/userModel', 'text!templates/UserView.html', 'jquery.cookie'], function (Backbone, userModel,Template) {
 
+
     var UserView = Backbone.View.extend({
+
         template: _.template(Template),
         el: ".page",
         events: {
@@ -14,14 +16,15 @@ define(['backbone', 'models/userModel', 'text!templates/UserView.html', 'jquery.
 
         },
         initialize: function (user, watchlists,loggedUser) {
+
             console.log("UserView initializing...");
             _.bindAll(this, 'render');
+
+
             this.user = user;
             this.watchlists = watchlists;
             this.loggedUser = loggedUser;
 
-            this.user.on('change', this.render);
-            //this.watchlists.on('change', this.render);
 
             var self = this;
             this.user.bind('sync add remove update', function () {
@@ -35,8 +38,12 @@ define(['backbone', 'models/userModel', 'text!templates/UserView.html', 'jquery.
 
             console.log($.cookie('token'));
 
-
             this.showHideUserButtons();
+        },
+        remove: function() {
+            this.$el.empty();
+            this.undelegateEvents();
+            return this;
         },
         render: function () {
 
@@ -45,6 +52,7 @@ define(['backbone', 'models/userModel', 'text!templates/UserView.html', 'jquery.
                 watchlists: this.watchlists.toJSON()
             }));
             this.showHideUserButtons();
+
         },
         addFriend: function (event) {
 
@@ -56,10 +64,13 @@ define(['backbone', 'models/userModel', 'text!templates/UserView.html', 'jquery.
                 $.ajax({
                     type: "POST",
                     url: "follow",
-                    contentType: "application/x-www-form-urlencoded",
-                    data: {id: userId}
+                    contentType: "application/json",
+                    data: JSON.stringify({
+                        id: userId
+                    })
                 }).done( function(data) {
-                    //console.log(self.user.toJSON);
+                    console.log("both");
+                    console.log(userId);
                     //self.loggedUser.fetch();
                    // console.log(self.user.toJSON);
                     }).fail(function (XMLHttpRequest) {
@@ -70,11 +81,9 @@ define(['backbone', 'models/userModel', 'text!templates/UserView.html', 'jquery.
 
         },
         removeFriend: function (event) {
-            //debugger;
+           // debugger;
             var self=this;
             var friendId = event.target.id;
-            //console.log(friendId);
-            var self=this;
 
             $.ajax({
                 type: "DELETE",
