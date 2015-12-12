@@ -87,8 +87,7 @@ define(['backbone', 'models/userModel', 'text!templates/UserView.html', 'jquery.
 
             $.ajax({
                 type: "DELETE",
-                url: "follow/"+friendId,
-                contentType: "application/x-www-form-urlencoded"
+                url: "follow/"+friendId
             }).done( function(data) {
                self.user.fetch();
                 }).fail(function (XMLHttpRequest) {
@@ -114,23 +113,23 @@ define(['backbone', 'models/userModel', 'text!templates/UserView.html', 'jquery.
                 var remote_auth_token = "";
                 var userPublicInfo = JSON.parse($.cookie("userPublicInfo"));
                 var loggedUserId = userPublicInfo.id;
-               // console.log(loggedUserId);
 
             }
 
             //hide or show remove friend button if page is logged user page
             //remove buttons to modify wathclists if the page is not le logged user's page
             if (loggedUserId !== pageUserid){
-               // console.log(true);
+
 
                 this.$el.find('.btn-lg1').addClass('hidden');
 
-                //button wacthlist
+                //button wacthlist hide
 
                 this.$el.find('.btn-danger').addClass('hidden');
                 this.$el.find('.btn-success').addClass('hidden');
                 this.$el.find('.modify').addClass('hidden');
                 this.$el.find('.remove').addClass('hidden');
+                this.$el.find('#watchlist-name-editor-container').addClass('hidden');
 
             }
             else{
@@ -185,8 +184,8 @@ define(['backbone', 'models/userModel', 'text!templates/UserView.html', 'jquery.
             $.ajax({
                 type: "POST",
                 url: "watchlists",
-                contentType: "application/x-www-form-urlencoded",
-                data: {name: watchlistName}
+                contentType: "application/json",
+                data: JSON.stringify({name: watchlistName})
             }).done( function(data) {
                 self.watchlists.fetch();
                 console.log("New watchlist added.");
@@ -205,8 +204,8 @@ define(['backbone', 'models/userModel', 'text!templates/UserView.html', 'jquery.
             $.ajax({
                 type: "PUT",
                 url: "watchlists/"+watchlistID,
-                contentType: "application/x-www-form-urlencoded",
-                data: {name: newName}
+                contentType: "application/json",
+                data: JSON.stringify({name: newName})
             }).done( function(data) {
                 self.watchlists.fetch();
                 console.log("Watchlist name changed.");
