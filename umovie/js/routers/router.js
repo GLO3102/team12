@@ -1,6 +1,6 @@
+
 define([
     'backbone',
-    'underscore',
     'views/Header',
     'views/Home',
     'models/ActorModel',
@@ -17,12 +17,10 @@ define([
     'collections/WatchlistCollection',
     'views/Login',
     'views/Signup',
-	'models/userModel',
+    'models/userModel',
     'views/User',
-    'views/Search',
     'jquery.cookie'
 ], function (Backbone,
-             _,
              HeaderView,
              HomeView,
              ActorModel,
@@ -38,11 +36,9 @@ define([
              WatchlistView,
              WatchlistCollection,
              LoginView,
-             SignupView,             
-			 UserModel,
-			 UserView,
-			 SearchView            
-            ) {
+             SignupView,
+             UserModel,
+             UserView) {
     var UmovieRouter = Backbone.Router.extend({
         routes: {
             '': "home",
@@ -55,10 +51,7 @@ define([
             "login": "login",
             "logout": "logout",
             "signup": "signup",
-            "search":"search",
-            //"search/:string":"search",
-            "search(?*querystring)":"search",
-			"users/:id": "getUser",
+            "users/:id": "getUser",
             "*actions": "defaultRoute"
         },
         initialize: function () {
@@ -67,6 +60,17 @@ define([
             Header.render();
             var Home = new HomeView;
             Home.render();
+            this.firstvView=0;
+            this.currentView = null;
+        },
+        _cleanUp: function() {
+
+            if(this.firstvView !== 0){
+
+                this.currentView.remove();
+
+            }
+
         },
         home: function () {
             console.log("Home route loaded.");
@@ -93,18 +97,6 @@ define([
             $.removeCookie('token');
             this.navigate('', {trigger: true});
         },
-
-
-
-            search: function(queryString) {
-                var filter = this.parseQueryString(queryString);
-                var searchView = new SearchView(filter);
-                searchView.render();
-                console.log("Seach Route Loaded.");
-
-
-        },
-
         prefs: function () {
             console.log("User Preferences Route Loaded.");
             $(".page").html("User Preference Page.");
@@ -189,8 +181,11 @@ define([
 
                 });
             });
-        },		
+        },
         getUser : function (id){
+            this._cleanUp();
+
+
             var user = new UserModel();
             user.url = user.urlRoot + id;
 
@@ -200,42 +195,26 @@ define([
             var loggedUser = new UserModel();
             loggedUser.url = loggedUser.urlRoot + loggedUserId;
 
-
+            var self=this;
 
             var watchListsCollection = new WatchlistCollection;
             watchListsCollection.url = "watchlists";
             user.fetch().done(function() {
                 watchListsCollection.fetch().done(function () {
                     loggedUser.fetch().done(function () {
-                        var uView = new UserView(user, watchListsCollection,loggedUser);
+
+                        self.currentView = new UserView(user, watchListsCollection,loggedUser);
+
                     });
                 });
             });
 
+
+            this.firstvView=1;
+
         },
         defaultRoute: function (actions) {
             console.log("defaultRoute Route Loaded.");
-        },
-        parseQueryString: function (queryString){
-            var params = {};
-            if(queryString){
-                _.each(
-                    _.map(decodeURI(queryString).split(/&/g),function(el,i){
-                        var aux = el.split('='), o = {};
-                        if(aux.length >= 1){
-                            var val = undefined;
-                            if(aux.length == 2)
-                                val = aux[1];
-                            o[aux[0]] = val;
-                        }
-                        return o;
-                    }),
-                    function(o){
-                        _.extend(params,o);
-                    }
-                );
-            }
-            return params;
         }
     });
 
@@ -243,7 +222,6 @@ define([
         console.log("Starting Backbone history...");
         Backbone.history.start();
         var app_router = new UmovieRouter;
-		Backbone.history.loadUrl( Backbone.history.fragment );
     };
 
     return {
