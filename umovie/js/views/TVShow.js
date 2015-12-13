@@ -10,7 +10,7 @@ define([
         template: _.template(TVShowTemplate),
         el: ".page",
         events: {
-            "click .TVShowTestModal": "showEpisodeModal",
+            "click .TVShowTestModal": "showEpisodeModal"
         },
         initialize: function () {
             this.render();
