@@ -48,7 +48,7 @@ define([
             console.log("TVShowModalView: done");
         },
         findYoutubeVideo: function (keyword) {
-            var url = 'https://www.googleapis.com/youtube/v3/search?part=id&q=' + keyword + '&type=video&key=AIzaSyA2Sh1KhOUfKYpfQchT5oZPgO0PpTqB17M';
+            var url = 'https://www.googleapis.com/youtube/v3/search?part=id&q=' + keyword + '&type=video&key=AIzaSyDkzzieUjeXVrM9m6JPVFT_MmfPxLaHkyI';
             var videos = undefined;
             $.ajaxSetup({
                 async: false

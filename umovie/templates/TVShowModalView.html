@@ -3,6 +3,10 @@
     <div class="modal-dialog modal-lg">
         <div class="tvshowmodal-container">
 
+            <div class="login-help">
+                <a id="close" class="close">Close</a>
+            </div>
+
             <% var epArray = episodes[0]; %>
             <img id="imageEpisodeModal" class="show" src='<%= epArray[id].artworkUrl100 %>'>
             <h1> <%= mod.collectionName %></h1>
@@ -19,9 +23,6 @@
 			<p><%= epArray[id].longDescription %></p>
             <p>Date : <%= epArray[id].releaseDate %></p>
 
-            <div class="login-help">
-                <a id="close" class="close">Close</a>
-            </div>
             <br>
             <div class="col-lg-2">
                 <span id="errorText" class="label label-danger"></span>

@@ -1,6 +1,30 @@
 $color-blue: #337ab7
 $color-dark: #220f26
 $color-pale: #F7F7F7
+$color-background: #fff
+$color-background-login: #4d90fe
+$color-background-login-hover: #357ae8
+$color-background-footer: #f5f5f5
+$color-loginModal: #666
+
+@mixin superGradient($from, $to)
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from), to($to))
+  background-color: $from
+  background-image: -moz-linear-gradient($from, $to)
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from), to($to))
+  background-image: -webkit-linear-gradient($from, $to)
+  background-image: -o-linear-gradient($from, $to)
+
+@mixin borderRadiusBox($amount: 8px)
+  /* border-radius: 2px; */
+  padding: 0 $amount
+  box-sizing: border-box
+  -moz-box-sizing: border-box
+
+@mixin border-radius($amount: 5px)
+  -moz-border-radius: $amount
+  -webkit-border-radius: $amount
+  border-radius: $amount
 
 @import url(http://fonts.googleapis.com/css?family=Roboto)
 
@@ -40,11 +64,9 @@ footer
   width: 100%
   bottom: 0
   height: auto
-
-/*background-color: #f5f5f5;
+  background-color: $color-background-footer
 
 /* MOVIES&TV section
-
 #cover
   max-width: 100%
   height: auto
@@ -76,6 +98,11 @@ footer
 
 .show
   visibility: visible
+
+.tvshowmodal-container
+  background-color: $color-background
+  @include border-radius(5px)
+  padding: 25px
 
 #imageEpisode
   width: 50%
@@ -156,7 +183,6 @@ footer
   margin-left: 50%
 
 /****** LOGIN MODAL *****
-
 .loginmodal-container
   padding: 30px
   max-width: 350px
@@ -186,14 +212,11 @@ footer
       width: 100%
       margin-bottom: 10px
       -webkit-appearance: none
-      background: #fff
-      border: 1px solid #d9d9d9
-      border-top: 1px solid #c0c0c0
-
-      /* border-radius: 2px;
-      padding: 0 8px
-      box-sizing: border-box
-      -moz-box-sizing: border-box
+      background: $color-background
+      border: 1px solid darken($color-background, 10%)
+      /* darken color. */
+      border-top: 1px solid darken($color-background, 20%)
+      @include borderRadiusBox(8px)
 
 input[type=password]
   height: 44px
@@ -201,14 +224,10 @@ input[type=password]
   width: 100%
   margin-bottom: 10px
   -webkit-appearance: none
-  background: #fff
+  background: $color-background
   border: 1px solid #d9d9d9
   border-top: 1px solid #c0c0c0
-
-  /* border-radius: 2px;
-  padding: 0 8px
-  box-sizing: border-box
-  -moz-box-sizing: border-box
+  @include borderRadiusBox(8px)
 
 .loginmodal-container input[type=text]:hover, input[type=password]:hover
   border: 1px solid #b9b9b9
@@ -224,34 +243,25 @@ input[type=password]
   font-weight: 700
   height: 36px
   padding: 0 8px
-
-/* border-radius: 3px;
-/* -webkit-user-select: none;
- *user-select: none;
+  @include borderRadiusBox(8px)
 
 .loginmodal-submit
-  /* border: 1px solid #3079ed;
   border: 0px
-  color: #fff
+  color: $color-background
   text-shadow: 0 1px rgba(0, 0, 0, 0.1)
-  background-color: #4d90fe
+  background-color: $color-background-login
   padding: 17px 0px
   font-family: roboto
   font-size: 14px
-
-  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed));
-
+  @include superGradient($color-background-login, darken($color-background-login, 20%))
   &:hover
-    /* border: 1px solid #2f5bb7;
     border: 0px
     text-shadow: 0 1px rgba(0, 0, 0, 0.3)
-    background-color: #357ae8
-
-/* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8));
+    @include superGradient(darken($color-background-login, 20%), darken($color-background-login, 20%))
 
 .loginmodal-container a
   text-decoration: none
-  color: #666
+  color: $color-loginModal
   font-weight: 400
   text-align: center
   display: inline-block
