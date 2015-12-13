@@ -27,11 +27,17 @@
             </div>
             <br>
             <button class="btn btn-primary btn-lg" data-toggle="popover" data-trigger="focus" data-placement="auto"
-                    data-content='<% _.each(watchlists,function(watchlist){%>
-                    <button class="btn btn-default" id=<%=watchlist.id%> >
+                    data-content="<% _.each(watchlists,function(watchlist){%>
+
+                  <% if(watchlist.hasOwnProperty('owner')){%>
+                                 <% if(watchlist.owner.id == loggedUserId ) {%>
+                    <button class='btn btn-default' id=<%=watchlist.id%> >
                     <%=watchlist.name%>
                     </button>
-                    <%});%>'
+
+            <% } %>
+            <% } %>
+                    <%});%>"
             >
                 Add to watchlist
             </button>

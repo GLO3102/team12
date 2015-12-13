@@ -71,7 +71,8 @@
                     <% _.each(watchlists, function(watchlist){ %>
                         <% if(watchlist.hasOwnProperty('owner')){%>
                         <% if(watchlist.owner.id == mod.id  ) {%>
-                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target=<%='#div'+watchlist.id%>><%= watchlist.name %></button>
+
+                            <button type="button" class="btn btn-info" data-toggle="collapse" data-target=<%='#div'+watchlist.id%>><%= watchlist.name %></button>
                     <button class="btn btn-warning modify btn-xs" data-button=<%=watchlist.id%>>Change name</button>
                     <div class="col-xs-2">
                         <input class="form-control" id="name<%=watchlist.id%>" placeholder="New watchlist name" data-id=<%=watchlist.id%> type="text">

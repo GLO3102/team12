@@ -11,12 +11,21 @@ define(['backbone', 'models/MovieModel', 'models/WatchlistModel', 'text!template
         },
         initialize: function () {
             console.log("MovieView initializing...");
+
+            if ($.cookie("userPublicInfo")) {
+                var remote_auth_token = "";
+                var userPublicInfo = JSON.parse($.cookie("userPublicInfo"));
+                this.loggedUserId = userPublicInfo.id;
+
+            }
+
+
             this.render();
         },
         render: function () {
             var modelJSON = this.model.toJSON();
             var youtubeVideo = this.findYoutubeVideo(modelJSON.trackName + 'trailer');
-            var watchlists = this.collection.toJSON().slice(0, 10);
+            var watchlists = this.collection.toJSON();
             console.log("Found youtube video: " + youtubeVideo);
             console.log("MovieView rendering...");
             this.renderReviewSection(modelJSON);
@@ -24,6 +33,7 @@ define(['backbone', 'models/MovieModel', 'models/WatchlistModel', 'text!template
                 mod: modelJSON,
                 youtubeVideoId: youtubeVideo,
                 watchlists: watchlists,
+                loggedUserId:  this.loggedUserId,
                 resizer: Util
             }));
         },
