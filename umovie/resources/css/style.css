@@ -310,6 +310,12 @@ a:hover {
     font-size: 32px;
 }
 
+
+.ListSearch .btn-primary, .ListSearch .btn-success{
+    float: right;
+    margin-right: 20px;
+}
+
 .select2 {
     width: 100% !important;
 }
