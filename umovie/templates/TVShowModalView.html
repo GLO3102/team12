@@ -1,0 +1,36 @@
+
+<div class="modal fade bd-example-modal-lg" id="tvshow-modal" style="display: block;">
+    <div class="modal-dialog modal-lg">
+        <div class="tvshowmodal-container">
+
+            <% var epArray = episodes[0]; %>
+            <img id="imageEpisodeModal" class="show" src='<%= epArray[id].artworkUrl100 %>'>
+            <h1> <%= mod.collectionName %></h1>
+            <h2><%= epArray[id].trackName %><h2/>
+            <br />
+
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe id="player" type="text/html" width="320" height="240"
+                            src="http://www.youtube.com/embed/<%= youtubeVideoId %>" frameborder="0"></iframe>
+                </div>
+
+            <br />
+			<h4>Description : </h4><br>
+			<p><%= epArray[id].longDescription %></p>
+            <p>Date : <%= epArray[id].releaseDate %></p>
+
+            <div class="login-help">
+                <a id="close" class="close">Close</a>
+            </div>
+            <br>
+            <div class="col-lg-2">
+                <span id="errorText" class="label label-danger"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $("#tvshow-modal").modal('show');
+</script>

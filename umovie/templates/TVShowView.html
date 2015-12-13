@@ -31,10 +31,10 @@
                     <br>
                     Episode List:
                     <br><br> <!-- Y fait froid ! -->
-                    <select name="episodeList" size="5">
+                    <select name="episodeList"  size="5">
                         <% var epArray = episodes[0]; %>
                         <% _.each(epArray, function(ep){ %>
-                        <option value="<%= ep.trackNumber %>" onclick='showImg("<%= ep.artworkUrl100 %>","<%= ep.previewUrl%>");'><%= ep.trackName %></option>
+                        <option class="TVShowTestModal" value="<%= ep.trackNumber %>" onclick='showImg("<%= ep.artworkUrl100 %>","<%= ep.previewUrl%>");'><%= ep.trackName %></option>
 
                         <% }); %>
                     </select>
@@ -65,11 +65,7 @@
 
 <script>
     function showImg(epImg, epPreview) {
-
         var el = document.getElementById('imageEpisode');
-        //alert(1);
         document.getElementById('imageEpisode').src = epImg;
-        document.getElementById('preView').src = epPreview;
-
     }
 </script>

@@ -9,6 +9,9 @@ define([
     var TVShowView = Backbone.View.extend({
         template: _.template(TVShowTemplate),
         el: ".page",
+        events: {
+            "click .TVShowTestModal": "showEpisodeModal",
+        },
         initialize: function () {
             this.render();
         },
@@ -21,6 +24,11 @@ define([
                 youtubeVideoId: youtubeVideo,
                 resizer: Util
             }));
+        },
+        showEpisodeModal: function() {
+            var modelJSON = this.model.toJSON();
+            var idEpisode =  $('select[name=episodeList]').val();
+            Backbone.history.navigate('/tvshows/season/' + modelJSON.collectionId + '/' + idEpisode, {trigger: true});
         },
         findYoutubeVideo: function (keyword) {
             var url = 'https://www.googleapis.com/youtube/v3/search?part=id&q=' + keyword + '&type=video&key=AIzaSyA2Sh1KhOUfKYpfQchT5oZPgO0PpTqB17M';

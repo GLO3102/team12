@@ -12,6 +12,7 @@ define([
     'models/TVShowModel',
     'collections/TVShowEpisodesCollection',
     'views/TVShow',
+    'views/TVShowModal',
     'views/Watchlist',
     'collections/WatchlistCollection',
     'views/Login',
@@ -32,6 +33,7 @@ define([
              TVShowModel,
              TVShowEpisodesCollection,
              TVShowView,
+             TVShowModalView,
              WatchlistView,
              WatchlistCollection,
              LoginView,
@@ -45,6 +47,7 @@ define([
             "movies/:id": "getMovie",
             "actors/:id": "getActor",
             "tvshows/season/:id": "getTVShow",
+            "tvshows/season/:id/:id": "getTVShowModalView",
             "watchlists": "getWatchlists",
             "watchlists/:id": "getWatchlist",
             "login": "login",
@@ -68,6 +71,24 @@ define([
             }
             var Home = new HomeView;
             Home.render();
+        },
+        getTVShowModalView: function(id) {
+                var modTVShow = new TVShowModel();
+                var tvShowEpisodesCollection = new TVShowEpisodesCollection();
+
+                modTVShow.url = modTVShow.urlRoot + id;
+                tvShowEpisodesCollection.url = modTVShow.url + "/episodes";
+
+                modTVShow.fetch().done(function () {
+                    tvShowEpisodesCollection.fetch().done(function () {
+
+                        var EpisodeModal = new TVShowModalView({
+                            model: modTVShow,
+                            collection: tvShowEpisodesCollection
+                        });
+
+                    });
+                });
         },
         signup: function() {
             var Home = new HomeView;
