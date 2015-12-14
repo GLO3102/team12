@@ -216,7 +216,7 @@ define([
             this.firstvView=1;
         },
         getTVShow: function (id) {
-            alert("allo");
+
             this._cleanUp();
             var modTVShow = new TVShowModel();
             var tvShowEpisodesCollection = new TVShowEpisodesCollection();
