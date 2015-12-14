@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68073506-0b50-46e8-af80-f36dd670de7f" name="Default" comment="">
+    <list default="true" id="68073506-0b50-46e8-af80-f36dd670de7f" name="Default" comment="some more modifications to user view">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DocumentDesign.pdf" afterPath="$PROJECT_DIR$/DocumentDesign.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/templates/UserView.html" afterPath="$PROJECT_DIR$/umovie/templates/UserView.html" />
     </list>
     <ignored path="team12.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,27 +29,7 @@
         <entry file="file://$PROJECT_DIR$/umovie/js/views/TVShow.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.sass" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/umovie/resources/css/style.sass">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.038462">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/umovie/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.5">
-              <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
+              <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -59,37 +39,17 @@
         <entry file="file://$PROJECT_DIR$/umovie/js/views/TVShowModal.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="50" column="148" selection-start-line="50" selection-start-column="148" selection-end-line="50" selection-end-column="148" />
+              <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserView.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserView.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/umovie/templates/UserView.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.884615">
-              <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TVShowModalView.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/umovie/templates/TVShowModalView.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.67849225">
-              <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Header.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/umovie/js/views/Header.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.43348116">
+              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -448,51 +408,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="team12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="team12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="umovie" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="helper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="team12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="team12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="umovie" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="collections" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -574,8 +490,8 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/umovie/js/routers/router.js</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/umovie/js/views/User.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/umovie/templates/UserView.html</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -936,12 +852,18 @@
       <option name="project" value="LOCAL" />
       <updated>1450064839644</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="some more modifications to user view">
+      <created>1450065629175</created>
+      <option name="number" value="00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1450065629175</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18385416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -977,7 +899,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Premier draft version Backbone." />
     <MESSAGE value="2e draft.  Decoupage du code." />
     <MESSAGE value="Update selon exemple router du prof" />
     <MESSAGE value="Modifs faites:&#10;- Ajout d'un template loader&#10;- changement du layout general&#10;- conversion du header en template/view&#10;" />
@@ -1002,7 +923,8 @@
     <MESSAGE value="Autocomplete v1." />
     <MESSAGE value="removed some junk." />
     <MESSAGE value="Renamed elements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Renamed elements" />
+    <MESSAGE value="some more modifications to user view" />
+    <option name="LAST_COMMIT_MESSAGE" value="some more modifications to user view" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1062,13 +984,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umovie/js/helper/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12823276">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1144,14 +1059,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.018318966">
           <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umovie/js/views/Signup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3114224">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1256,27 +1163,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/umovie/js/views/Movie.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="77" column="35" selection-start-line="76" selection-start-column="109" selection-end-line="76" selection-end-column="148" />
-          <folding>
-            <marker date="1450058865483" expanded="true" signature="981:1605" placeholder="{...}" />
-            <marker date="1450058865483" expanded="true" signature="1379:1592" placeholder="{...}" />
-            <marker date="1450058865483" expanded="true" signature="1659:3164" placeholder="{...}" />
-            <marker date="1450058865483" expanded="true" signature="1759:3154" placeholder="{...}" />
-            <marker date="1450058865483" expanded="true" signature="1913:2136" placeholder="{...}" />
-            <marker date="1450058865483" expanded="true" signature="1941:2118" placeholder="{...}" />
-            <marker date="1450058865483" expanded="true" signature="2235:3130" placeholder="{...}" />
-            <marker date="1450058865483" expanded="true" signature="2285:2715" placeholder="{...}" />
-            <marker date="1450058865483" expanded="true" signature="2750:3077" placeholder="{...}" />
-            <marker date="1450058865483" expanded="true" signature="3211:3769" placeholder="{...}" />
-            <marker date="1450058865483" expanded="true" signature="3624:3757" placeholder="{...}" />
-            <marker date="1450058865483" expanded="true" signature="3812:4073" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/umovie/resources/css/style.css.map">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1320,14 +1206,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/umovie/js/views/TVShowModal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="148" selection-start-line="50" selection-start-column="148" selection-end-line="50" selection-end-column="148" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/umovie/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.5">
@@ -1344,22 +1222,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/umovie/js/views/TVShow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umovie/resources/css/style.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.038462">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/umovie/templates/HeaderView.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8481153">
@@ -1372,14 +1234,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umovie/templates/UserView.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.884615">
-          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1413,8 +1267,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/umovie/templates/TVShowModalView.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.67849225">
+        <state vertical-scroll-proportion="-23.538462">
           <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umovie/js/helper/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umovie/js/views/Signup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umovie/resources/css/style.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43348116">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umovie/js/views/TVShowModal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umovie/js/views/Movie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54202586">
+          <caret line="63" column="39" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umovie/js/views/TVShow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umovie/templates/UserView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43348116">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
         </state>
       </provider>
