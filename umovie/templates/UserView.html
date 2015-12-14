@@ -63,7 +63,7 @@
                 <button type="button" class="btn btn-info" data-toggle="collapse" data-target=<%='#div'+watchlist.id%>><%= watchlist.name %></button>
                 <button class="btn btn-warning modify btn-xs" data-button=<%=watchlist.id%>>Change name</button>
                 <div class="col-xs-2">
-                    <input class="form-control" id="name<%=watchlist.id%>" placeholder="New watchlist name" data-id=<%=watchlist.id%> type="text">
+                    <input class="form-control wName" id="name<%=watchlist.id%>" placeholder="New watchlist name" data-id=<%=watchlist.id%> type="text">
                 </div>
                 <button class="btn btn-danger btn-xs" style="float:right;" id=<%=watchlist.id%>>X</button>
                 <div id=<%='div'+watchlist.id %> class="collapse">

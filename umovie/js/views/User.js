@@ -123,7 +123,7 @@ define(['backbone', 'models/userModel', 'text!templates/UserView.html', 'jquery.
                 this.$el.find('.btn-lg1').addClass('hidden');
 
                 //bouton Go to friend page non fonctionnel sur page d'ami
-                this.$el.find('.btn-lg2').addClass('hidden');
+                //this.$el.find('.btn-lg2').addClass('hidden');
 
                 //button wacthlist hide
 
@@ -132,6 +132,7 @@ define(['backbone', 'models/userModel', 'text!templates/UserView.html', 'jquery.
                 this.$el.find('.modify').addClass('hidden');
                 this.$el.find('.remove').addClass('hidden');
                 this.$el.find('#watchlist-name-editor-container').addClass('hidden');
+                this.$el.find('.wName').addClass('hidden');
 
             }
             else{
