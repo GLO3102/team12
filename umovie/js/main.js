@@ -12,7 +12,8 @@ requirejs.config({
         select2: 'http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min',
         backbone: 'http://backbonejs.org/backbone-min',
         text: 'https://cdnjs.cloudflare.com/ajax/libs/require-text/2.0.12/text.min',
-        'jquery.cookie': 'https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min'
+        'jquery.cookie': 'https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min',
+        'jquery-ui': 'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min'
     },
     shim: {
         'jquery': {
@@ -29,9 +30,11 @@ requirejs.config({
         },
         'jquery.cookie': {
             deps: ['jquery']
+        },
+        'jquery-ui': {
+            deps: ['jquery']
         }
     }
-    //enforceDefine: true
 });
 console.log("RequireJS configuration done.");
 

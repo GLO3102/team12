@@ -60,7 +60,6 @@ define([
         },
 
         navigateToPage: function(evt) {
-            debugger;
             var wrapperType = $(evt.target).attr('data-wrapperType');
             var url = "";
             if(wrapperType === 'track') {

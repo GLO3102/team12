@@ -10,7 +10,8 @@
                 <select class="movies-genres" i-multiple="multiple">
                     <option value="0">Tous</option>
                     <% moviesGenres.forEach(function(genre){%>
-                    <option value="<%= genre.id %>" <%if(filter.mg && filter.mg==genre.id){%>selected="selected"<%}%>>
+                    <option value="<%= genre.id %>"
+                    <%if(filter.mg && filter.mg==genre.id){%>selected="selected"<%}%>>
                     <%= genre.name %>
                     </option>
                     <%})%>
@@ -21,7 +22,8 @@
                 <select class="tvshow-genres" i-multiple="multiple">
                     <option value="0">Tous</option>
                     <% tvshowGenres.forEach(function(genre){%>
-                    <option value="<%= genre.id %>" <%if(filter.tg && filter.tg==genre.id){%>selected="selected"<%}%>>
+                    <option value="<%= genre.id %>"
+                    <%if(filter.tg && filter.tg==genre.id){%>selected="selected"<%}%>>
                     <%= genre.name %>
                     </option>
                     <%})%>
@@ -39,7 +41,6 @@
                     <img src="<%= result.artworkUrl100 %>" alt="<%= result.trackName || result.collectionName %>" class="media-object">
                 </div>
                 <div class="media-body">
-                    <%debugger;%>
                     <a class="nom" data-wrapperType='<%=result.wrapperType%>' data-trackId='<%=result.trackId%>' data-collectionId='<%=result.collectionId%>' data-artistId="<%=result.artistId%>">
 
                         <%= result.trackName || result.collectionName || result.artistName %>
