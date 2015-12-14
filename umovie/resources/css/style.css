@@ -256,23 +256,35 @@ a:hover {
 .containerWatchlist {
   width: 656px; }
 
-.ListSearch .nom {
-  color: #220f26;
-  font-size: 18px; }
+.ListSearch .nom{
+    color: #220f26;
+    font-size: 18px;
+}
+
 .ListSearch i {
-  float: right;
-  color: #337ab7;
-  font-size: 32px; }
+    float: right;
+    color: #337ab7;
+    font-size: 32px;
+}
+
+
+.ListSearch .btn-primary, .ListSearch .btn-success{
+    float: right;
+    margin-right: 20px;
+}
 
 .select2 {
-  width: 100% !important; }
+    width: 100% !important;
+}
 
 .media-body, .media-left, .media-right {
-  vertical-align: middle; }
+    vertical-align: middle;
+}
 
 #loader img {
-  margin: 0 auto;
-  display: none;
-  width: 100px; }
+    margin: 0 auto;
+    display: none;
+    width: 100px;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,7 @@
 
 define([
     'backbone',
+    'underscore',
     'views/Header',
     'views/Home',
     'models/ActorModel',
@@ -20,8 +21,10 @@ define([
     'views/Signup',
     'models/userModel',
     'views/User',
+    'views/Search',
     'jquery.cookie'
 ], function (Backbone,
+             _,
              HeaderView,
              HomeView,
              ActorModel,
@@ -40,7 +43,8 @@ define([
              LoginView,
              SignupView,
              UserModel,
-             UserView) {
+             UserView,
+             SearchView) {
     var UmovieRouter = Backbone.Router.extend({
         routes: {
             '': "home",
@@ -55,6 +59,8 @@ define([
             "logout": "logout",
             "signup": "signup",
             "users/:id": "getUser",
+            "search":"search",
+            "search(?*querystring)":"search",
             "*actions": "defaultRoute"
         },
         initialize: function () {
@@ -83,6 +89,12 @@ define([
             }
             var Home = new HomeView;
             Home.render();
+        },
+        search: function(queryString) {
+            var filter = this.parseQueryString(queryString);
+            var searchView = new SearchView(filter);
+            searchView.render();
+            console.log("Search Route Loaded.");
         },
         getTVShowModalView: function(id) {
                 var modTVShow = new TVShowModel();
@@ -236,6 +248,27 @@ define([
         },
         defaultRoute: function (actions) {
             console.log("defaultRoute Route Loaded.");
+        },
+        parseQueryString: function (queryString) {
+            var params = {};
+            if (queryString) {
+                _.each(
+                    _.map(decodeURI(queryString).split(/&/g), function (el, i) {
+                        var aux = el.split('='), o = {};
+                        if (aux.length >= 1) {
+                            var val = undefined;
+                            if (aux.length == 2)
+                                val = aux[1];
+                            o[aux[0]] = val;
+                        }
+                        return o;
+                    }),
+                    function (o) {
+                        _.extend(params, o);
+                    }
+                );
+            }
+            return params;
         }
     });
 

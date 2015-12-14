@@ -2,6 +2,19 @@ define(['backbone', 'text!templates/HeaderView.html', 'jquery.cookie'], function
     var HeaderView = Backbone.View.extend({
         template: _.template(HeaderTemplate),
         el: '.header',
+        events: {
+            "keypress input#minisearch": "navigateToSearchPage"
+        },
+
+        navigateToSearchPage: function(event) {
+            if (event.which == 13 || event.keyCode == 13) {
+                // var app_router = new UmovieRouter();
+                // location.hash = "#search/" + encodeURIComponent(val.trim());
+                Backbone.history.navigate('/search?q=' + $(event.target).val(), {trigger: true, replace: true});
+                return false;
+            }
+            return true;
+        },
 
         render: function () {
             var user = undefined;
@@ -26,9 +39,8 @@ define(['backbone', 'text!templates/HeaderView.html', 'jquery.cookie'], function
                 console.log("Not logged in. Redirecting to login page...");
                 Backbone.history.navigate('login', {trigger: true});
             }
-
-
         }
+
     });
 
     return HeaderView;

@@ -9,6 +9,7 @@ requirejs.config({
         jquery: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min',
         bootstrap: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min',
         underscore: 'https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min',
+        select2: 'http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min',
         backbone: 'http://backbonejs.org/backbone-min',
         text: 'https://cdnjs.cloudflare.com/ajax/libs/require-text/2.0.12/text.min',
         'jquery.cookie': 'https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min'
