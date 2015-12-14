@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68073506-0b50-46e8-af80-f36dd670de7f" name="Default" comment="">
+    <list default="true" id="68073506-0b50-46e8-af80-f36dd670de7f" name="Default" comment="removed some junk.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/templates/HeaderView.html" afterPath="$PROJECT_DIR$/umovie/templates/HeaderView.html" />
     </list>
@@ -65,21 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/umovie/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.6594828">
               <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HeaderView.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/umovie/templates/HeaderView.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3580931">
-              <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -575,6 +565,7 @@
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
           <PATH vcs="Git" revision="">$PROJECT_DIR$/umovie/js/routers/router.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/umovie/js/views/User.js</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -923,7 +914,13 @@
       <option name="project" value="LOCAL" />
       <updated>1450063943594</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="removed some junk.">
+      <created>1450063974156</created>
+      <option name="number" value="00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1450063974156</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -964,7 +961,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="move de notre content dans scratch/, detatchment de l'architecture de notre page des elements du template." />
     <MESSAGE value="modif styling homepage." />
     <MESSAGE value="Premier draft version Backbone." />
     <MESSAGE value="2e draft.  Decoupage du code." />
@@ -989,7 +985,8 @@
     <MESSAGE value="2e iteration SASS, fix key API Youtube pour TV Shows" />
     <MESSAGE value="fix typo" />
     <MESSAGE value="Autocomplete v1." />
-    <option name="LAST_COMMIT_MESSAGE" value="Autocomplete v1." />
+    <MESSAGE value="removed some junk." />
+    <option name="LAST_COMMIT_MESSAGE" value="removed some junk." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1363,26 +1360,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/umovie/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/umovie/js/views/Header.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/umovie/resources/css/style.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.038462">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1395,10 +1376,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/umovie/resources/css/style.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.038462">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/umovie/templates/HeaderView.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3580931">
-          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.8481153">
+          <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/umovie/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6594828">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
           <folding />
         </state>
       </provider>
