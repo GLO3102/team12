@@ -69,8 +69,15 @@ define([
             Header.render();
             var Home = new HomeView;
             Home.render();
+
+            //if =0, no views have been instantiated else if = 1, some views have been instantiated, value needed to cleanup if old views exist
             this.firstvView=0;
+            this.firstViewTvEpisode=0;
+
             this.currentView = null;
+            this.currentTvEpisode = null;
+
+
 
         },
         _cleanUp: function() {
@@ -82,10 +89,19 @@ define([
             }
 
         },
+        _cleanUpViewTvEpisode: function() {
+
+            if(this.firstViewTvEpisode !== 0){
+
+                this.currentTvEpisode.remove();
+
+            }
+
+        },
         home: function () {
             console.log("Home route loaded.");
             if(typeof Header === "undefined") {
-                var Header = new HeaderView;
+                var Header = new HeaderView;F
                 Header.render();
             }
             var Home = new HomeView;
@@ -101,7 +117,7 @@ define([
 
         },
         getTVShowModalView: function(id) {
-                this._cleanUp();
+                this._cleanUpViewTvEpisode();
                 var modTVShow = new TVShowModel();
                 var tvShowEpisodesCollection = new TVShowEpisodesCollection();
 
@@ -111,14 +127,14 @@ define([
                 modTVShow.fetch().done(function () {
                     tvShowEpisodesCollection.fetch().done(function () {
 
-                        self.currentView = new TVShowModalView({
+                        self.currentTvEpisode = new TVShowModalView({
                             model: modTVShow,
                             collection: tvShowEpisodesCollection
                         });
 
                     });
                 });
-            this.firstvView=1;
+            this.firstViewTvEpisode=1;
         },
         signup: function() {
             var Home = new HomeView;
