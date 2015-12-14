@@ -19,6 +19,11 @@ define(['backbone', 'models/WatchlistModel', 'models/MovieModel', 'text!template
             });
             this.render();
         },
+        remove: function() {
+            this.$el.empty();
+            this.undelegateEvents();
+            return this;
+        },
         render: function () {
             console.log("WatchlistView rendering...");
             this.$el.html(this.template({

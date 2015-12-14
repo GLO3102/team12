@@ -15,6 +15,11 @@ define([
         initialize: function () {
             this.render();
         },
+        remove: function() {
+            this.$el.empty();
+            this.undelegateEvents();
+            return this;
+        },
         render: function () {
             var modelJSON = this.model.toJSON();
             var youtubeVideo = this.findYoutubeVideo(modelJSON.artistName + 'trailer');

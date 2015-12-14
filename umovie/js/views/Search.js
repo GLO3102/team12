@@ -39,6 +39,11 @@ define([
             self.getResults();
 
         },
+        remove: function() {
+            this.$el.empty();
+            this.undelegateEvents();
+            return this;
+        },
         render: function () {
             var self = this;
             var template = _.template(Template);

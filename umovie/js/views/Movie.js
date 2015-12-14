@@ -22,6 +22,11 @@ define(['backbone', 'models/MovieModel', 'models/WatchlistModel', 'text!template
 
             this.render();
         },
+        remove: function() {
+            this.$el.empty();
+            this.undelegateEvents();
+            return this;
+        },
         render: function () {
             var modelJSON = this.model.toJSON();
             var youtubeVideo = this.findYoutubeVideo(modelJSON.trackName + 'trailer');

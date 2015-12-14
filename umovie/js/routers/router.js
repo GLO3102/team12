@@ -71,6 +71,7 @@ define([
             Home.render();
             this.firstvView=0;
             this.currentView = null;
+
         },
         _cleanUp: function() {
 
@@ -91,28 +92,33 @@ define([
             Home.render();
         },
         search: function(queryString) {
+            this._cleanUp();
             var filter = this.parseQueryString(queryString);
-            var searchView = new SearchView(filter);
-            searchView.render();
+            this.currentView = new SearchView(filter);
+            this.currentView.render();
             console.log("Search Route Loaded.");
+            this.firstvView=1;
+
         },
         getTVShowModalView: function(id) {
+                this._cleanUp();
                 var modTVShow = new TVShowModel();
                 var tvShowEpisodesCollection = new TVShowEpisodesCollection();
 
                 modTVShow.url = modTVShow.urlRoot + id;
                 tvShowEpisodesCollection.url = modTVShow.url + "/episodes";
-
+                var self=this;
                 modTVShow.fetch().done(function () {
                     tvShowEpisodesCollection.fetch().done(function () {
 
-                        var EpisodeModal = new TVShowModalView({
+                        self.currentView = new TVShowModalView({
                             model: modTVShow,
                             collection: tvShowEpisodesCollection
                         });
 
                     });
                 });
+            this.firstvView=1;
         },
         signup: function() {
             var Home = new HomeView;
@@ -135,22 +141,27 @@ define([
             $(".page").html("User Preference Page.");
         },
         getWatchlists: function () {
+            this._cleanUp();
             var watchListsCollection = new WatchlistCollection;
             watchListsCollection.url = "watchlists";
+            var self=this;
             watchListsCollection.fetch().done(function () {
-                var watchlistView = new WatchlistView({
+                self.currentView = new WatchlistView({
                     collection: watchListsCollection
                 });
             });
+            this.firstvView=1;
         },
         getWatchlist: function (id) {
+            this._cleanUp();
             console.log("getWatchlist function called with id: " + id);
             var modWatchlist = new WatchlistModel();
             modWatchlist.url = modWatchlist.urlRoot + id;
+            var self=this;
             modWatchlist.fetch({
                 async: true,
                 success: function (collection, response, options) {
-                    var watchlistView = new WatchlistView({
+                    self.currentView= new WatchlistView({
                         model: modWatchlist
                     });
                 },
@@ -160,32 +171,38 @@ define([
                     $(".page").html(errorHtml);
                 }
             });
+            this.firstvView=1;
         },
         getMovie: function (id) {
+            this._cleanUp();
             var modFilm = new MovieModel();
             modFilm.url = modFilm.urlRoot + id;
             var watchListsCollection = new WatchlistCollection;
             watchListsCollection.url = "watchlists";
+            var self=this;
             watchListsCollection.fetch().done(function () {
                 modFilm.fetch().done(function () {
-                    var movieView = new MovieView({
+                    self.currentView = new MovieView({
                         model: modFilm,
                         collection: watchListsCollection
                     });
                 });
             });
+            this.firstvView=1;
         },
         getActor: function (id) {
+            this._cleanUp();
             var modActor = new ActorModel();
             var modActorMovies = new ActorMovies();
             var modImgActor = new ActorImgModel();
             modActor.url = modActor.urlRoot + id;
             modActorMovies.url = modActor.url + "/movies";
+            var self=this;
             modImgActor.url = modActorMovies.url;
             modActor.fetch().done(function () {
                 modActorMovies.fetch().done(function () {
                     modImgActor.fetch().done(function () {
-                        var actorView = new ActorView({
+                        self.currentView = new ActorView({
                             model: modActor,
                             collection: modActorMovies
                         });
@@ -196,24 +213,29 @@ define([
                     });
                 });
             });
+            this.firstvView=1;
         },
         getTVShow: function (id) {
+            alert("allo");
+            this._cleanUp();
             var modTVShow = new TVShowModel();
             var tvShowEpisodesCollection = new TVShowEpisodesCollection();
 
             modTVShow.url = modTVShow.urlRoot + id;
             tvShowEpisodesCollection.url = modTVShow.url + "/episodes";
+            var self=this;
 
             modTVShow.fetch().done(function () {
                 tvShowEpisodesCollection.fetch().done(function () {
 
-                    var actorView = new TVShowView({
+                    self.currentView = new TVShowView({
                         model: modTVShow,
                         collection: tvShowEpisodesCollection
                     });
 
                 });
             });
+            this.firstvView=1;
         },
         getUser : function (id){
             this._cleanUp();

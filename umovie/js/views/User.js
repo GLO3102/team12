@@ -94,7 +94,6 @@ define(['backbone', 'models/userModel', 'text!templates/UserView.html', 'jquery.
                     console.log("Something went wrong while removing a friend.");
                 })
 
-           // alert(1);
         },
 
         goToFriendPage: function(event){
@@ -171,13 +170,7 @@ define(['backbone', 'models/userModel', 'text!templates/UserView.html', 'jquery.
             })
         },
         addWatchlist: function (event) {
-/*
-            var isValid = this.watchlists.create({
-                "name": $("#textArea").val()
-            }, {
-                type: 'POST',
-                validate: true
-            });*/
+
 
             var self=this;
             var watchlistName = $("#textArea").val();
