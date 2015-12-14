@@ -20,9 +20,14 @@
 
             <% _.each(mod.following, function(friend){ %>
             <!-- /.col-md-8 -->
-            <ul>
-                <li><%= friend.name %> (<%= friend.email %>)</li>
-            </ul>
+            <table frame="box">
+                <tr>
+                    <th><%= friend.name %></th>
+                </tr>
+                <tr>
+                    <th><%= friend.email %></th>
+                </tr>
+            </table>
             <br>
             <button class="btn btn-primary btn-lg1" data-toggle="popover" data-trigger="focus" data-placement="auto"
                     data-content='<button class="btn btn-GotoFriendPage" id="<%= friend.id %>">Go to friend page </button>
