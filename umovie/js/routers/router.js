@@ -68,12 +68,9 @@ define([
             Header.render();
             var Home = new HomeView;
             Home.render();
-
-            //if =0, no views have been instantiated else if = 1, some views have been instantiated, value needed to cleanup if old views exist
+            // if =0, no views have been instantiated else if = 1, some views have been instantiated, value needed to cleanup if old views exist
             this.firstvView = 0;
-
             this.currentView = null;
-
         },
         _cleanUp: function () {
             if (this.firstvView !== 0) {
@@ -96,7 +93,6 @@ define([
             this.currentView.render();
             console.log("Search Route Loaded.");
             this.firstvView = 1;
-
         },
         getTVShowModalView: function (id) {
 
@@ -108,15 +104,12 @@ define([
 
             modTVShow.fetch().done(function () {
                 tvShowEpisodesCollection.fetch().done(function () {
-
                      var currentTvEpisode = new TVShowModalView({
                         model: modTVShow,
                         collection: tvShowEpisodesCollection
                     });
-
                 });
             });
-
         },
         signup: function () {
             var Home = new HomeView;
@@ -214,7 +207,6 @@ define([
             this.firstvView = 1;
         },
         getTVShow: function (id) {
-
             this._cleanUp();
             var modTVShow = new TVShowModel();
             var tvShowEpisodesCollection = new TVShowEpisodesCollection();
@@ -225,19 +217,16 @@ define([
 
             modTVShow.fetch().done(function () {
                 tvShowEpisodesCollection.fetch().done(function () {
-
                     self.currentView = new TVShowView({
                         model: modTVShow,
                         collection: tvShowEpisodesCollection
                     });
-
                 });
             });
             this.firstvView = 1;
         },
         getUser: function (id) {
             this._cleanUp();
-
 
             var user = new UserModel();
             user.url = user.urlRoot + id;
@@ -255,9 +244,7 @@ define([
             user.fetch().done(function () {
                 watchListsCollection.fetch().done(function () {
                     loggedUser.fetch().done(function () {
-
                         self.currentView = new UserView(user, watchListsCollection, loggedUser);
-
                     });
                 });
             });

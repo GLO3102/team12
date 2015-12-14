@@ -15,7 +15,7 @@ define([
         initialize: function () {
             this.render();
         },
-        remove: function() {
+        remove: function () {
             this.$el.empty();
             this.undelegateEvents();
             return this;
@@ -30,9 +30,9 @@ define([
                 resizer: Util
             }));
         },
-        showEpisodeModal: function() {
+        showEpisodeModal: function () {
             var modelJSON = this.model.toJSON();
-            var idEpisode =  $('select[name=episodeList]').val();
+            var idEpisode = $('select[name=episodeList]').val();
             Backbone.history.navigate('/tvshows/season/' + modelJSON.collectionId + '/' + idEpisode, {trigger: true});
         },
         findYoutubeVideo: function (keyword) {

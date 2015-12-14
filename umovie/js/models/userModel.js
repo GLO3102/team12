@@ -1,6 +1,3 @@
-/**
- * Created by user on 2015-12-08.
- */
 define(['backbone'], function (Backbone) {
 
     console.log("userModel: defined");

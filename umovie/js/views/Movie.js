@@ -16,13 +16,10 @@ define(['backbone', 'models/MovieModel', 'models/WatchlistModel', 'text!template
                 var remote_auth_token = "";
                 var userPublicInfo = JSON.parse($.cookie("userPublicInfo"));
                 this.loggedUserId = userPublicInfo.id;
-
             }
-
-
             this.render();
         },
-        remove: function() {
+        remove: function () {
             this.$el.empty();
             this.undelegateEvents();
             return this;
@@ -38,7 +35,7 @@ define(['backbone', 'models/MovieModel', 'models/WatchlistModel', 'text!template
                 mod: modelJSON,
                 youtubeVideoId: youtubeVideo,
                 watchlists: watchlists,
-                loggedUserId:  this.loggedUserId,
+                loggedUserId: this.loggedUserId,
                 resizer: Util
             }));
         },

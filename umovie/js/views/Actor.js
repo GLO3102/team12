@@ -24,7 +24,7 @@ define([
                 resizer: Util
             }));
         },
-        remove: function() {
+        remove: function () {
             this.$el.empty();
             this.undelegateEvents();
             return this;

@@ -23,7 +23,6 @@
                 <br>
                 <img class="logoItunes" src="resources/images/1257009-logo-itunes-11.jpg">
                 <a href=<%= mod.collectionViewUrl %>> Buy on Itunes! </a>
-
             </div>
 
             <div class="upAndDown">
@@ -31,7 +30,7 @@
                     <br>
                     Episode List:
                     <br><br> <!-- Y fait froid ! -->
-                    <select name="episodeList"  size="5">
+                    <select name="episodeList" size="5">
                         <% var epArray = episodes[0]; %>
                         <% _.each(epArray, function(ep){ %>
                         <option class="TVShowTestModal" value="<%= ep.trackNumber %>" onclick='showImg("<%= ep.artworkUrl100 %>","<%= ep.previewUrl%>");'><%= ep.trackName %></option>
@@ -40,8 +39,7 @@
                     </select>
                 </div>
                 <br>
-                <img id="imageEpisode" class="show"
-                     src=''>
+                <img id="imageEpisode" class="show" src=''>
             </div>
         </div>
 
@@ -52,15 +50,10 @@
                         src="http://www.youtube.com/embed/<%= youtubeVideoId %>" frameborder="0"></iframe>
             </div>
         </div>
-
         <!-- /.col-md-4 -->
     </div>
-
     <!-- /.row -->
-
     <hr>
-
-
 </div>
 
 <script>

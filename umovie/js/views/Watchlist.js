@@ -19,7 +19,7 @@ define(['backbone', 'models/WatchlistModel', 'models/MovieModel', 'text!template
             });
             this.render();
         },
-        remove: function() {
+        remove: function () {
             this.$el.empty();
             this.undelegateEvents();
             return this;

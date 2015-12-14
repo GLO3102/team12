@@ -9,15 +9,14 @@ define([
         template: _.template(TVShowModalViewTemplate),
         el: '#modalContainer',
         events: {
-            "click #close" : "close",
+            "click #close": "close",
         },
         initialize: function () {
             this.render();
         },
-        close: function() {
-
+        close: function () {
             var EpisodeUrl = Backbone.history.getFragment();
-            var SeasonUrl = EpisodeUrl.substring(0, EpisodeUrl.lastIndexOf("/")+1);
+            var SeasonUrl = EpisodeUrl.substring(0, EpisodeUrl.lastIndexOf("/") + 1);
 
             $("#tvshow-modal").hide();
             $("#tvshow-modal").remove();
@@ -25,7 +24,6 @@ define([
             $("body").removeClass("modal-open");
 
             Backbone.history.navigate('//' + SeasonUrl, {trigger: true});
-
         },
         render: function () {
             var EpisodeUrl = Backbone.history.getFragment();
@@ -33,16 +31,15 @@ define([
 
             var modelJSON = this.model.toJSON();
 
-            var youtubeVideo = this.findYoutubeVideo(modelJSON.collectionName +' E' + episodeId + ' ' + ' trailer');
-            console.log(modelJSON.collectionName +' Episode ' + episodeId + ' trailer');
+            var youtubeVideo = this.findYoutubeVideo(modelJSON.collectionName + ' E' + episodeId + ' ' + ' trailer');
+            console.log(modelJSON.collectionName + ' Episode ' + episodeId + ' trailer');
 
             console.log("TVShowModalView: rendering template...");
-            /*this.$el.html(this.template());*/
             this.$el.html(this.template({
                 mod: modelJSON,
                 episodes: this.collection.toJSON(),
                 youtubeVideoId: youtubeVideo,
-                id: episodeId-1,
+                id: episodeId - 1,
                 resizer: Util
             }));
             console.log("TVShowModalView: done");

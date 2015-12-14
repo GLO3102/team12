@@ -1,12 +1,12 @@
-define(['backbone','text!templates/LoginView.html', 'jquery.cookie'], function (Backbone, LoginTemplate) {
+define(['backbone', 'text!templates/LoginView.html', 'jquery.cookie'], function (Backbone, LoginTemplate) {
     var LoginView = Backbone.View.extend({
         template: _.template(LoginTemplate),
         el: '#modalContainer',
         events: {
-            "click #submitLogin" : "login",
-            "click #register" : "signup"
+            "click #submitLogin": "login",
+            "click #register": "signup"
         },
-        login: function() {
+        login: function () {
             $("#errorText").hide();
             var date = new Date();
             var minutes = 60;
@@ -19,12 +19,12 @@ define(['backbone','text!templates/LoginView.html', 'jquery.cookie'], function (
                 type: "POST",
                 url: "login",
                 contentType: "application/x-www-form-urlencoded",
-                data: {email : email, password : password},
-                success: function(data) {
+                data: {email: email, password: password},
+                success: function (data) {
                     $.ajaxSetup({
-                        headers: { "Authorization": data["token"] }
+                        headers: {"Authorization": data["token"]}
                     });
-                    $.cookie("token", data["token"], { expires: date });
+                    $.cookie("token", data["token"], {expires: date});
                     $("#login-modal").hide();
                     $('.modal-backdrop').remove();
                     $('body').removeClass('modal-open');
@@ -39,7 +39,7 @@ define(['backbone','text!templates/LoginView.html', 'jquery.cookie'], function (
                 }
             });
         },
-        signup: function() {
+        signup: function () {
             $("#login-modal").hide();
             Backbone.history.navigate('signup', {trigger: true});
         },
@@ -47,7 +47,6 @@ define(['backbone','text!templates/LoginView.html', 'jquery.cookie'], function (
             console.log("LoginView: rendering template...");
             this.$el.html(this.template());
             console.log("LoginView: done");
-            //$("#login-modal").modal('show'); //parfois erreur ici si le template a pas fini de render
         }
     });
 

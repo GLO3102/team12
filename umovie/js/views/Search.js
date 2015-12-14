@@ -8,20 +8,18 @@ define([
     'collections/MoviesGenreCollection',
     'collections/TvshowGenreCollection',
     'models/WatchlistModel',
-    'collections/WatchlistCollection'], function ($, _, Backbone, select2, Template, SearchCollection, MoviesGenres, TvshowGenres, WatchlistModel,WatchlistCollection) {
-
+    'collections/WatchlistCollection'], function ($, _, Backbone, select2, Template, SearchCollection, MoviesGenres, TvshowGenres, WatchlistModel, WatchlistCollection) {
 
     var SearchView = Backbone.View.extend({
-
         el: '.page',
         events: {
             'click .addToWatchList': 'addToWatchlist',
-            'click .follow-user':    'followUser',
-            'click .nom':            'navigateToPage',
+            'click .follow-user': 'followUser',
+            'click .nom': 'navigateToPage',
             'change .movies-genres': 'selectMovieGenre',
             'change .tvshow-genres': 'selectTvshowGenre'
         },
-        initialize: function(filter) {
+        initialize: function (filter) {
             var self = this;
             self.filter = filter || {};
 
@@ -40,7 +38,7 @@ define([
             self.getResults();
 
         },
-        remove: function() {
+        remove: function () {
             this.$el.empty();
             this.undelegateEvents();
             return this;
@@ -48,32 +46,38 @@ define([
         render: function () {
             var self = this;
             var template = _.template(Template);
-            var html = template({filter: self.filter, loggedUserId:  this.loggedUserId, watchlists: self.watchlists, results:self.results, moviesGenres:self.moviesGenres, tvshowGenres:self.tvshowGenres, users: self.users});
+            var html = template({
+                filter: self.filter,
+                loggedUserId: this.loggedUserId,
+                watchlists: self.watchlists,
+                results: self.results,
+                moviesGenres: self.moviesGenres,
+                tvshowGenres: self.tvshowGenres,
+                users: self.users
+            });
             this.$el.html(html);
-            this.$el.find('.movies-genres').select2({ placeholder: "Movie genre", width: 'resolve' });
-            this.$el.find('.tvshow-genres').select2({ placeholder: "Tv show genre", width: 'resolve' });
+            this.$el.find('.movies-genres').select2({placeholder: "Movie genre", width: 'resolve'});
+            this.$el.find('.tvshow-genres').select2({placeholder: "Tv show genre", width: 'resolve'});
             this.$el.find('.btn-primary').popover({
                 title: "Add to watchlist",
                 html: true,
                 animation: true
             });
         },
-
-        navigateToPage: function(evt) {
+        navigateToPage: function (evt) {
             var wrapperType = $(evt.target).attr('data-wrapperType');
             var url = "";
-            if(wrapperType === 'track') {
-                url = "movies/" +  $(evt.target).attr('data-trackId');
+            if (wrapperType === 'track') {
+                url = "movies/" + $(evt.target).attr('data-trackId');
             } else if (wrapperType === 'collection') {
-                url = 'tvshows/season/' +  $(evt.target).attr('data-collectionId');
-            } else if(wrapperType === 'artist') {
-                url = 'actors/' +  $(evt.target).attr('data-artistId');
+                url = 'tvshows/season/' + $(evt.target).attr('data-collectionId');
+            } else if (wrapperType === 'artist') {
+                url = 'actors/' + $(evt.target).attr('data-artistId');
             } else {
                 url = "";
             }
             Backbone.history.navigate(url, {trigger: true, replace: true});
         },
-
         addToWatchlist: function (evt) {
             var self = this;
             var watchlistId = $(evt.target).data('id');
@@ -81,7 +85,7 @@ define([
             var movie = self.results.find(function (m) {
                 return m.trackId == movieId;
             });
-            if(movie && watchlistId && movieId){
+            if (movie && watchlistId && movieId) {
                 var modWatchlist = new WatchlistModel();
                 modWatchlist.url = modWatchlist.urlRoot + watchlistId + "/movies";
                 modWatchlist.fetch({data: movie, type: 'POST'});
@@ -89,9 +93,8 @@ define([
                 console.log('Error: Movie not found!!');
             }
         },
-
         followUser: function (evt) {
-            var self=this;
+            var self = this;
 
             var userId = $(evt.target).data('id');
             $.ajax({
@@ -101,43 +104,40 @@ define([
                 data: JSON.stringify({
                     id: userId
                 })
-            }).done( function(data) {
+            }).done(function (data) {
                 console.log(userId);
             }).fail(function (XMLHttpRequest) {
                 console.log("Something went wrong while adding a new friend.");
             });
         },
-
         selectMovieGenre: function (evt) {
             var mg = $(evt.target).val();
-            if(mg != 0 && this.filter.q){
-                var url = '/search?q='+ this.filter.q + '&mg=' + mg;
-                if(this.filter.tg)
+            if (mg != 0 && this.filter.q) {
+                var url = '/search?q=' + this.filter.q + '&mg=' + mg;
+                if (this.filter.tg)
                     url += '&tg=' + this.filter.tg;
-                Backbone.history.navigate(url,{trigger:true,replace:true});
-            } else if(mg == 0){
-                var url = '/search?q='+ this.filter.q;
-                if(this.filter.tg)
+                Backbone.history.navigate(url, {trigger: true, replace: true});
+            } else if (mg == 0) {
+                var url = '/search?q=' + this.filter.q;
+                if (this.filter.tg)
                     url += '&tg=' + this.filter.tg;
-                Backbone.history.navigate(url,{trigger:true,replace:true});
+                Backbone.history.navigate(url, {trigger: true, replace: true});
             }
         },
-
         selectTvshowGenre: function (evt) {
             var tg = $(evt.target).val();
-            if(tg != 0 && this.filter.q){
-                var url = '/search?q='+ this.filter.q + '&tg=' + tg;
-                if(this.filter.mg)
+            if (tg != 0 && this.filter.q) {
+                var url = '/search?q=' + this.filter.q + '&tg=' + tg;
+                if (this.filter.mg)
                     url += '&mg=' + this.filter.mg;
-                Backbone.history.navigate(url,{trigger:true,replace:true});
-            } else if(tg == 0){
-                var url = '/search?q='+ this.filter.q;
-                if(this.filter.mg)
+                Backbone.history.navigate(url, {trigger: true, replace: true});
+            } else if (tg == 0) {
+                var url = '/search?q=' + this.filter.q;
+                if (this.filter.mg)
                     url += '&mg=' + this.filter.mg;
-                Backbone.history.navigate(url,{trigger:true,replace:true});
+                Backbone.history.navigate(url, {trigger: true, replace: true});
             }
         },
-
         getResults: function () {
             var self = this;
 
@@ -152,79 +152,85 @@ define([
             self.watchlistDeferred = $.Deferred();
 
             self.watchlistCollection = new WatchlistCollection();
-            self.watchlistCollection.fetch({url: 'watchlists',success:function(model, data) {
-                self.watchlists = data;
-                self.watchlistDeferred.resolve();
-            }
+            self.watchlistCollection.fetch({
+                url: 'watchlists', success: function (model, data) {
+                    self.watchlists = data;
+                    self.watchlistDeferred.resolve();
+                }
             });
 
             self.moviesGenresCollection = new MoviesGenres();
-            self.moviesGenresCollection.fetch({url: 'genres/movies', success:function(model, data) {
-                self.moviesGenres = data;
-                self.moviesGenresDeferred.resolve();
-            }
+            self.moviesGenresCollection.fetch({
+                url: 'genres/movies', success: function (model, data) {
+                    self.moviesGenres = data;
+                    self.moviesGenresDeferred.resolve();
+                }
             });
 
             self.tvshowGenresCollection = new MoviesGenres();
-            self.tvshowGenresCollection.fetch({url: 'genres/tvshows', success:function(model, data) {
-                self.tvshowGenres = data;
-                self.tvshowGenresDeferred.resolve();
-            }
+            self.tvshowGenresCollection.fetch({
+                url: 'genres/tvshows', success: function (model, data) {
+                    self.tvshowGenres = data;
+                    self.tvshowGenresDeferred.resolve();
+                }
             });
 
             var url_movies = 'search/movies';
-            if(self.filter.q){
+            if (self.filter.q) {
                 url_movies += '?q=' + self.filter.q;
-                if(self.filter.mg)
+                if (self.filter.mg)
                     url_movies += '&genre=' + self.filter.mg;
             }
             self.moviesCollection = new SearchCollection();
-            self.moviesCollection.fetch({url: url_movies, success:function(model, data) {
-                self.results = data.results;
-                self.moviesDeferred.resolve();
-            }
+            self.moviesCollection.fetch({
+                url: url_movies, success: function (model, data) {
+                    self.results = data.results;
+                    self.moviesDeferred.resolve();
+                }
             });
 
             var url_tvshows = 'search/tvshows/seasons';
-            if(self.filter.q){
+            if (self.filter.q) {
                 url_tvshows += '?q=' + self.filter.q;
-                if(self.filter.tg)
+                if (self.filter.tg)
                     url_tvshows += '&genre=' + self.filter.tg;
             }
             self.tvshowsCollection = new SearchCollection();
-            self.tvshowsCollection.fetch({url: url_tvshows, success:function(model, data) {
-                self.results = self.results.concat(data.results);
-                self.tvshowsDeferred.resolve();
-            }
+            self.tvshowsCollection.fetch({
+                url: url_tvshows, success: function (model, data) {
+                    self.results = self.results.concat(data.results);
+                    self.tvshowsDeferred.resolve();
+                }
             });
 
             var url_actors = 'search/actors';
-            if(self.filter.q){
+            if (self.filter.q) {
                 url_actors += '?q=' + self.filter.q;
             }
             self.actorsCollection = new SearchCollection();
-            self.actorsCollection.fetch({url: url_actors, success:function(model, data) {
-                self.results = self.results.concat(data.results);
-                self.actorsDeferred.resolve();
-            }
+            self.actorsCollection.fetch({
+                url: url_actors, success: function (model, data) {
+                    self.results = self.results.concat(data.results);
+                    self.actorsDeferred.resolve();
+                }
             });
 
             var url_users = 'search/users';
-            if(self.filter.q){
+            if (self.filter.q) {
                 url_users += '?q=' + self.filter.q;
             }
             self.usersCollection = new SearchCollection();
-            self.usersCollection.fetch({url: url_users, success:function(model, data) {
-                self.users = data;
-                self.usersDeferred.resolve();
-            }
+            self.usersCollection.fetch({
+                url: url_users, success: function (model, data) {
+                    self.users = data;
+                    self.usersDeferred.resolve();
+                }
             });
 
             $.when(self.moviesGenresDeferred, self.tvshowGenresDeferred, self.moviesDeferred, self.tvshowsDeferred, self.actorsDeferred, self.usersDeferred).done(function () {
                 self.render();
                 $('#loader img').css('display', 'none');
             })
-
         }
     });
 

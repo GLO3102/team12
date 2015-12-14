@@ -1,8 +1,6 @@
-define(['backbone', 'models/userModel', 'text!templates/UserView.html', 'jquery.cookie'], function (Backbone, userModel,Template) {
-
+define(['backbone', 'models/userModel', 'text!templates/UserView.html', 'jquery.cookie'], function (Backbone, userModel, Template) {
 
     var UserView = Backbone.View.extend({
-
         template: _.template(Template),
         el: ".page",
         events: {
@@ -15,16 +13,13 @@ define(['backbone', 'models/userModel', 'text!templates/UserView.html', 'jquery.
             "click .modify": "modifyWatchlist"
 
         },
-        initialize: function (user, watchlists,loggedUser) {
-
+        initialize: function (user, watchlists, loggedUser) {
             console.log("UserView initializing...");
             _.bindAll(this, 'render');
-
 
             this.user = user;
             this.watchlists = watchlists;
             this.loggedUser = loggedUser;
-
 
             var self = this;
             this.user.bind('sync add remove update', function () {
@@ -35,123 +30,96 @@ define(['backbone', 'models/userModel', 'text!templates/UserView.html', 'jquery.
             });
 
             this.render();
-
-            //console.log($.cookie('token'));
-
             this.showHideUserButtons();
         },
-        remove: function() {
+        remove: function () {
             this.$el.empty();
             this.undelegateEvents();
             return this;
         },
         render: function () {
-
             this.$el.html(this.template({
                 mod: this.user.toJSON(),
                 watchlists: this.watchlists.toJSON()
             }));
             this.showHideUserButtons();
-
         },
         addFriend: function (event) {
-
-           // debugger;
             var userJson = this.user.toJSON();
             var userId = userJson.id;
             console.log("enter");
-            var self=this;
-                $.ajax({
-                    type: "POST",
-                    url: "follow",
-                    contentType: "application/json",
-                    data: JSON.stringify({
-                        id: userId
-                    })
-                }).done( function(data) {
-                    console.log("both");
-                    console.log(userId);
-                    //self.loggedUser.fetch();
-                   // console.log(self.user.toJSON);
-                    }).fail(function (XMLHttpRequest) {
-                        console.log("Something went wrong while adding a new friend.");
-                    })
-
-
-
+            var self = this;
+            $.ajax({
+                type: "POST",
+                url: "follow",
+                contentType: "application/json",
+                data: JSON.stringify({
+                    id: userId
+                })
+            }).done(function (data) {
+                console.log("both");
+                console.log(userId);
+            }).fail(function (XMLHttpRequest) {
+                console.log("Something went wrong while adding a new friend.");
+            })
         },
         removeFriend: function (event) {
-           // debugger;
-            var self=this;
+            // debugger;
+            var self = this;
             var friendId = event.target.id;
 
             $.ajax({
                 type: "DELETE",
-                url: "follow/"+friendId
-            }).done( function(data) {
-               self.user.fetch();
-                }).fail(function (XMLHttpRequest) {
-                    console.log("Something went wrong while removing a friend.");
-                })
-
+                url: "follow/" + friendId
+            }).done(function (data) {
+                self.user.fetch();
+            }).fail(function (XMLHttpRequest) {
+                console.log("Something went wrong while removing a friend.");
+            })
         },
-
-        goToFriendPage: function(event){
+        goToFriendPage: function (event) {
             var friendId = event.target.id;
-          // console.log("getting to friend page");
-            Backbone.history.navigate('users/'+friendId, {trigger: true});
+            // console.log("getting to friend page");
+            Backbone.history.navigate('users/' + friendId, {trigger: true});
         },
-
-        showHideUserButtons: function() {
-
-            var pageUser= this.user.toJSON();
-            var pageUserid= pageUser.id;
-
+        showHideUserButtons: function () {
+            var pageUser = this.user.toJSON();
+            var pageUserid = pageUser.id;
 
             if ($.cookie("userPublicInfo")) {
                 var remote_auth_token = "";
                 var userPublicInfo = JSON.parse($.cookie("userPublicInfo"));
                 var loggedUserId = userPublicInfo.id;
-
             }
 
             //hide or show remove friend button if page is logged user page
             //remove buttons to modify wathclists if the page is not le logged user's page
-            if (loggedUserId !== pageUserid){
-
-
+            if (loggedUserId !== pageUserid) {
                 this.$el.find('.btn-lg1').addClass('hidden');
 
                 //bouton Go to friend page non fonctionnel sur page d'ami
                 //this.$el.find('.btn-lg2').addClass('hidden');
 
                 //button wacthlist hide
-
                 this.$el.find('.btn-danger').addClass('hidden');
                 this.$el.find('.btn-success').addClass('hidden');
                 this.$el.find('.modify').addClass('hidden');
                 this.$el.find('.remove').addClass('hidden');
                 this.$el.find('#watchlist-name-editor-container').addClass('hidden');
                 this.$el.find('.wName').addClass('hidden');
-
             }
-            else{
-
+            else {
                 this.$el.find('.btn-lg2').addClass('hidden');
                 this.$el.find('.btnAddFriend').addClass('hidden');
-
             }
-
-
         },
-
         deleteWatchlist: function () {
             var targetID = event.target.id;
-            var self=this;
+            var self = this;
             $.ajax({
                 type: "DELETE",
-                url: "watchlists/"+targetID
-            }).done( function(data) {
+                url: "watchlists/" + targetID
+            }).done(function (data) {
                 self.watchlists.fetch();
                 console.log("watchlist removed.");
             }).fail(function (XMLHttpRequest) {
@@ -162,11 +130,11 @@ define(['backbone', 'models/userModel', 'text!templates/UserView.html', 'jquery.
             var data = $.parseJSON($(event.target).attr('data-button'));
             var watchlistID = data.watchlistId;
             var trackId = data.trackId;
-            var self=this;
+            var self = this;
             $.ajax({
                 type: "DELETE",
-                url: "watchlists/"+watchlistID+"/movies/"+trackId
-            }).done( function(data) {
+                url: "watchlists/" + watchlistID + "/movies/" + trackId
+            }).done(function (data) {
                 self.watchlists.fetch();
                 console.log("Movie removed from watchlist.");
             }).fail(function (XMLHttpRequest) {
@@ -174,24 +142,19 @@ define(['backbone', 'models/userModel', 'text!templates/UserView.html', 'jquery.
             })
         },
         addWatchlist: function (event) {
-
-
-            var self=this;
+            var self = this;
             var watchlistName = $("#textArea").val();
             $.ajax({
                 type: "POST",
                 url: "watchlists",
                 contentType: "application/json",
                 data: JSON.stringify({name: watchlistName})
-            }).done( function(data) {
+            }).done(function (data) {
                 self.watchlists.fetch();
                 console.log("New watchlist added.");
             }).fail(function (XMLHttpRequest) {
                 console.log("Something went wrong while adding a new watchlist.");
             })
-
-
-
         },
         modifyWatchlist: function (event) {
             var self = this;
@@ -200,24 +163,17 @@ define(['backbone', 'models/userModel', 'text!templates/UserView.html', 'jquery.
 
             $.ajax({
                 type: "PUT",
-                url: "watchlists/"+watchlistID,
+                url: "watchlists/" + watchlistID,
                 contentType: "application/json",
                 data: JSON.stringify({name: newName})
-            }).done( function(data) {
+            }).done(function (data) {
                 self.watchlists.fetch();
                 console.log("Watchlist name changed.");
             }).fail(function (XMLHttpRequest) {
                 console.log("Something went wrong while changing watchlist's name.");
             })
-
         }
-
-
-
     });
 
     return UserView;
 });
-/**
- * Created by user on 2015-12-08.
- */
