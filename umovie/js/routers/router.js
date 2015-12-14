@@ -1,4 +1,3 @@
-
 define([
     'backbone',
     'underscore',
@@ -59,8 +58,8 @@ define([
             "logout": "logout",
             "signup": "signup",
             "users/:id": "getUser",
-            "search":"search",
-            "search(?*querystring)":"search",
+            "search": "search",
+            "search(?*querystring)": "search",
             "*actions": "defaultRoute"
         },
         initialize: function () {
@@ -71,84 +70,73 @@ define([
             Home.render();
 
             //if =0, no views have been instantiated else if = 1, some views have been instantiated, value needed to cleanup if old views exist
-            this.firstvView=0;
-            this.firstViewTvEpisode=0;
+            this.firstvView = 0;
+            this.firstViewTvEpisode = 0;
 
             this.currentView = null;
             this.currentTvEpisode = null;
-
-
-
         },
-        _cleanUp: function() {
-
-            if(this.firstvView !== 0){
-
+        _cleanUp: function () {
+            if (this.firstvView !== 0) {
                 this.currentView.remove();
-
             }
-
         },
-        _cleanUpViewTvEpisode: function() {
-
-            if(this.firstViewTvEpisode !== 0){
-
+        _cleanUpViewTvEpisode: function () {
+            if (this.firstViewTvEpisode !== 0) {
                 this.currentTvEpisode.remove();
-
             }
-
         },
         home: function () {
             console.log("Home route loaded.");
-            if(typeof Header === "undefined") {
-                var Header = new HeaderView;F
+            if (typeof Header === "undefined") {
+                var Header = new HeaderView;
                 Header.render();
             }
             var Home = new HomeView;
             Home.render();
         },
-        search: function(queryString) {
+        search: function (queryString) {
             this._cleanUp();
             var filter = this.parseQueryString(queryString);
             this.currentView = new SearchView(filter);
             this.currentView.render();
             console.log("Search Route Loaded.");
-            this.firstvView=1;
+            this.firstvView = 1;
 
         },
-        getTVShowModalView: function(id) {
-                this._cleanUpViewTvEpisode();
-                var modTVShow = new TVShowModel();
-                var tvShowEpisodesCollection = new TVShowEpisodesCollection();
+        getTVShowModalView: function (id) {
+            this._cleanUpViewTvEpisode();
+            var modTVShow = new TVShowModel();
+            var tvShowEpisodesCollection = new TVShowEpisodesCollection();
 
-                modTVShow.url = modTVShow.urlRoot + id;
-                tvShowEpisodesCollection.url = modTVShow.url + "/episodes";
-                var self=this;
-                modTVShow.fetch().done(function () {
-                    tvShowEpisodesCollection.fetch().done(function () {
+            modTVShow.url = modTVShow.urlRoot + id;
+            tvShowEpisodesCollection.url = modTVShow.url + "/episodes";
+            var self = this;
+            modTVShow.fetch().done(function () {
+                tvShowEpisodesCollection.fetch().done(function () {
 
-                        self.currentTvEpisode = new TVShowModalView({
-                            model: modTVShow,
-                            collection: tvShowEpisodesCollection
-                        });
-
+                    self.currentTvEpisode = new TVShowModalView({
+                        model: modTVShow,
+                        collection: tvShowEpisodesCollection
                     });
+
                 });
-            this.firstViewTvEpisode=1;
+            });
+            this.firstViewTvEpisode = 1;
         },
-        signup: function() {
+        signup: function () {
             var Home = new HomeView;
             Home.render();
             var Signup = new SignupView;
             Signup.render();
         },
-        login: function() {
+        login: function () {
             var Home = new HomeView;
             Home.render();
             var Login = new LoginView;
             Login.render();
         },
-        logout: function() {
+        logout: function () {
             $.removeCookie('token');
             this.navigate('', {trigger: true});
         },
@@ -160,24 +148,24 @@ define([
             this._cleanUp();
             var watchListsCollection = new WatchlistCollection;
             watchListsCollection.url = "watchlists";
-            var self=this;
+            var self = this;
             watchListsCollection.fetch().done(function () {
                 self.currentView = new WatchlistView({
                     collection: watchListsCollection
                 });
             });
-            this.firstvView=1;
+            this.firstvView = 1;
         },
         getWatchlist: function (id) {
             this._cleanUp();
             console.log("getWatchlist function called with id: " + id);
             var modWatchlist = new WatchlistModel();
             modWatchlist.url = modWatchlist.urlRoot + id;
-            var self=this;
+            var self = this;
             modWatchlist.fetch({
                 async: true,
                 success: function (collection, response, options) {
-                    self.currentView= new WatchlistView({
+                    self.currentView = new WatchlistView({
                         model: modWatchlist
                     });
                 },
@@ -187,7 +175,7 @@ define([
                     $(".page").html(errorHtml);
                 }
             });
-            this.firstvView=1;
+            this.firstvView = 1;
         },
         getMovie: function (id) {
             this._cleanUp();
@@ -195,7 +183,7 @@ define([
             modFilm.url = modFilm.urlRoot + id;
             var watchListsCollection = new WatchlistCollection;
             watchListsCollection.url = "watchlists";
-            var self=this;
+            var self = this;
             watchListsCollection.fetch().done(function () {
                 modFilm.fetch().done(function () {
                     self.currentView = new MovieView({
@@ -204,7 +192,7 @@ define([
                     });
                 });
             });
-            this.firstvView=1;
+            this.firstvView = 1;
         },
         getActor: function (id) {
             this._cleanUp();
@@ -213,7 +201,7 @@ define([
             var modImgActor = new ActorImgModel();
             modActor.url = modActor.urlRoot + id;
             modActorMovies.url = modActor.url + "/movies";
-            var self=this;
+            var self = this;
             modImgActor.url = modActorMovies.url;
             modActor.fetch().done(function () {
                 modActorMovies.fetch().done(function () {
@@ -229,7 +217,7 @@ define([
                     });
                 });
             });
-            this.firstvView=1;
+            this.firstvView = 1;
         },
         getTVShow: function (id) {
 
@@ -239,7 +227,7 @@ define([
 
             modTVShow.url = modTVShow.urlRoot + id;
             tvShowEpisodesCollection.url = modTVShow.url + "/episodes";
-            var self=this;
+            var self = this;
 
             modTVShow.fetch().done(function () {
                 tvShowEpisodesCollection.fetch().done(function () {
@@ -251,9 +239,9 @@ define([
 
                 });
             });
-            this.firstvView=1;
+            this.firstvView = 1;
         },
-        getUser : function (id){
+        getUser: function (id) {
             this._cleanUp();
 
 
@@ -266,23 +254,20 @@ define([
             var loggedUser = new UserModel();
             loggedUser.url = loggedUser.urlRoot + loggedUserId;
 
-            var self=this;
+            var self = this;
 
             var watchListsCollection = new WatchlistCollection;
             watchListsCollection.url = "watchlists";
-            user.fetch().done(function() {
+            user.fetch().done(function () {
                 watchListsCollection.fetch().done(function () {
                     loggedUser.fetch().done(function () {
 
-                        self.currentView = new UserView(user, watchListsCollection,loggedUser);
+                        self.currentView = new UserView(user, watchListsCollection, loggedUser);
 
                     });
                 });
             });
-
-
-            this.firstvView=1;
-
+            this.firstvView = 1;
         },
         defaultRoute: function (actions) {
             console.log("defaultRoute Route Loaded.");

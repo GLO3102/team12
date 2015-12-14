@@ -15,12 +15,6 @@ $color-loginModal: #666
   background-image: -webkit-linear-gradient($from, $to)
   background-image: -o-linear-gradient($from, $to)
 
-@mixin borderRadiusBox($amount: 8px)
-  /* border-radius: 2px; */
-  padding: 0 $amount
-  box-sizing: border-box
-  -moz-box-sizing: border-box
-
 @mixin border-radius($amount: 5px)
   -moz-border-radius: $amount
   -webkit-border-radius: $amount
@@ -213,10 +207,8 @@ footer
       margin-bottom: 10px
       -webkit-appearance: none
       background: $color-background
-      border: 1px solid darken($color-background, 10%)
-      /* darken color. */
-      border-top: 1px solid darken($color-background, 20%)
-      @include borderRadiusBox(8px)
+      border: 1px solid
+      @include border-radius(8px)
 
 input[type=password]
   height: 44px
@@ -227,7 +219,7 @@ input[type=password]
   background: $color-background
   border: 1px solid #d9d9d9
   border-top: 1px solid #c0c0c0
-  @include borderRadiusBox(8px)
+  @include border-radius(8px)
 
 .loginmodal-container input[type=text]:hover, input[type=password]:hover
   border: 1px solid #b9b9b9
@@ -243,7 +235,7 @@ input[type=password]
   font-weight: 700
   height: 36px
   padding: 0 8px
-  @include borderRadiusBox(8px)
+  @include border-radius(8px)
 
 .loginmodal-submit
   border: 0px

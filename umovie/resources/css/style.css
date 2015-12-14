@@ -168,13 +168,10 @@ footer {
     margin-bottom: 10px;
     -webkit-appearance: none;
     background: #fff;
-    border: 1px solid #e6e6e6;
-    /* darken color. */
-    border-top: 1px solid #cccccc;
-    /* border-radius: 2px; */
-    padding: 0 8px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box; }
+    border: 1px solid;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px; }
 
 input[type=password] {
   height: 44px;
@@ -185,10 +182,9 @@ input[type=password] {
   background: #fff;
   border: 1px solid #d9d9d9;
   border-top: 1px solid #c0c0c0;
-  /* border-radius: 2px; */
-  padding: 0 8px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box; }
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px; }
 
 .loginmodal-container input[type=text]:hover, input[type=password]:hover {
   border: 1px solid #b9b9b9;
@@ -204,10 +200,9 @@ input[type=password] {
   font-weight: 700;
   height: 36px;
   padding: 0 8px;
-  /* border-radius: 2px; */
-  padding: 0 8px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box; }
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px; }
 
 .loginmodal-submit {
   border: 0px;
@@ -256,35 +251,23 @@ a:hover {
 .containerWatchlist {
   width: 656px; }
 
-.ListSearch .nom{
-    color: #220f26;
-    font-size: 18px;
-}
-
+.ListSearch .nom {
+  color: #220f26;
+  font-size: 18px; }
 .ListSearch i {
-    float: right;
-    color: #337ab7;
-    font-size: 32px;
-}
-
-
-.ListSearch .btn-primary, .ListSearch .btn-success{
-    float: right;
-    margin-right: 20px;
-}
+  float: right;
+  color: #337ab7;
+  font-size: 32px; }
 
 .select2 {
-    width: 100% !important;
-}
+  width: 100% !important; }
 
 .media-body, .media-left, .media-right {
-    vertical-align: middle;
-}
+  vertical-align: middle; }
 
 #loader img {
-    margin: 0 auto;
-    display: none;
-    width: 100px;
-}
+  margin: 0 auto;
+  display: none;
+  width: 100px; }
 
 /*# sourceMappingURL=style.css.map */
