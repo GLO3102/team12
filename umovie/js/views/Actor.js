@@ -23,7 +23,13 @@ define([
                 movies: this.collection.toJSON(),
                 resizer: Util
             }));
+        },
+        remove: function() {
+            this.$el.empty();
+            this.undelegateEvents();
+            return this;
         }
+
     });
 
     return ActorView;
