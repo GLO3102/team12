@@ -36,7 +36,7 @@ define(['backbone', 'models/userModel', 'text!templates/UserView.html', 'jquery.
 
             this.render();
 
-            console.log($.cookie('token'));
+            //console.log($.cookie('token'));
 
             this.showHideUserButtons();
         },
@@ -121,6 +121,9 @@ define(['backbone', 'models/userModel', 'text!templates/UserView.html', 'jquery.
 
 
                 this.$el.find('.btn-lg1').addClass('hidden');
+
+                //bouton Go to friend page non fonctionnel sur page d'ami
+                this.$el.find('.btn-lg2').addClass('hidden');
 
                 //button wacthlist hide
 

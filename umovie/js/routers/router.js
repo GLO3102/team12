@@ -71,19 +71,13 @@ define([
 
             //if =0, no views have been instantiated else if = 1, some views have been instantiated, value needed to cleanup if old views exist
             this.firstvView = 0;
-            this.firstViewTvEpisode = 0;
 
             this.currentView = null;
-            this.currentTvEpisode = null;
+
         },
         _cleanUp: function () {
             if (this.firstvView !== 0) {
                 this.currentView.remove();
-            }
-        },
-        _cleanUpViewTvEpisode: function () {
-            if (this.firstViewTvEpisode !== 0) {
-                this.currentTvEpisode.remove();
             }
         },
         home: function () {
@@ -105,24 +99,24 @@ define([
 
         },
         getTVShowModalView: function (id) {
-            this._cleanUpViewTvEpisode();
+
             var modTVShow = new TVShowModel();
             var tvShowEpisodesCollection = new TVShowEpisodesCollection();
 
             modTVShow.url = modTVShow.urlRoot + id;
             tvShowEpisodesCollection.url = modTVShow.url + "/episodes";
-            var self = this;
+
             modTVShow.fetch().done(function () {
                 tvShowEpisodesCollection.fetch().done(function () {
 
-                    self.currentTvEpisode = new TVShowModalView({
+                     var currentTvEpisode = new TVShowModalView({
                         model: modTVShow,
                         collection: tvShowEpisodesCollection
                     });
 
                 });
             });
-            this.firstViewTvEpisode = 1;
+
         },
         signup: function () {
             var Home = new HomeView;
