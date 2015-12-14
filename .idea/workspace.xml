@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="68073506-0b50-46e8-af80-f36dd670de7f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/index.html" afterPath="$PROJECT_DIR$/umovie/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/main.js" afterPath="$PROJECT_DIR$/umovie/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/views/Header.js" afterPath="$PROJECT_DIR$/umovie/js/views/Header.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/js/views/Search.js" afterPath="$PROJECT_DIR$/umovie/js/views/Search.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/resources/css/style.css.map" afterPath="$PROJECT_DIR$/umovie/resources/css/style.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/templates/HeaderView.html" afterPath="$PROJECT_DIR$/umovie/templates/HeaderView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/umovie/templates/SearchView.html" afterPath="$PROJECT_DIR$/umovie/templates/SearchView.html" />
     </list>
     <ignored path="team12.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -84,8 +78,8 @@
       <file leaf-file-name="HeaderView.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/umovie/templates/HeaderView.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37804878">
-              <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.3580931">
+              <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -168,9 +162,9 @@
         <option value="$PROJECT_DIR$/umovie/js/main.js" />
         <option value="$PROJECT_DIR$/umovie/resources/css/search-fix.css" />
         <option value="$PROJECT_DIR$/umovie/index.html" />
-        <option value="$PROJECT_DIR$/umovie/templates/HeaderView.html" />
         <option value="$PROJECT_DIR$/umovie/js/views/Header.js" />
         <option value="$PROJECT_DIR$/umovie/resources/css/style.sass" />
+        <option value="$PROJECT_DIR$/umovie/templates/HeaderView.html" />
       </list>
     </option>
   </component>
@@ -923,7 +917,13 @@
       <option name="project" value="LOCAL" />
       <updated>1450060137333</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Autocomplete v1.">
+      <created>1450063943594</created>
+      <option name="number" value="00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1450063943594</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -988,7 +988,8 @@
     <MESSAGE value="modifs:&#10;- rendu la preview Youtube asynchrone (requêtes synchrones sont deprecated et ça ralentissait le chargement de la page)&#10;- fixed ajaxPrefilter pour le token @ API uMovie + Youtube API&#10;- Ajouté module SSO (exécuter avec npm install &amp;&amp; npm start)" />
     <MESSAGE value="2e iteration SASS, fix key API Youtube pour TV Shows" />
     <MESSAGE value="fix typo" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix typo" />
+    <MESSAGE value="Autocomplete v1." />
+    <option name="LAST_COMMIT_MESSAGE" value="Autocomplete v1." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1396,8 +1397,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/umovie/templates/HeaderView.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37804878">
-          <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.3580931">
+          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
           <folding />
         </state>
       </provider>
