@@ -17,6 +17,7 @@ define([
         events: {
             'click .addToWatchList': 'addToWatchlist',
             'click .follow-user':    'followUser',
+            'click .nom':            'navigateToPage',
             'change .movies-genres': 'selectMovieGenre',
             'change .tvshow-genres': 'selectTvshowGenre'
         },
@@ -51,6 +52,22 @@ define([
                 html: true,
                 animation: true
             });
+        },
+
+        navigateToPage: function(evt) {
+            debugger;
+            var wrapperType = $(evt.target).attr('data-wrapperType');
+            var url = "";
+            if(wrapperType === 'track') {
+                url = "movies/" +  $(evt.target).attr('data-trackId');
+            } else if (wrapperType === 'collection') {
+                url = 'tvshows/season/' +  $(evt.target).attr('data-collectionId');
+            } else if(wrapperType === 'artist') {
+                url = 'actors/' +  $(evt.target).attr('data-artistId');
+            } else {
+                url = "";
+            }
+            Backbone.history.navigate(url, {trigger: true, replace: true});
         },
 
         addToWatchlist: function (evt) {

@@ -26,7 +26,7 @@
                 <span id="dateSortie"><%= mod.releaseDate %></span>
             </div>
             <br>
-            <button class="btn btn-primary btn-lg" data-toggle="popover" data-trigger="focus" data-placement="auto"
+            <button id="addToWatchlist" class="btn btn-primary btn-lg" data-toggle="popover" data-trigger="focus" data-placement="auto"
                     data-content="<% _.each(watchlists,function(watchlist){%>
 
                   <% if(watchlist.hasOwnProperty('owner')){%>
@@ -44,7 +44,7 @@
             <hr>
 
             <script>
-                $('.btn-primary').popover({
+                $('#addToWatchlist').popover({
                     title: "Add to watchlist",
                     html: true,
                     animation: true

@@ -8,8 +8,6 @@ define(['backbone', 'text!templates/HeaderView.html', 'jquery.cookie'], function
 
         navigateToSearchPage: function(event) {
             if (event.which == 13 || event.keyCode == 13) {
-                // var app_router = new UmovieRouter();
-                // location.hash = "#search/" + encodeURIComponent(val.trim());
                 Backbone.history.navigate('/search?q=' + $(event.target).val(), {trigger: true, replace: true});
                 return false;
             }
